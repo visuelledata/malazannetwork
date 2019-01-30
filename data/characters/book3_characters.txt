@@ -1,0 +1,229 @@
+Gruntle, a caravan guard
+
+Stonny Menackis, a caravan guard
+
+Harllo, a caravan guard
+
+Buke, a caravan guard
+
+Bauchelain, an explorer
+
+Korbal Broach, his silent partner
+
+Emancipor Reese, a manservant
+
+Keruli, a trader
+
+Marble, a sorceror
+
+Brukhalian, Mortal Sword of Fener’s Reve (the Grey Swords)
+
+Itkovian, Shield Anvil of Fener’s Reve (the Grey Swords)
+
+Karnadas, Destriant of Fener’s Reve (the Grey Swords)
+
+Recruit Velbara (the Grey Swords)
+
+Master Sergeant Norul (the Grey Swords)
+
+Farakalian (the Grey Swords)
+
+Nakalian (the Grey Swords)
+
+Torun (the Grey Swords)
+
+Sidlis (the Grey Swords)
+
+Nilbanas (the Grey Swords)
+
+Jelarkan, prince and ruler of Capustan
+
+Arard, prince and ruler in absentia of Coral
+
+Rath’Fener (Priest of the Mask Council)
+
+Rath’Shadowthrone (Priest of the Mask Council)
+
+Rath’Queen of Dreams (Priestess of the Mask Council)
+
+Rath’Hood (Priest of the Mask Council)
+
+Rath’D’rek (Priest of the Mask Council)
+
+Rath’Trake (Priest of the Mask Council)
+
+Rath’Burn (Priestess of the Mask Council)
+
+Rath’Togg (Priest of the Mask Council)
+
+Rath’Fanderay (Priestess of the Mask Council)
+
+Rath’Dessembrae (Priestess of the Mask Council)
+
+Rath’Oponn (Priest of the Mask Council)
+
+Rath’Beru (Priest of the Mask Council)
+
+Dujek Onearm, commander of renegade Malazan army
+
+Whiskeyjack, second-in-command of renegade Malazan army
+
+Twist, commander of the Black Moranth
+
+Artanthos, standard-bearer of renegade Malazan army
+
+Barack, a liaison officer
+
+Hareb, a noble-born captain
+
+Ganoes Paran, Captain, Bridgeburners
+
+Antsy, sergeant, 7th Squad, Bridgeburners
+
+Picker, corporal, 7th Squad, Bridgeburners
+
+Detoran, soldier, 7th Squad
+
+Spindle, mage and sapper, 7th Squad
+
+Blend, soldier, 7th Squad
+
+Mallet, healer, 9th Squad
+
+Hedge, sapper, 9th Squad
+
+Trotts, soldier, 9th Squad
+
+Quick Ben, mage, 9th Squad
+
+Aimless (Bridgeburner corporal)
+
+Bucklund (Bridgeburner sergeant)
+
+Runter (Bridgeburner sapper)
+
+Mulch (Bridgeburner healer)
+
+Bluepearl (Bridgeburner mage)
+
+Shank (Bridgeburner mage)
+
+Toes (Bridgeburner mage)
+
+Caladan Brood, warlord of liberation army on Genabackis
+
+Anomander Rake, Lord of Moon’s Spawn
+
+Kallor, the High King, Brood’s second-in-command
+
+The Mhybe, matron of the Rhivi Tribes
+
+Silverfox, the Rhivi Reborn
+
+Korlat, a Tiste Andii Soletaken
+
+Orfantal, Korlat’s brother
+
+Hurlochel, an outrider in the liberation army
+
+Crone, a Great Raven and companion to Anomander Rake
+
+Humbrall Taur, warchief of the White Face Clan
+
+Hetan, his daughter
+
+Cafal, his first son
+
+Netok, his second son
+
+Coll, an ambassador
+
+Estraysian D’arle, a councilman
+
+Baruk, an alchemist
+
+Kruppe, a citizen
+
+Murillio, a citizen
+
+Kron, ruler of the Kron T’lan Imass
+
+Cannig Tol, clan chief
+
+Bek Okhan, a Bonecaster
+
+Pran Chole, a Bonecaster
+
+Okral Lom, a Bonecaster
+
+Bendal Home, a Bonecaster
+
+Ay Estos, a Bonecaster
+
+Olar Ethil, the First Bonecaster and First Soletaken
+
+Tool, the Shorn, once First Sword
+
+Kilava, a renegade Bonecaster
+
+Lanas Tog, a Kerluhm T’lan Imass
+
+The Seer, priest-king of the Domin
+
+Ultentha, Septarch of Coral
+
+Kulpath, Septarch of the besieging army
+
+Inal, Septarch of Lest
+
+Anaster, a Tenescowri Child of the Dead Seed
+
+Seerdomin Kahlt
+
+K’rul, an Elder God
+
+Draconus, an Elder God
+
+Sister of Cold Nights, an Elder Goddess
+
+Lady Envy, a resident of Morn
+
+Gethol, a Herald
+
+Treach, a First Hero (the Tiger of Summer)
+
+Toc the Younger, Aral Fayle, a Malazan scout
+
+Garath, a large dog
+
+Baaljagg, a larger wolf
+
+Mok, a Seguleh
+
+Thurule, a Seguleh
+
+Senu, a Seguleh
+
+The Chained One, an unknown ascendant (also known as the Crippled God)
+
+The Witch of Tennes
+
+Munug, a Daru artisan
+
+Talamandas, a Barghast sticksnare
+
+Ormulogun, artist in Onearm’s Host
+
+Gumble, his critic
+
+Haradas, a Trygalle Trade Guild caravan master
+
+Azra Jael, a marine in Onearm’s Host
+
+Straw, a Mott Irregular
+
+Sty, a Mott Irregular
+
+Stump, a Mott Irregular
+
+Job Bole, a Mott Irregular

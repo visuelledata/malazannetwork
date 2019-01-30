@@ -1,0 +1,301 @@
+Tehol Beddict, a destitute resident
+
+Bugg, Tehol’s manservant
+
+Shurq Elalle, an itinerant pirate
+
+Skorgen Kaban, Shurq’s First Mate
+
+Ublala Pung, an unemployed Tarthenal half-blood
+
+Ormly, a member of the Rat Catchers’ Guild
+
+Rucket, Chief Investigator of the Rat Catchers’ Guild
+
+Karos Invictad, Invigilator of the Patriotists
+
+Tanal Yathvanar, Karos’s personal assistant
+
+Rautos Hivanar, Master of the Liberty Consign of Merchants
+
+Venitt Sathad, Rautos’s principal field agent
+
+Triban Gnol, Chancellor of the New Empire
+
+Nisall, First Concubine of the old emperor
+
+Janall, deposed empress
+
+Turudal Brizad, ex-consort
+
+Janath Anar, a political prisoner
+
+Sirryn Kanar, a palace guard
+
+Brullyg (Shake), nominal Ruler of Second Maiden Fort
+
+Yedan Derryg (The Watch)
+
+Orbyn ‘Truthfinder’, Section Commander of the Patriotists
+
+Letur Anict, Factor in Drene
+
+Bivatt, Atri-Preda of the Eastern Army
+
+Feather Witch, Letherii slave to Uruth
+
+Rhulad, ruler of the New Empire
+
+Hannan Mosag, Imperial Ceda
+
+Uruth, Matriarch of the Emperor and wife to Tomad Sengar
+
+K’risnan, warlocks of the Emperor
+
+Bruthen Trana, Edur in palace
+
+Brohl Handar, Overseer of the East in Drene
+
+Yan Tovis (Twilight), Atri-Preda of the Letherii Army
+
+Varat Taun, her lieutenant
+
+Taralack Veed, a Gral agent of the Nameless Ones
+
+Icarium, Taralack’s weapon
+
+Hanradi Khalag, a warlock of the Tiste Edur
+
+Tomad Sengar, Patriarch of the Emperor
+
+Samar Dev, a scholar and witch from Seven Cities
+
+Karsa Orlong, a Toblakai warrior
+
+Taxilian, an interpreter
+
+Redmask, an exile who returned
+
+Masarch, a warrior of the Renfayar Clan
+
+Hadralt, War Leader of Ganetok Clan
+
+Sag’Churok, a bodyguard to Redmask
+
+Gunth Mach, a bodyguard to Redmask
+
+Torrent, a Copperface
+
+Natarkas, a Copperface
+
+Seren Pedac, a Letherii Acquitor
+
+Fear Sengar, a Tiste Edur
+
+Kettle, a Letherii orphan
+
+Udinaas, a Letherii runaway slave
+
+Wither, a shadow wraith
+
+Silchas Ruin, a Tiste Andii Ascendant
+
+Ulshun Pral, an Imass
+
+Rud Elalle, an adopted foundling
+
+Hostille Rator, a T’lan Imass
+
+Til’aras Benok, a T’lan Imass
+
+Gr’istanas Ish’ilm, a T’lan Imass
+
+Tavore Paran, Commander of the Bonehunters
+
+Lostara Yil, Second to Tavore
+
+Keneb, Fist in the Bonehunters
+
+Blistig, Fist in the Bonehunters
+
+Faradan Sort, Captain
+
+Madan’tul Rada, Faradan Sort’s lieutenant
+
+Grub, adopted son of Keneb
+
+Beak, mage seconded to Captain Faradan Sort
+
+Fiddler, sergeant
+
+Tarr, corporal
+
+Koryk, half-blood Seti, marine
+
+Smiles, Kanese, marine
+
+Cuttle, sapper
+
+Bottle, squad mage
+
+Corabb Bhilan Thenu’alas, soldier
+
+Gesler, sergeant
+
+Stormy, corporal
+
+Sands, marine
+
+Shortnose, heavy infantry
+
+Flashwit, heavy infantry
+
+Uru Hela, heavy infantry
+
+Mayfly, heavy infantry
+
+Cord, sergeant
+
+Shard, corporal
+
+Limp, marine
+
+Ebron, squad mage
+
+Crump (Jamber Bole), sapper
+
+Sinn, mage
+
+Hellian, sergeant
+
+Touchy, corporal #1
+
+Brethless, corporal #2
+
+Balgrid, squad mage
+
+Tavos Pond, marine
+
+Maybe, sapper
+
+Lutes, squad healer
+
+Balm, sergeant
+
+Deadsmell, corporal
+
+Throatslitter, marine
+
+Galt, marine
+
+Lobe, marine
+
+Widdershins, squad mage
+
+Thom Tissy, sergeant
+
+Tulip, corporal
+
+Ramp, heavy infantry
+
+Jibb, medium infantry
+
+Gullstream, medium infantry
+
+Mudslinger, medium infantry
+
+Bellig Harn, heavy infantry
+
+Urb, sergeant
+
+Reem, corporal
+
+Masan Gilani, marine
+
+Bowl, heavy infantry
+
+Hanno, heavy infantry
+
+Saltlick, heavy infantry
+
+Scant, heavy infantry
+
+Pravalak Rim, corporal
+
+Honey, sapper
+
+Strap Mull, sapper
+
+Shoaly, heavy infantry
+
+Lookback, heavy infantry
+
+Badan Gruk, sergeant
+
+Ruffle, marine
+
+Skim, marine
+
+Nep Furrow, mage
+
+Reliko, heavy infantry
+
+Vastly Blank, heavy infantry
+
+Primly, sergeant
+
+Hunt, corporal
+
+Mulvan Dreader, mage
+
+Neller, sapper
+
+Skulldeath, marine
+
+Drawfirst, heavy infantry
+
+Banaschar, the Last Priest of D’rek
+
+Withal, a Meckros Swordsmith
+
+Sandalath Drukorlat, a Tiste Andii, Withal’s wife
+
+Nimander Golit, a Tiste Andii, offspring of Anomander Rake
+
+Phaed, a Tiste Andii, offspring of Anomander Rake
+
+Curdle, a possessed skeletal reptile
+
+Telorast, a possessed skeletal reptile
+
+Onrack, a T’lan Imass, unbound
+
+Trull Sengar, a Tiste Edur renegade
+
+Ben Adaephon Delat, a wizard
+
+Menandore, a Soletaken (Sister of Dawn)
+
+Sheltatha Lore, a Soletaken (Sister of Dusk)
+
+Sukul Ankhadu, a Soletaken (Sister Dapple)
+
+Kilmandaros, an Elder Goddess
+
+Clip, a Tiste Andii
+
+Cotillion, The Rope, Patron God of Assassins
+
+Emroth, a broken T’lan Imass
+
+Hedge, a ghost
+
+Old Hunch Arbat, Tarthenal
+
+Pithy, an ex-con
+
+Brevity, an ex-con
+
+Pully, a Shake witch
+
+Skwish, a Shake witch
