@@ -1,5 +1,6 @@
 source("R/import_books.R")
 source("R/import_characters.R")
+source("R/import_alias.R")
 
 books %>% 
   filter(str_detect(line, " Watch"))

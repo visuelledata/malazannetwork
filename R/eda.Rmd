@@ -1,0 +1,89 @@
+---
+title: "eda"
+author: "Chris Peralta"
+date: "January 31, 2019"
+output: pdf_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(tidytext)
+source("R/import_books.R")
+source("R/import_characters.R")
+source("R/import_alias.R")
+english_words <- read_csv("data/words_alpha.txt")
+places <- read_csv("data/places.txt")
+```
+
+Find more names:
+Getting variations of names and combining lists. 
+```{r}
+names_and_aliases <- characters %>% 
+  select(name) %>% 
+  bind_rows(rename(select(alias, aliases), name = aliases)) %>% 
+  distinct()
+
+get_name_variations <- function(name_data){
+  name_data <- name_data %>% 
+    mutate(name = str_trim(name), 
+           name = str_squish(name))
+  
+  plural <- name_data %>% 
+    mutate(names = paste0(name, "s"))
+  
+  possessive <- name_data %>% 
+    mutate(name = paste0(name, "'s"))
+
+  possessive_s <- name_data %>% 
+    mutate(name = paste0(name, "'"))
+  
+  short_name <- name_data %>% 
+    mutate(name = str_split(name, " ")) %>% 
+    unnest()
+  
+  short_name_plural <- short_name %>% 
+    mutate(name = paste0(name, "s"))
+  
+  short_name_possessive <- short_name %>% 
+    mutate(name = paste0(name, "'s"))
+  
+  short_name_possessive_s <- short_name %>% 
+    mutate(name = paste0(name, "'"))
+    
+  bind_rows(name_data, plural, possessive, possessive_s, short_name, short_name_plural,
+            short_name_possessive, short_name_possessive_s) %>% 
+    distinct()
+}
+```
+
+Co-occurences: 
+Use ngrams
+Compare all of them against name variations
+Remove all rows without names
+Shrink everything horizontally
+(at this point there is a dataframe of names)
+Can make a network graph at this point
+Remove duplicate names within each rows and names that match themselves
+
+Co-occurences through ngrams with / without dialogue 
+```{r}
+books %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 10, to_lower = FALSE) %>% 
+  
+```
+
+
+
+Some preprocessing:  (necessary?)
+Remove titles from character names
+Replace aliases with names
+Remove dialogue
+Replace pronouns with names??
+Replace titles with names??
+
+
+

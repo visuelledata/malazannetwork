@@ -27,7 +27,8 @@ characters <- characters %>%
   mutate(value = str_remove(value, " \\(Bridgeburner.*")) %>% 
   mutate(value = str_remove(value, " \\(Shake.*")) %>%
   mutate(value = str_remove(value, " \\(.*")) %>%  
-  mutate(value = str_remove(value, "/.*")) %>% 
+  mutate(value = str_remove(value, "/.*")) %>%
+  mutate(value = str_remove(value, "^[A-Z]$")) %>%
   bind_rows(data_frame(value = c("Keeper", "Twilight", "Watch", "Jamber Bole", 
                                  "Gall's wife", "Elan", "Errastas", "Sechul Lath", 
                                  "Studious Lock", "Strings", "Gimlet", "Cotillion", 
