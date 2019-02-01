@@ -27,35 +27,39 @@ names_and_aliases <- characters %>%
   bind_rows(rename(select(alias, aliases), name = aliases)) %>% 
   distinct()
 
+#The removed code below is unnecessary and wastes time
 get_name_variations <- function(name_data){
   name_data <- name_data %>% 
     mutate(name = str_trim(name), 
            name = str_squish(name))
   
-  plural <- name_data %>% 
-    mutate(names = paste0(name, "s"))
-  
-  possessive <- name_data %>% 
-    mutate(name = paste0(name, "'s"))
-
-  possessive_s <- name_data %>% 
-    mutate(name = paste0(name, "'"))
-  
+  # plural <- name_data %>% 
+  #   mutate(name = paste0(name, "s"))
+  # 
+  # possessive <- name_data %>% 
+  #   mutate(name = paste0(name, "'s"))
+  # 
+  # possessive_s <- name_data %>% 
+  #   mutate(name = paste0(name, "'"))
+   
   short_name <- name_data %>% 
     mutate(name = str_split(name, " ")) %>% 
-    unnest()
+    unnest() %>% 
+    anti_join(stop_words, by = c("name" = "word")) %>% 
+    anti_join(mutate(stop_words, word = str_to_title(word)), by = c("name" = "word"))
   
-  short_name_plural <- short_name %>% 
-    mutate(name = paste0(name, "s"))
-  
-  short_name_possessive <- short_name %>% 
-    mutate(name = paste0(name, "'s"))
-  
-  short_name_possessive_s <- short_name %>% 
-    mutate(name = paste0(name, "'"))
+  # short_name_plural <- short_name %>% 
+  #   mutate(name = paste0(name, "s"))
+  # 
+  # short_name_possessive <- short_name %>% 
+  #   mutate(name = paste0(name, "'s"))
+  # 
+  # short_name_possessive_s <- short_name %>% 
+  #   mutate(name = paste0(name, "'"))
     
-  bind_rows(name_data, plural, possessive, possessive_s, short_name, short_name_plural,
-            short_name_possessive, short_name_possessive_s) %>% 
+  bind_rows(name_data, short_name) %>% 
+            #plural, possessive, possessive_s, short_name_plural,
+            #short_name_possessive, short_name_possessive_s) %>% 
     distinct()
 }
 ```
@@ -70,13 +74,87 @@ Can make a network graph at this point
 Remove duplicate names within each rows and names that match themselves
 
 Co-occurences through ngrams with / without dialogue 
+This is a minimal working example
 ```{r}
-books %>% 
-  unnest_tokens(ngram, line, token = "ngrams", n = 10, to_lower = FALSE) %>% 
-  
+all_names <- get_name_variations(names_and_aliases) %>% 
+  filter(!str_detect(name, "^.{1,3}$")) %>% 
+  filter(name != "")
+
+temp <- books %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 30, to_lower = FALSE) %>%
+  filter(str_detect(ngram, pattern = all_names$name)) %>% 
+  select(ngram) %>% 
+  apply(., 1, function(x) str_extract(x, pattern = all_names$name))
+  #mutate(chars = str_extract_all(ngram, pattern = all_names$name)) #%>% 
+
+temp1 <- temp %>% 
+  t() %>% 
+  as.tibble() %>% 
+  unite("names", V1:V3180, sep = "")
+
+temp2 <- temp1 %>% 
+  mutate(names = str_replace_all(names, "NA", "-"), 
+         names = str_replace_all(names, "-+", ","), 
+         names = str_remove_all(names, "^,|,$"), 
+         connections = lengths(str_split(names, ","))) %>% 
+  separate(names, into = paste0("name", 1:30), sep = ",")
+
+library(ggraph)
+library(igraph)
+
+important_labels <- temp1 %>% 
+  mutate(names = str_replace_all(names, "NA", "-"), 
+         names = str_replace_all(names, "-+", ","), 
+         names = str_remove_all(names, "^,|,$"),
+         names = str_split(names, ","),
+         connections = lengths(names)) %>% 
+  filter(connections > 9) %>% 
+  unnest() %>% 
+  pull(names) %>% 
+  unique()
+
+tempgraph <- temp2 %>% 
+  filter(connections > 2) %>% 
+  graph_from_data_frame(directed = FALSE) %>% 
+  ggraph() + 
+  geom_edge_fan(spread = 5) + 
+  geom_node_point() + 
+  geom_node_text(aes(label = name, alpha = (name %in% important_labels)), 
+                 repel = TRUE, segment.size = 1, 
+                 segment.color = "pink", color = "blue") + 
+  theme_void() + 
+  theme(legend.position="none")
 ```
 
 
+
+```{r}
+books %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 20, to_lower = FALSE) %>% 
+  filter(str_detect(ngram, pattern = fixed(all_names$name))) %>% 
+  separate(ngram, c(paste0("word", 1:20)), sep = " ") %>% 
+  #filter(word1 %in% all_names$name) %>% 
+  View()
+#OR
+#This approach seems better
+books %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 10, to_lower = FALSE) %>% 
+  separate(ngram, c(paste0("word", 1:10)), sep = " ") %>% 
+  filter(word1 %in% all_names$name |
+         word2 %in% all_names$name |
+         word3 %in% all_names$name |
+         word4 %in% all_names$name |
+         word5 %in% all_names$name |
+         word6 %in% all_names$name |
+         word7 %in% all_names$name |
+         word8 %in% all_names$name |
+         word9 %in% all_names$name |
+         word10 %in% all_names$name) %>% 
+  View()
+```
+what happens when you put a vector as pattern in str_detect? 
+
+Consider adding a column for which characters appear in which books, this will prevent characters such as the Assail, sorry, etc... being over represented. Get further toward the network graph before you worry about this. 
 
 Some preprocessing:  (necessary?)
 Remove titles from character names
@@ -87,3 +165,38 @@ Replace titles with names??
 
 
 
+Code for dealing with lists when str_extract_all returns a lot of lists
+```{r}
+temp1 <- compact(temp)
+temp1 <- map(temp1, compact)
+temp1 <- map(temp1, as.character)
+
+temp1 <- temp %>% 
+  compact() %>% 
+  map(compact) %>% 
+  map(as.character)
+
+bind_rows(lapply(vectorList, as.data.frame.list)) %>% 
+#as.data.frame(do.call(rbind, temp1)) %>% 
+  as.tibble() %>% 
+  View()
+
+temp %>%   
+  filter(!identical(chars, character(0))) %>% 
+  View()
+
+temp %>% 
+  select(chars) %>% 
+  mutate(chars2 = Filter(function(x) !identical(character(0),x), chars))
+
+temp %>% 
+  select(chars) %>% 
+  mutate(chars = compact(chars)) %>% 
+  View()
+
+temp %>% 
+  compact() %>% 
+  View()
+
+temp mutate(map str_extract() along character list on each line)
+```
