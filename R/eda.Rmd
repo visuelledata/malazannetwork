@@ -78,15 +78,30 @@ This is a minimal working example
 ```{r}
 all_names <- get_name_variations(names_and_aliases) %>% 
   filter(!str_detect(name, "^.{1,3}$")) %>% 
-  filter(name != "")
-
+  filter(name != "") %>% 
+  arrange(desc(nchar(name)))
+tic()
 temp <- books %>% 
   unnest_tokens(ngram, line, token = "ngrams", n = 30, to_lower = FALSE) %>%
-  filter(str_detect(ngram, pattern = all_names$name)) %>% 
+  filter(str_detect(ngram, pattern = fixed(all_names$name))) %>% 
   select(ngram) %>% 
-  apply(., 1, function(x) str_extract(x, pattern = all_names$name))
-  #mutate(chars = str_extract_all(ngram, pattern = all_names$name)) #%>% 
-
+  #apply(1, function(x) str_extract(x, pattern = fixed(all_names$name))
+  apply(1, function(x){
+              map_chr(all_names$name,
+                  function(pat){
+                    name <- str_extract(x, pattern = fixed(pat))
+                    x <<- str_remove(x, pattern = fixed(pat))
+                    name
+                  })
+                 })
+  #rowwise() %>% 
+  #do(chars = str_extract(.$ngram, pattern = fixed(all_names$name)))
+  #mutate(chars = str_extract(ngram, pattern = fixed(all_names$name)))
+toc()
+for(i in seq_along(pat))  {
+      out[i] <- str_extract(str1, pattern = fixed(pat[i]))
+      str1 <- str_remove(str1, pat[i])
+ }
 temp1 <- temp %>% 
   t() %>% 
   as.tibble() %>% 
