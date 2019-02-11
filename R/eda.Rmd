@@ -15,6 +15,7 @@ library(tidytext)
 source("R/import_books.R")
 source("R/import_characters.R")
 source("R/import_alias.R")
+source("R/standardize_names.R")
 english_words <- read_csv("data/words_alpha.txt")
 places <- read_csv("data/places.txt")
 ```
@@ -77,17 +78,41 @@ Co-occurences through ngrams with / without dialogue
 This is a minimal working example
 ```{r}
 all_names <- get_name_variations(names_and_aliases) %>% 
-  filter(!str_detect(name, "^.{1,3}$")) %>% 
-  filter(name != "") %>% 
-  arrange(desc(nchar(name)))
-tic()
+  mutate(name = str_remove(name, "^The ")) %>% 
+  filter(!str_detect(name, "^.{1,3}$")) %>%
+  filter(name != "", name != "Doubt", name != "Imperial", name != "House", 
+         name != "Wait", name != "Lying", name != "Felis", name != "Seventh", 
+         name != "Twelfth", name != "Dead", name != "Jaghut", name != "Darkness",
+         name != "Ghost", name != "Mortal", name != "Sword", name != "Shield", 
+         name != "Anvil", name != "Master", name != "Deck", name != "Cold", 
+         name != "Moon", name != "Mage", name != "Iron", name != "Soon", 
+         name != "Throw", name != "Fire", name != "Lady", name != "Mage", 
+         name != "Seer", name != "Lieutenant", name != "Breath", name != "Sort",
+         name != "Pale", name != "Councilman", name != "Sergeant", name != "High Fist",
+         name != "Elder", name != "Green", name != "Pig", name != "Hound", 
+         name != "Shadow", name != "Queen", name != "Dark", name != "Whirlwind", 
+         name != "Dryjhna", name != "Black", name != "Captain", name != "High", 
+         name != "Fist", name != "Assassin", name != "Last", name != "Bear", 
+         name != "One", name != "King", name != "Silent", name != "Esta", 
+         name != "Lord", name != "D'Arle", name != "Life", name != "Will", 
+         name != "White", name != "Artist", name != "Treat", name != "Cook", 
+         name != "Fish", name != "Setral", name != "Crippled", 
+         !str_detect(name, "^[a-z]")) %>% 
+  arrange(desc(nchar(name))) %>% 
+  pull(name)
+
+tictoc::tic()
 temp <- books %>% 
+  mutate(line = str_replace_all(line, 
+                                fixed("Hood’s breath", ignore_case = TRUE), 
+                                "Replacement")) %>% 
+  standardize_names() %>% 
   unnest_tokens(ngram, line, token = "ngrams", n = 30, to_lower = FALSE) %>%
-  filter(str_detect(ngram, pattern = fixed(all_names$name))) %>% 
+  filter(str_detect(ngram, pattern = fixed(all_names))) %>% 
   select(ngram) %>% 
   #apply(1, function(x) str_extract(x, pattern = fixed(all_names$name))
   apply(1, function(x){
-              map_chr(all_names$name,
+              map_chr(all_names,
                   function(pat){
                     name <- str_extract(x, pattern = fixed(pat))
                     x <<- str_remove(x, pattern = fixed(pat))
@@ -97,21 +122,56 @@ temp <- books %>%
   #rowwise() %>% 
   #do(chars = str_extract(.$ngram, pattern = fixed(all_names$name)))
   #mutate(chars = str_extract(ngram, pattern = fixed(all_names$name)))
-toc()
-for(i in seq_along(pat))  {
-      out[i] <- str_extract(str1, pattern = fixed(pat[i]))
-      str1 <- str_remove(str1, pat[i])
- }
+tictoc::toc()
+
+
 temp1 <- temp %>% 
   t() %>% 
   as.tibble() %>% 
-  unite("names", V1:V3180, sep = "")
+  unite("names", V1:V3106, sep = ",")
 
 temp2 <- temp1 %>% 
-  mutate(names = str_replace_all(names, "NA", "-"), 
-         names = str_replace_all(names, "-+", ","), 
+  mutate(names = str_replace_all(names, "NA", ","), 
+         names = str_replace_all(names, ",+", ","), 
          names = str_remove_all(names, "^,|,$"), 
-         connections = lengths(str_split(names, ","))) %>% 
+         names = str_replace_all(names, "Empress", "Laseen"), 
+         names = str_replace_all(names, "Imperial Historian Duiker|Imperial Historian|Historian|Duiker", "Duiker"),
+         names = str_replace_all(names, "Laseen Laseen", "Laseen"),
+         names = str_replace_all(names, "Emperor Kellanved|Kellanved|Shadowthrone", 
+                                 "Ammanas"), 
+         names = str_replace_all(names, "Surly", "Laseen"),
+         names = str_replace_all(names, "Paran|Ganoes Paran", "Ganoes Stabro Paran"), 
+         names = str_replace_all(names, "Korbolo", "Korbolo Dom"),
+         names = str_replace_all(names, "Rake", "Anomander Rake"), 
+         names = str_replace_all(names, "Anomander Anomander", "Anomander"),
+         names = str_replace_all(names, "Dujek", "Dujek Onearm"), 
+         names = str_replace_all(names, "Onearm Onearm", "Onearm"), 
+         names = str_replace_all(names, "Quick Ben|Quick", "Ben Adaephon Delat"),
+         names = str_replace_all(names, "Crokus Younghand|Crokus|Cutter", 
+                                 "Crokus Younghand"),
+         names = str_replace_all(names, "Iskaral", "Iskaral Pust"), 
+         names = str_replace_all(names, "Pust Pust", "Pust"), 
+         names = str_replace_all(names, "Pust", "Iskaral Pust"), 
+         names = str_replace_all(names, "Iskaral Iskaral", "Iskaral"),
+         names = str_replace_all(names, "Caladan|Brood|Warlord", "Caladan Brood"), 
+         names = str_replace_all(names, "Caladan Brood Caladan Brood", 
+                                 "Caladan Brood"),
+         names = str_replace_all(names, "Sergeant ", ""), 
+         names = str_replace_all(names, "Talo Krafar|Talo", "Talo Krafar"),
+         names = str_replace_all(names, "Osserc", "Osseric"), 
+         names = str_replace_all(names, "Hound Gear", "Gear"), 
+         names = str_replace_all(names, "Salk Elan", "Pearl"), 
+         names = str_replace_all(names, "Heboric Light Touch|
+                                 Heboric Ghost Hands|Heboric", 
+                                 "Heboric Light Touch"), 
+         names = str_replace_all(names, "Prazek Goul|Prazek", "Prazek Goul"), 
+         names = str_replace_all(names, "Mesker Setral|Mesker", "Mesker Setral"),
+         names = str_replace_all(names, "Kadagar Fant|Kadagar|Fant", "Kadagar Fant"),
+         names = str_replace_all(names, "Silchas Ruin|Silchas", "Silchas Ruin"),
+         connections = lengths(str_split(names, ","))) 
+temp2 %>% mutate(names = str_split(names, ",")) %>% unnest() %>% distinct(names) %>% View
+
+temp2 <- temp2 %>% 
   separate(names, into = paste0("name", 1:30), sep = ",")
 
 library(ggraph)
@@ -129,21 +189,21 @@ important_labels <- temp1 %>%
   unique()
 
 tempgraph <- temp2 %>% 
-  filter(connections > 2) %>% 
+  filter(connections > 1) %>% 
   graph_from_data_frame(directed = FALSE) %>% 
   ggraph() + 
   geom_edge_fan(spread = 5) + 
   geom_node_point() + 
-  geom_node_text(aes(label = name, alpha = (name %in% important_labels)), 
+  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
                  repel = TRUE, segment.size = 1, 
-                 segment.color = "pink", color = "blue") + 
+                 segment.color = "pink", color = "blue")) + 
   theme_void() + 
   theme(legend.position="none")
 ```
 
 
 
-```{r}
+```{r eval=FALSE}
 books %>% 
   unnest_tokens(ngram, line, token = "ngrams", n = 20, to_lower = FALSE) %>% 
   filter(str_detect(ngram, pattern = fixed(all_names$name))) %>% 
@@ -181,7 +241,7 @@ Replace titles with names??
 
 
 Code for dealing with lists when str_extract_all returns a lot of lists
-```{r}
+```{r eval=FALSE}
 temp1 <- compact(temp)
 temp1 <- map(temp1, compact)
 temp1 <- map(temp1, as.character)
