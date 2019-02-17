@@ -1,7 +1,18 @@
 standardize_names_book <- function(df){
   df %>% 
     group_by(book) %>% 
-    mutate(line = if_else(book == 1, str_replace_all(line, "Adjunct", "Lorn"), line), 
+    mutate(line = if_else(book == 1, str_replace_all(line, 
+                                                     "Adjunct Lorn|Adjunct|Lorn", 
+                                                     "Lorn"), 
+                          line)) %>%
+    mutate(line = if_else(book != 5 | book != 7, str_replace_all(line, 
+                                                     "Fear", 
+                                                     "fear"), 
+                          line)) %>%
+    mutate(line = if_else(book != 1, 
+                          str_replace_all(line, "Adjunct Tavore Paran|Adjunct Tavore|Adjunct", 
+                                          "Tavore Paran"), 
+                          line), 
            line = str_replace_all(line, "Lorn Lorn", "Lorn"),
            line = str_replace_all(line, "Lorn Lorn", "Lorn")) %>%
     mutate(line = if_else(book != 2 | book != 8, 
@@ -9,13 +20,18 @@ standardize_names_book <- function(df){
                           line)) %>%
     mutate(line = if_else(book == 5 | book == 7, 
                           str_replace_all(line, 
-                                          "Emperor Rhulad Sengar|Emperor Rhulad|Emperor", 
+                                          "Emperor Rhulad Sengar|Emperor Rhulad|Emperor|Rhulad", 
                                           "Rhulad Sengar"), 
                           line)) %>%
     mutate(line = if_else(book != 5 | book != 7, 
                           str_replace_all(line, 
                                           "Emperor Kellanved|Emperor", 
                                           "Ammanas"), 
+                          line)) %>%
+    mutate(line = if_else(book == 4,  
+                          str_replace_all(line, 
+                                          "Warleader", 
+                                          "Karsa"), 
                           line)) %>%
     ungroup()
 }
@@ -31,7 +47,7 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Emperor Kellanved|Kellanved|Shadowthrone", 
                                    "Ammanas"), 
            names = str_replace_all(names, "Surly", "Laseen"),
-           names = str_replace_all(names, "Paran|Ganoes Paran", "Ganoes Stabro Paran"), 
+           names = str_replace_all(names, "Ganoes Paran|Paran", "Ganoes Stabro Paran"), 
            names = str_replace_all(names, "Korbolo", "Korbolo Dom"),
            names = str_replace_all(names, "Rake", "Anomander Rake"), 
            names = str_replace_all(names, "Anomander Anomander", "Anomander"),
@@ -59,6 +75,8 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Mesker Setral|Mesker", "Mesker Setral"),
            names = str_replace_all(names, "Kadagar Fant|Kadagar|Fant", "Kadagar Fant"),
            names = str_replace_all(names, "Silchas Ruin|Silchas", "Silchas Ruin"), 
+           names = str_replace_all(names, "Tavore Ganoes Stabro Paran|Tavore", 
+                                   "Tavore Paran"), 
            names = str_replace_all(names, "Corporal Kalam Mekhar|Kalam Mekhar|Kalam", 
                                    "Kalam Mekhar"), 
            names = str_replace_all(names, "Rallick Nom|Rallick", "Rallick Nom"))
