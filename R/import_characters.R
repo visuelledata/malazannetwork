@@ -35,4 +35,5 @@ characters <- characters %>%
                                  "Ammanas"), 
                        description = rep(NA_character_, 13))) %>% 
   distinct(value, .keep_all = TRUE) %>% 
-  rename(name = value)
+  rename(name = value) %>% 
+  mutate(name = str_replace_all(name, "’", "'"))

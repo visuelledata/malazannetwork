@@ -55,5 +55,6 @@ books <- books %>%
   map(mutate, chapter = chapter + cumsum(str_detect(value, "^(?i)epilogue"))) %>% 
   reduce(bind_rows) %>% 
   rename(line = value) %>% 
-  arrange(book)
+  arrange(book) %>% 
+  mutate(line = str_replace_all(line, "’", "'"))
 

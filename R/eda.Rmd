@@ -98,15 +98,14 @@ all_names <- get_name_variations(names_and_aliases) %>%
          name != "White", name != "Artist", name != "Treat", name != "Cook", 
          name != "Fish", name != "Setral", name != "Crippled", name != "Claw", 
          name != "Grin", name != "Witch", name != "Ceda", name != "Light", 
-         name != "Warleader", 
+         name != "Warleader", name != "Warlock", name != "Bone", name != "Sengar", 
+         name != "Grey", name != "Sister", name != "Corporal", name != "Dying", 
+         name != "Commander"
          !str_detect(name, "^[a-z]")) %>% 
   arrange(desc(nchar(name))) %>% 
   pull(name)
 
 temp0 <- books %>% 
-  mutate(line = str_replace_all(line, 
-                                fixed("Hood’s breath", ignore_case = TRUE), 
-                                "Replacement")) %>% 
   standardize_names_book() %>% 
   unnest_tokens(ngram, line, token = "ngrams", n = 30, to_lower = FALSE) %>%
   filter(str_detect(ngram, pattern = fixed(all_names))) %>% 
@@ -119,20 +118,21 @@ tictoc::tic()
 plan(multiprocess, workers = 4) 
 temp <- temp0 %>% 
   future_apply(1, function(x){
-              map_chr(all_names,
-                  function(pat){
-                    name <- str_extract(x, pattern = fixed(pat))
-                    if(!is.na(name)) x <<- str_remove(x, pattern = fixed(pat))
-                    name
-                  })
-                 }, future.seed = TRUE)
+               map_chr(all_names,
+                       function(pat){
+                         name <- str_extract(x, pattern = fixed(pat))
+                         if(!is.na(name)) x <<- str_remove(x, pattern = fixed(pat))
+                         name
+                        })
+                       }, 
+               future.seed = TRUE)
 tictoc::toc()
 
 
 temp1 <- temp %>% 
   t() %>% 
   as.tibble() %>% 
-  unite("names", V1:V3086, sep = ",")
+  unite("names", V1:V3080, sep = ",")
 
 temp2 <- temp1 %>% 
   standardize_names_net() %>% 
@@ -141,33 +141,51 @@ temp2 <- temp1 %>%
 temp2 %>% mutate(names = str_split(names, ",")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
 
 temp2 <- temp2 %>% 
+  filter(str_detect(names, ",")) %>% 
   separate(names, into = paste0("name", 1:30), sep = ",")
 
 library(ggraph)
-library(igraph)
+library(tidygraph)
 
-important_labels <- temp1 %>% 
-  mutate(names = str_replace_all(names, "NA", "-"), 
-         names = str_replace_all(names, "-+", ","), 
-         names = str_remove_all(names, "^,|,$"),
-         names = str_split(names, ","),
-         connections = lengths(names)) %>% 
-  filter(connections > 9) %>% 
-  unnest() %>% 
-  pull(names) %>% 
-  unique()
-
-tempgraph <- temp2 %>% 
-  filter(connections > 1) %>% 
-  graph_from_data_frame(directed = FALSE) %>% 
-  ggraph() + 
+as_tbl_graph(temp2) %>% 
+  activate(nodes) %>% 
+  mutate(popularity = centrality_degree()) %>% 
+  activate(nodes) %>% 
+  filter(popularity != 0) %>% 
+  activate(nodes) %>% 
+  filter(!node_is_isolated()) %>% 
+  ggraph(layout = "nicely") + 
   geom_edge_fan(spread = 5) + 
-  geom_node_point() + 
+  geom_node_point(aes(size = popularity)) + 
   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
                  repel = TRUE, segment.size = 1, 
                  segment.color = "pink", color = "blue")) + 
   theme_void() + 
   theme(legend.position="none")
+
+
+# important_labels <- temp1 %>% 
+#   mutate(names = str_replace_all(names, "NA", "-"), 
+#          names = str_replace_all(names, "-+", ","), 
+#          names = str_remove_all(names, "^,|,$"),
+#          names = str_split(names, ","),
+#          connections = lengths(names)) %>% 
+#   filter(connections > 9) %>% 
+#   unnest() %>% 
+#   pull(names) %>% 
+#   unique()
+# 
+# tempgraph <- temp2 %>% 
+#   filter(connections > 1) %>% 
+#   graph_from_data_frame(directed = FALSE) %>% 
+#   ggraph() + 
+#   geom_edge_fan(spread = 5) + 
+#   geom_node_point() + 
+#   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
+#                  repel = TRUE, segment.size = 1, 
+#                  segment.color = "pink", color = "blue")) + 
+#   theme_void() + 
+#   theme(legend.position="none")
 ```
 
 
