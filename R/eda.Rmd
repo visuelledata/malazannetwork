@@ -107,55 +107,137 @@ all_names <- get_name_variations(names_and_aliases) %>%
 
 temp0 <- books %>% 
   standardize_names_book() %>% 
-  unnest_tokens(ngram, line, token = "ngrams", n = 30, to_lower = FALSE) %>%
-  filter(str_detect(ngram, pattern = fixed(all_names))) %>% 
-  select(ngram) %>% 
-  data.table::as.data.table()
+  group_by(book, chapter) %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 20, to_lower = FALSE) %>%
+  nest() %>% 
+  ungroup() 
+
+pull_book_data <- function(book_data, i){
+  book_data %>% 
+    filter(book == i) %>% 
+    pull(data)
+}
+book1 <- pull_book_data(temp0, 1)
+book2 <- pull_book_data(temp0, 2)
+book3 <- pull_book_data(temp0, 3)
+book4 <- pull_book_data(temp0, 4)
+book5 <- pull_book_data(temp0, 5)
+book6 <- pull_book_data(temp0, 6)
+book7 <- pull_book_data(temp0, 7)
+book8 <- pull_book_data(temp0, 8)
+book9 <- pull_book_data(temp0, 9)
+book10 <- pull_book_data(temp0, 10)
 
 library(future.apply)
+```
 
+```{r}
+process_data <- function(datastuff, book_num, i){
 tictoc::tic()
 plan(multiprocess, workers = 4) 
-temp <- temp0 %>% 
+
+placeholder <- datastuff %>% #Change Here####
   future_apply(1, function(x){
-               map_chr(all_names,
-                       function(pat){
-                         name <- str_extract(x, pattern = fixed(pat))
-                         if(!is.na(name)) x <<- str_remove(x, pattern = fixed(pat))
-                         name
-                        })
-                       }, 
-               future.seed = TRUE)
-tictoc::toc()
+    map_chr(all_names,
+            function(pat){
+              name <- str_extract(x, pattern = fixed(pat))
+              if(!is.na(name)) x <<- str_remove(x, pattern = fixed(pat))
+              name
+            })
+  }, 
+  future.seed = TRUE)
 
-
-temp1 <- temp %>% 
+placeholder %>% 
   t() %>% 
   as.tibble() %>% 
-  unite("names", V1:V3080, sep = ",")
+  unite("names", V1:V3080, sep = ";") %>% 
+  remove_NAs() %>% 
+  mutate(book = book_num, 
+         chapter = i) %>%  #Change Here####
+  write_rds(paste0("data/network_data/network_data", 
+                   book_num, "-", i,   #Change Here####
+                   ".rds"), compress = "none")
 
-temp2 <- temp1 %>% 
+tictoc::toc()
+}
+
+for (i in seq_along(book1)){
+  process_data(book1[[i]], 1, i)
+}
+
+for (i in seq_along(book2)){
+  process_data(book2[[i]], 2, i)
+}
+
+for (i in seq_along(book3)){
+  process_data(book3[[i]], 3, i)
+}
+
+for (i in seq_along(book4)){
+  process_data(book4[[i]], 4, i)
+}
+
+for (i in seq_along(book5)){
+  process_data(book5[[i]], 5, i)
+}
+
+for (i in seq_along(book6)){
+  process_data(book6[[i]], 6, i)
+}
+
+for (i in seq_along(book7)){
+  process_data(book7[[i]], 7, i)
+}
+
+for (i in seq_along(book8)){
+  process_data(book8[[i]], 8, i)
+}
+
+for (i in seq_along(book9)){
+  process_data(book9[[i]], 9, i)
+}
+
+for (i in seq_along(book10)){
+  process_data(book10[[i]], 10, i)
+}
+```
+
+Clean and merge the data
+Reduce duplicates (janitor::get_dupes)
+Run standardize_names_net and update it
+Write dataset to file
+Analyze here / Gephi?
+Animations starting with Paran in book 1 and add points with gganimate and tweenr?
+Write docs
+
+```{r}
+network_data <- list.files("data/network_data") %>% 
+  map_df(~read_rds(paste0("data/network_data/", .))) %>% 
+  remove_NAs() %>% 
+  filter(names != "", 
+         str_detect(names, ";")) %>%
   standardize_names_net() %>% 
-  mutate(connections = lengths(str_split(names, ",")))
+  distinct(names, book, chapter) 
+#Start at n=188 with Gran who is a character in book 3
          
-temp2 %>% mutate(names = str_split(names, ",")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
+network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
 
-temp2 <- temp2 %>% 
-  filter(str_detect(names, ",")) %>% 
-  separate(names, into = paste0("name", 1:30), sep = ",")
+network_data <- network_data %>% 
+  separate(names, into = paste0("name", 1:30), sep = ";")
+
 
 library(ggraph)
 library(tidygraph)
 
-as_tbl_graph(temp2) %>% 
+as_tbl_graph(network_data) %>% 
   activate(nodes) %>% 
   mutate(popularity = centrality_degree()) %>% 
   activate(nodes) %>% 
-  filter(popularity != 0) %>% 
+  filter(popularity > 10) %>%
   activate(nodes) %>% 
   filter(!node_is_isolated()) %>% 
   ggraph(layout = "nicely") + 
-  geom_edge_fan(spread = 5) + 
+  geom_edge_link() + 
   geom_node_point(aes(size = popularity)) + 
   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
                  repel = TRUE, segment.size = 1, 
@@ -189,76 +271,3 @@ as_tbl_graph(temp2) %>%
 ```
 
 
-
-```{r eval=FALSE}
-books %>% 
-  unnest_tokens(ngram, line, token = "ngrams", n = 20, to_lower = FALSE) %>% 
-  filter(str_detect(ngram, pattern = fixed(all_names$name))) %>% 
-  separate(ngram, c(paste0("word", 1:20)), sep = " ") %>% 
-  #filter(word1 %in% all_names$name) %>% 
-  View()
-#OR
-#This approach seems better
-books %>% 
-  unnest_tokens(ngram, line, token = "ngrams", n = 10, to_lower = FALSE) %>% 
-  separate(ngram, c(paste0("word", 1:10)), sep = " ") %>% 
-  filter(word1 %in% all_names$name |
-         word2 %in% all_names$name |
-         word3 %in% all_names$name |
-         word4 %in% all_names$name |
-         word5 %in% all_names$name |
-         word6 %in% all_names$name |
-         word7 %in% all_names$name |
-         word8 %in% all_names$name |
-         word9 %in% all_names$name |
-         word10 %in% all_names$name) %>% 
-  View()
-```
-what happens when you put a vector as pattern in str_detect? 
-
-Consider adding a column for which characters appear in which books, this will prevent characters such as the Assail, sorry, etc... being over represented. Get further toward the network graph before you worry about this. 
-
-Some preprocessing:  (necessary?)
-Remove titles from character names
-Replace aliases with names
-Remove dialogue
-Replace pronouns with names??
-Replace titles with names??
-
-
-
-Code for dealing with lists when str_extract_all returns a lot of lists
-```{r eval=FALSE}
-temp1 <- compact(temp)
-temp1 <- map(temp1, compact)
-temp1 <- map(temp1, as.character)
-
-temp1 <- temp %>% 
-  compact() %>% 
-  map(compact) %>% 
-  map(as.character)
-
-bind_rows(lapply(vectorList, as.data.frame.list)) %>% 
-#as.data.frame(do.call(rbind, temp1)) %>% 
-  as.tibble() %>% 
-  View()
-
-temp %>%   
-  filter(!identical(chars, character(0))) %>% 
-  View()
-
-temp %>% 
-  select(chars) %>% 
-  mutate(chars2 = Filter(function(x) !identical(character(0),x), chars))
-
-temp %>% 
-  select(chars) %>% 
-  mutate(chars = compact(chars)) %>% 
-  View()
-
-temp %>% 
-  compact() %>% 
-  View()
-
-temp mutate(map str_extract() along character list on each line)
-```

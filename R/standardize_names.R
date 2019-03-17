@@ -1,16 +1,12 @@
-function(df){
-  df %>% 
-    mutate(names = str_replace_all(names, "NA", ";"), 
-           names = str_replace_all(names, ";+", ";"), 
-           names = str_remove_all(names, "^;|;$"))
-}
-
 standardize_names_book <- function(df){
   df %>% 
     group_by(book) %>% 
     mutate(line = str_replace_all(line, 
                                   fixed("Hood's breath", ignore_case = TRUE), 
                                   "Replacement")) %>% 
+    mutate(line = str_replace_all(line, 
+                                  fixed("House Paran", ignore_case = TRUE), 
+                                  "Replacement")) %>%
     mutate(line = if_else(book == 1, str_replace_all(line, 
                                                      "Adjunct Lorn|Adjunct|Lorn", 
                                                      "Lorn"), 
@@ -62,18 +58,38 @@ standardize_names_book <- function(df){
     ungroup()
 }
 
+remove_NAs <- function(df){
+  df %>% 
+    mutate(names = str_remove_all(names, "Mock"),
+           names = str_replace_all(names, ";Toblakai;|Toblakai;|;Toblakai", ";"),
+           names = str_replace_all(names, ";Prince;|Prince;|;Prince", ";"),
+           names = str_replace_all(names, ";Death;|Death;|;Death", ";"),
+           names = str_replace_all(names, ";Mother;|Mother;|;Mother", ";"),
+           names = str_replace_all(names, ";Fourteen;|Fourteen;|;Fourteen", ";"), 
+           names = str_replace_all(names, ";Matron;|Matron;|;Matron", ";"), 
+           names = str_replace_all(names, ";K’ell;|K’ell;|;K’ell", ";"),
+           names = str_replace_all(names, ";Hunter;|Hunter;|;Hunter", ";"),
+           names = str_replace_all(names, ";Brother;|Brother;|;Brother", ";"),
+           names = str_replace_all(names, ";Seguleh;|Seguleh;|;Seguleh", ";"),
+           names = str_replace_all(names, ";Temple;|Temple;|;Temple", ";"),
+           names = str_replace_all(names, ";Voice;|Voice;|;Voice", ";"),
+           names = str_replace_all(names, ";Champion;|Champion;|;Champion", ";"),
+           names = str_replace_all(names, ";Knight;|Knight;|;Knight", ";"),
+           names = str_replace_all(names, ";Shattered;|Shattered;|;Shattered", ";"),
+           names = str_replace_all(names, "NA", ";"), 
+           names = str_replace_all(names, ";+", ";"), 
+           names = str_remove_all(names, "^;|;$"))
+  }  
+
 standardize_names_net <- function(df){
   df %>% 
-    mutate(names = str_replace_all(names, "NA", ","), 
-           names = str_replace_all(names, ",+", ","), 
-           names = str_remove_all(names, "^,|,$"), 
-           names = str_replace_all(names, "Empress", "Laseen"), 
+    mutate(names = str_replace_all(names, "Empress", "Laseen"), 
            names = str_replace_all(names, "Imperial Historian Duiker|Imperial Historian|Historian|Duiker", "Duiker"),
            names = str_replace_all(names, "Laseen Laseen", "Laseen"),
            names = str_replace_all(names, "Emperor Kellanved|Kellanved|Shadowthrone|Wu|King of High House Shadow", 
                                    "Ammanas"), 
            names = str_replace_all(names, "Surly", "Laseen"),
-           names = str_replace_all(names, "Ganoes Paran|Paran|Master of the Deck", "Ganoes Stabro Paran"), 
+           names = str_replace_all(names, "Ganoes Stabro Paran|Ganoes Paran|Ganoes Stabro|Stabro Paran|Ganoes|Stabro|Paran|Master of the Deck", "Ganoes Stabro Paran"), 
            names = str_replace_all(names, "Korbolo", "Korbolo Dom"),
            names = str_replace_all(names, "Anomander Rake|Rake|Purake|Anomandaris Purake|'Mander|Blacksword|Anomandaris Dragnipurake|Seguleh Seventh|Son of Darkness|Knight of High House Dark", "Anomander Rake"), 
            names = str_replace_all(names, "Dujek Onearm|Dujek|Onearm", "Dujek Onearm"), 
@@ -95,7 +111,7 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Mesker Setral|Mesker", "Mesker Setral"),
            names = str_replace_all(names, "Kadagar Fant|Kadagar|Fant", "Kadagar Fant"),
            names = str_replace_all(names, "Silchas Ruin|Silchas|White Crow", "Silchas Ruin"),
-           names = str_replace_all(names, "Warlock King", "Hannan"),
+           names = str_replace_all(names, "Warlock King|Hannan Mosag|Hannan|Mosag", "Hannan Mosag"),
            names = str_replace_all(names, "Onrack", "Onrack T'emlava"),
            names = str_replace_all(names, "Tavore Ganoes Stabro Paran|Tavore", 
                                    "Tavore Paran"), 
@@ -116,11 +132,12 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Toc the Younger|Toc Anaster|Anaster Toc", "Toc the Younger"),
            names = str_replace_all(names, "Trull Sengar|Trull|Knight of Shadow", "Trull Sengar"),
            names = str_replace_all(names, "Sandalath Drukorlat|Sandalath|Mother Dark", "Sandalath Drukorlat"),
+           names = str_replace_all(names, "Councilman Turban Orr|Turban Orr|Turban", "Turban Orr"),
            names = str_replace_all(names, "Osric|Osserc|Liossercal|Son of Light|Champion of High House Light", "Osseric"),
            names = str_replace_all(names, "Ragman|Tatterdemalion", "Topper"),
            names = str_replace_all(names, "Stonewielder|Orjin Samarr|Orjin|Samarr|Great Betrayer", "Greymane"),
            names = str_replace_all(names, "Redeemer", "Itkovian"),
-           names = str_replace_all(names, "Dessembrae|Lord of Tragedy|Traveller|Dassem Ultor|Dassem", "Dessembrae"),
+           names = str_replace_all(names, "Dessembrae|Lord of Tragedy|Traveller|Dassem Ultor|Dassem|Ultor", "Dessembrae"),
            names = str_replace_all(names, "Onos T'oolan|Onos Toolan|Tool|First Sword|Onos", "Onos T'oolan"),
            names = str_replace_all(names, "Felisin Paran|Felisin", "Felisin Paran"),
            names = str_replace_all(names, "Rud Elalle|Ryadd Eleis|Ryadd", "Felisin Paran"),
@@ -145,11 +162,19 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Sechul Lath|Sechul|Knuckles", "Sechul Lath"),
            names = str_replace_all(names, "Errant|Errastas|Turudal Brizad|Turudal|First Consort", "Errant"),
            names = str_replace_all(names, "Destriant Kalyth|Kalyth", "Kalyth"),
+           names = str_replace_all(names, "Amby Bole|Amby", "Amby Bole"),
+           names = str_replace_all(names, "Precious Thimble|Precious|Thimble", "Precious Thimble"),
            names = str_replace_all(names, "Yedan Derryg|Yedan|Watch", "Yedan Derryg"),
            names = str_replace_all(names, "Urko Crust|Urko|Ba'ienrok|Keeper", "Urko Crust"),
            names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
            names = str_replace_all(names, "Cotillion|Dancer|Rope|Dorin|Assassin of High House Shadow", "Cotillion"),
+           names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
            names = str_replace_all(names, "Fist Gamet|Gamet|Gimlet", "Gamet"),
            names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
+           names = str_replace_all(names, "Rhulad Sengar|Rhulad", "Rhulad Sengar"),
+           names = str_replace_all(names, "Tene Baralta|Tene", "Tene Baralta"),
+           names = str_replace_all(names, "Whiskeyjackal Pust", "Iskaral Pust"),
+           names = str_replace_all(names, "Chancellor Triban Gnol|Chancellor Gnol|Chancellor Triban|Chancellor|Gnol|Triban", "Triban Gnol"),
+
            names = str_replace_all(names, "Keruli|K'rul", "K'rul"))
 }  
