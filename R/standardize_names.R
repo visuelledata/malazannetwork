@@ -1,3 +1,10 @@
+function(df){
+  df %>% 
+    mutate(names = str_replace_all(names, "NA", ";"), 
+           names = str_replace_all(names, ";+", ";"), 
+           names = str_remove_all(names, "^;|;$"))
+}
+
 standardize_names_book <- function(df){
   df %>% 
     group_by(book) %>% 
@@ -109,7 +116,6 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Toc the Younger|Toc Anaster|Anaster Toc", "Toc the Younger"),
            names = str_replace_all(names, "Trull Sengar|Trull|Knight of Shadow", "Trull Sengar"),
            names = str_replace_all(names, "Sandalath Drukorlat|Sandalath|Mother Dark", "Sandalath Drukorlat"),
-           names = str_replace_all(names, "Councilman Turban Orr|Turban Orr|Turban", "Turban Orr"),
            names = str_replace_all(names, "Osric|Osserc|Liossercal|Son of Light|Champion of High House Light", "Osseric"),
            names = str_replace_all(names, "Ragman|Tatterdemalion", "Topper"),
            names = str_replace_all(names, "Stonewielder|Orjin Samarr|Orjin|Samarr|Great Betrayer", "Greymane"),
@@ -143,7 +149,6 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Urko Crust|Urko|Ba'ienrok|Keeper", "Urko Crust"),
            names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
            names = str_replace_all(names, "Cotillion|Dancer|Rope|Dorin|Assassin of High House Shadow", "Cotillion"),
-           names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
            names = str_replace_all(names, "Fist Gamet|Gamet|Gimlet", "Gamet"),
            names = str_replace_all(names, "Yan Tovis|Twilight", "Yan Tovis"),
            names = str_replace_all(names, "Keruli|K'rul", "K'rul"))

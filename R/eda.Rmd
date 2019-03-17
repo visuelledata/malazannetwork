@@ -100,7 +100,7 @@ all_names <- get_name_variations(names_and_aliases) %>%
          name != "Grin", name != "Witch", name != "Ceda", name != "Light", 
          name != "Warleader", name != "Warlock", name != "Bone", name != "Sengar", 
          name != "Grey", name != "Sister", name != "Corporal", name != "Dying", 
-         name != "Commander"
+         name != "Commander",
          !str_detect(name, "^[a-z]")) %>% 
   arrange(desc(nchar(name))) %>% 
   pull(name)
