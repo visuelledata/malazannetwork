@@ -16,8 +16,6 @@ source("R/import_books.R")
 source("R/import_characters.R")
 source("R/import_alias.R")
 source("R/standardize_names.R")
-#english_words <- read_csv("data/words_alpha.txt")
-#places <- read_csv("data/places.txt")
 ```
 
 Find more names:
@@ -28,39 +26,18 @@ names_and_aliases <- characters %>%
   bind_rows(rename(select(alias, aliases), name = aliases)) %>% 
   distinct()
 
-#The removed code below is unnecessary and wastes time
 get_name_variations <- function(name_data){
   name_data <- name_data %>% 
     mutate(name = str_trim(name), 
            name = str_squish(name))
-  
-  # plural <- name_data %>% 
-  #   mutate(name = paste0(name, "s"))
-  # 
-  # possessive <- name_data %>% 
-  #   mutate(name = paste0(name, "'s"))
-  # 
-  # possessive_s <- name_data %>% 
-  #   mutate(name = paste0(name, "'"))
    
   short_name <- name_data %>% 
     mutate(name = str_split(name, " ")) %>% 
     unnest() %>% 
     anti_join(stop_words, by = c("name" = "word")) %>% 
     anti_join(mutate(stop_words, word = str_to_title(word)), by = c("name" = "word"))
-  
-  # short_name_plural <- short_name %>% 
-  #   mutate(name = paste0(name, "s"))
-  # 
-  # short_name_possessive <- short_name %>% 
-  #   mutate(name = paste0(name, "'s"))
-  # 
-  # short_name_possessive_s <- short_name %>% 
-  #   mutate(name = paste0(name, "'"))
-    
+
   bind_rows(name_data, short_name) %>% 
-            #plural, possessive, possessive_s, short_name_plural,
-            #short_name_possessive, short_name_possessive_s) %>% 
     distinct()
 }
 ```
@@ -123,8 +100,8 @@ network_data <- list.files("data/network_data") %>%
   filter(names != "", 
          str_detect(names, ";")) %>%
   standardize_names_net() %>% 
-  distinct(names, book, chapter) 
-#Start at n=188 with Gran who is a character in book 3
+  distinct(names, book, chapter) # Removes duplicate observations 
+#Start at n=145 with Minala
          
 network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
 
