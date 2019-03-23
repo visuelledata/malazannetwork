@@ -101,7 +101,7 @@ network_data <- list.files("data/network_data") %>%
          str_detect(names, ";")) %>%
   standardize_names_net() %>% 
   distinct(names, book, chapter) # Removes duplicate observations 
-#Start at n=145 with Minala
+#Start at n=117 with Ibra Gholan
          
 network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
 
