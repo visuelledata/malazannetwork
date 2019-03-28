@@ -107,7 +107,7 @@ network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% count(na
 
 network_data <- network_data %>% 
   separate(names, into = paste0("name", 1:30), sep = ";")
-
+  
 
 library(ggraph)
 library(tidygraph)
