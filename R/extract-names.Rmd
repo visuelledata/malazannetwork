@@ -94,7 +94,7 @@ temp0 <- books %>%
 At this point I had a lot of trouble writing code that could efficiently extract the co-occurence data from the books. In `extract-names.R` you'll see the code I used to extract the co-occurence data. The code is written quite poorly, because I wanted to keep the code simple for debugging purposes. It took me multiple attempts to extract all of the data and the final code took about 50 hours to run through all of the data and write all of the co-occurence data to .rds files. 
 
 ```{r}
-network_data <- list.files("data/network_data") %>% 
+pre_network_data <- list.files("data/network_data") %>% 
   map_df(~read_rds(paste0("data/network_data/", .))) %>% 
   remove_NAs() %>% 
   filter(names != "", 
@@ -102,11 +102,15 @@ network_data <- list.files("data/network_data") %>%
   standardize_names_net() %>% 
   distinct(names, book, chapter) # Removes duplicate observations 
 #Start at n=117 with Ibra Gholan
-         
-network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% count(names) %>% arrange(desc(n)) %>% View
 
-network_data <- network_data %>% 
-  separate(names, into = paste0("name", 1:30), sep = ";")
+write_rds(pre_network_data, path = "data/pre_network_data.rds", compress = "none")
+write_csv(pre_network_data, "data/pre_network_data.csv")
+
+network_data <- pre_network_data %>% 
+  separate(names, into = paste0("name", 1:21), sep = ";")
+
+write_rds(network_data, "data/network_data.rds", compress = "none")
+write_csv(network_data, "data/network_data.csv")
   
 
 library(ggraph)
