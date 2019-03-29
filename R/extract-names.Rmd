@@ -111,26 +111,6 @@ network_data <- pre_network_data %>%
 
 write_rds(network_data, "data/network_data.rds", compress = "none")
 write_csv(network_data, "data/network_data.csv")
-  
-
-library(ggraph)
-library(tidygraph)
-
-as_tbl_graph(network_data) %>% 
-  activate(nodes) %>% 
-  mutate(popularity = centrality_degree()) %>% 
-  activate(nodes) %>% 
-  filter(popularity > 10) %>%
-  activate(nodes) %>% 
-  filter(!node_is_isolated()) %>% 
-  ggraph(layout = "nicely") + 
-  geom_edge_link() + 
-  geom_node_point(aes(size = popularity)) + 
-  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
-                 repel = TRUE, segment.size = 1, 
-                 segment.color = "pink", color = "blue")) + 
-  theme_void() + 
-  theme(legend.position="none")
 ```
 
 

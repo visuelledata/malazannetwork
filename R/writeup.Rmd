@@ -1,0 +1,63 @@
+---
+title: "Malazan Network Analysis"
+author: "Christopher Peralta"
+date: "Friday, Apr 26, 2019"
+output: 
+  tufte::tufte_handout: default
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=TRUE, echo=FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  warning = FALSE, 
+  #out.width = '75%',
+  #out.height = '75%', 
+  comment = "#>", 
+  #fig.keep = "last", 
+  dpi = 600, 
+  warning = FALSE, 
+  message = FALSE, 
+  dev = 'jpeg', 
+  cache = TRUE)
+
+
+# All packages available on CRAN
+library(tidyverse)
+library(ggraph)
+library(tidygraph)
+
+# Read in data
+pre_network_data <- read_rds("data/pre_network_data.rds")
+network_data <- read_rds("data/network_data.rds")
+
+#theme_set(theme_ipsum())
+
+#source("gghelpers.R")
+
+#ggplot <- function(...) ggplot2::ggplot(...) + scale_colour_manual(values = color) + #theme(plot.title = element_text(size = 11.5))
+```
+
+```{r}
+as_tbl_graph(network_data) %>% 
+  activate(nodes) %>% 
+  mutate(popularity = centrality_degree()) %>% 
+  activate(nodes) %>% 
+  filter(popularity > 10) %>%
+  activate(nodes) %>% 
+  filter(!node_is_isolated()) %>% 
+  ggraph(layout = "nicely") + 
+  geom_edge_link() + 
+  geom_node_point(aes(size = popularity)) + 
+  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
+                 repel = TRUE, segment.size = 1, 
+                 segment.color = "pink", color = "blue")) + 
+  theme_void() + 
+  theme(legend.position="none")
+```
+
+
+# Bibliography
+https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
