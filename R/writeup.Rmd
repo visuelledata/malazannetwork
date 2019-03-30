@@ -32,6 +32,7 @@ library(tidygraph)
 # Read in data
 pre_network_data <- read_rds("data/pre_network_data.rds")
 network_data <- read_rds("data/network_data.rds")
+source("R/import_pov_data.R")
 
 #theme_set(theme_ipsum())
 
@@ -41,6 +42,14 @@ network_data <- read_rds("data/network_data.rds")
 ```
 
 ```{r}
+pov_characters <- pov_data %>% 
+  distinct(name) %>% 
+  pull(name)
+#"Tattersail" %in% pov_characters
+
+as_tbl_graph(network_data) %>% 
+  activate(nodes) %>%
+
 as_tbl_graph(network_data) %>% 
   activate(nodes) %>% 
   mutate(popularity = centrality_degree()) %>% 
