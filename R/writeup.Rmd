@@ -4,6 +4,7 @@ author: "Christopher Peralta"
 date: "Friday, Apr 26, 2019"
 output: 
   tufte::tufte_handout: default
+  toc:true
 editor_options: 
   chunk_output_type: console
 ---
@@ -28,11 +29,15 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(ggraph)
 library(tidygraph)
+library(tidytext)
 
 # Read in data
 pre_network_data <- read_rds("data/pre_network_data.rds")
 network_data <- read_rds("data/network_data.rds")
 source("R/import_pov_data.R")
+source("R/import_books.R")
+source("R/import_characters.R")
+source("R/standardize_names.R")
 
 #theme_set(theme_ipsum())
 
@@ -41,21 +46,82 @@ source("R/import_pov_data.R")
 #ggplot <- function(...) ggplot2::ggplot(...) + scale_colour_manual(values = color) + #theme(plot.title = element_text(size = 11.5))
 ```
 
-```{r}
+```{r numbers}
+characters %>% 
+  rename(names = name) %>% 
+  remove_NAs() %>% 
+  #standardize_names_net() %>% 
+  distinct(names) 
+
+pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% 
+  distinct(names) 
+
+num_char <- function(){
+  num_char_low <- as_tbl_graph(network_data) %>% 
+    activate(nodes) %>%
+    mutate(popularity = centrality_degree()) %>% 
+    filter(popularity != 0) %>% 
+    activate(nodes) %>% 
+    pull(name) %>% 
+    length() %>% 
+    formatC(format="d", big.mark=",")
+
+  num_char_high <- as_tbl_graph(network_data) %>% 
+    activate(nodes) %>% 
+    pull(name) %>% 
+    length() %>% 
+    formatC(format="d", big.mark=",")
+
+  c(num_char_low, num_char_high)
+}
+
+num_words <- 
+  books %>% 
+  filter(!str_detect(line, "^Chapter .+|^CHAPTER .+|^[A-Z]+$|^[A-Z]+\\d{1,2}$")) %>% 
+  unnest_tokens(words, line) %>% 
+  pull(words) %>% 
+  length() %>% 
+  formatC(format="d", big.mark=",")
+
+num_pov <- pov_characters %>% 
+  unique() %>% 
+  length()
+```
+
+```{r include=FALSE, eval=FALSE}
+pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% 
+  distinct(names)
+
 pov_characters <- pov_data %>% 
   distinct(name) %>% 
+  mutate(name = str_remove_all(name, "\\(.+\\)"), 
+         name = str_trim(name)) %>%
+  distinct(name) %>% 
   pull(name)
-#"Tattersail" %in% pov_characters
 
 as_tbl_graph(network_data) %>% 
   activate(nodes) %>%
+  filter(name %in% pov_characters) %>% 
+  mutate(popularity = centrality_degree()) %>% 
+  filter(popularity > 10) %>% 
+  activate(nodes) %>% 
+  filter(!node_is_isolated()) %>% 
+  ggraph() +
+  geom_edge_link() + 
+  geom_node_point(aes(size = popularity)) + 
+  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
+                 repel = TRUE, segment.size = 1, 
+                 segment.color = "pink", color = "blue")) + 
+  theme_void() + 
+  theme(legend.position="none")
+  
 
 as_tbl_graph(network_data) %>% 
   activate(nodes) %>% 
   mutate(popularity = centrality_degree()) %>% 
   activate(nodes) %>% 
-  filter(popularity > 10) %>%
-  activate(nodes) %>% 
+  #filter(popularity > 10) %>%
+  #activate(nodes) %>% 
   filter(!node_is_isolated()) %>% 
   ggraph(layout = "nicely") + 
   geom_edge_link() + 
@@ -66,7 +132,8 @@ as_tbl_graph(network_data) %>%
   theme_void() + 
   theme(legend.position="none")
 ```
-
+# Abstract
+In this project, I attempted to visualize the co-occurrence data of characters in the series ["Malazan Book of the Fallen"](https://en.wikipedia.org/wiki/Malazan_Book_of_the_Fallen). This series is notable in that it is one of the most complex and long fantasy series with a continuous single plotline. There are `r num_words` words in the series and somewhere between `r num_char()[[1]]` and `r num_char()[[2]]` characters in the series with `r num_pov` unique points of view. 
 
 # Bibliography
 https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/

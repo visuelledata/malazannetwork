@@ -29,6 +29,7 @@ pov_data <-
          names = if_else(str_detect(names, "Sorry") & book != 1, 
                          "Apsalar", 
                          names)) %>% 
+  remove_NAs() %>% 
   standardize_names_net() %>% 
   filter(!is.na(order)) %>% 
   rename(name = names)

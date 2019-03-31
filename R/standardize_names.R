@@ -233,5 +233,6 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Admiral Nok|Admiral", "Admiral Nok"),
            names = str_replace_all(names, "Seren Pedac|Seren|Pedac", "Seren Pedac"),
            names = str_replace_all(names, "Aparal Forge|Aparal|Forge", "Aparal Forge"),
-           names = str_replace_all(names, "Keruli|K'rul", "K'rul"))
+           names = str_replace_all(names, "Keruli|K'rul", "K'rul"), 
+           names = str_replace_all(names, "’", "'"))
 }  
