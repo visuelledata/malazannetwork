@@ -103,13 +103,13 @@ pre_network_data <- list.files("data/network_data") %>%
   distinct(names, book, chapter) # Removes duplicate observations 
 #Start at n=117 with Ibra Gholan
 
-write_rds(pre_network_data, path = "data/pre_network_data.rds", compress = "none")
+write_rds(pre_network_data, path = "data/pre_network_data.rds", compress = "gz")
 write_csv(pre_network_data, "data/pre_network_data.csv")
 
 network_data <- pre_network_data %>% 
   separate(names, into = paste0("name", 1:21), sep = ";")
 
-write_rds(network_data, "data/network_data.rds", compress = "none")
+write_rds(network_data, "data/network_data.rds", compress = "gz")
 write_csv(network_data, "data/network_data.csv")
 ```
 

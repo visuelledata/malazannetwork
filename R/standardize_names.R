@@ -1,3 +1,5 @@
+library(dplyr)
+library(stringr)
 standardize_names_book <- function(df){
   df %>% 
     group_by(book) %>% 

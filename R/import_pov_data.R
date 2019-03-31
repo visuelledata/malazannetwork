@@ -3,6 +3,9 @@
 # Reddit post. 
 
 library(googlesheets)
+library(purrr)
+library(stringr)
+library(dplyr)
 
 pov_data <- 
   map_df(1:10, 

@@ -4,7 +4,6 @@ author: "Christopher Peralta"
 date: "Friday, Apr 26, 2019"
 output: 
   tufte::tufte_handout: default
-  toc:true
 editor_options: 
   chunk_output_type: console
 ---
@@ -30,10 +29,12 @@ library(tidyverse)
 library(ggraph)
 library(tidygraph)
 library(tidytext)
+library(readr)
 
 # Read in data
-pre_network_data <- read_rds("data/pre_network_data.rds")
 network_data <- read_rds("data/network_data.rds")
+pre_network_data <- read_rds("data/pre_network_data.rds")
+#network_data <- read_rds("data/network_data.rds")
 source("R/import_pov_data.R")
 source("R/import_books.R")
 source("R/import_characters.R")
@@ -83,6 +84,14 @@ num_words <-
   length() %>% 
   formatC(format="d", big.mark=",")
 
+
+pov_characters <- pov_data %>% 
+  distinct(name) %>% 
+  mutate(name = str_remove_all(name, "\\(.+\\)"), 
+         name = str_trim(name)) %>%
+  distinct(name) %>% 
+  pull(name)
+
 num_pov <- pov_characters %>% 
   unique() %>% 
   length()
@@ -91,13 +100,6 @@ num_pov <- pov_characters %>%
 ```{r include=FALSE, eval=FALSE}
 pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% 
   distinct(names)
-
-pov_characters <- pov_data %>% 
-  distinct(name) %>% 
-  mutate(name = str_remove_all(name, "\\(.+\\)"), 
-         name = str_trim(name)) %>%
-  distinct(name) %>% 
-  pull(name)
 
 as_tbl_graph(network_data) %>% 
   activate(nodes) %>%
