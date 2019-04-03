@@ -35,8 +35,8 @@ library(readr)
 # Read in data
 network_data <- read_rds("data/network_data.rds")
 pre_network_data <- read_rds("data/pre_network_data.rds")
+pov_data <- read_rds("data/pov-data.rds")
 #network_data <- read_rds("data/network_data.rds")
-source("R/import_pov_data.R")
 source("R/import_books.R")
 source("R/import_characters.R")
 source("R/standardize_names.R")
@@ -101,39 +101,6 @@ num_pov <- pov_characters %>%
 ```{r include=FALSE, eval=FALSE}
 pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% 
   distinct(names)
-
-as_tbl_graph(network_data) %>% 
-  activate(nodes) %>%
-  filter(name %in% pov_characters) %>% 
-  mutate(popularity = centrality_degree()) %>% 
-  filter(popularity > 10) %>% 
-  activate(nodes) %>% 
-  filter(!node_is_isolated()) %>% 
-  ggraph() +
-  geom_edge_link() + 
-  geom_node_point(aes(size = popularity)) + 
-  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
-                 repel = TRUE, segment.size = 1, 
-                 segment.color = "pink", color = "blue")) + 
-  theme_void() + 
-  theme(legend.position="none")
-  
-
-tempplot <- as_tbl_graph(network_data) %>% 
-  activate(nodes) %>% 
-  mutate(popularity = centrality_degree()) %>% 
-  activate(nodes) %>% 
-  #filter(popularity > 10) %>%
-  #activate(nodes) %>% 
-  filter(!node_is_isolated()) %>% 
-  ggraph(layout = "nicely") + 
-  geom_edge_link(color = "grey80") + 
-  geom_node_point(aes(size = popularity^2.5), color = "grey20") + 
-  # geom_node_text(aes(label = name, #alpha = (name %in% important_labels)), 
-  #                repel = TRUE, segment.size = 1, 
-  #                segment.color = "pink", color = "blue")) + 
-  theme_void() + 
-  theme(legend.position="none")
 ```
 # Abstract
 
@@ -169,8 +136,47 @@ After cleaning the data, I began to analyze the co-occurrence data.
 
 ## Results
 
-  
+I'll start with showing the complete network graph: 
 
+```{r echo=F, results='asis'}
+# # Code for full graph
+# as_tbl_graph(network_data) %>% 
+#   activate(nodes) %>% 
+#   mutate(popularity = centrality_degree()) %>% 
+#   activate(nodes) %>% 
+#   filter(!node_is_isolated()) %>% 
+#   ggraph(layout = "nicely") + 
+#   geom_edge_link(color = "grey80") + 
+#   geom_node_point(aes(size = popularity^2.5), color = "grey20") + 
+#   theme_void() + 
+#   theme(legend.position="none")
+cat('\n![](full-network-graph.png)\n')
+```
+```{marginfigure echo=T}
+The only interesting observation I can make from this graph is that there is a clear distinction the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
+```
+
+Let's look at a graph with only characters who are given points of view in the series. I'll also remove any nodes with under 10 edges.  
+
+```{r echo=F, results='asis'}
+as_tbl_graph(network_data) %>%
+  mutate(popularity = centrality_degree()) %>%
+  activate(nodes) %>%
+  filter(name %in% pov_characters,
+         popularity >= 10,
+         !node_is_isolated()) %>%
+  ggraph(layout = "kk") +
+  geom_edge_link(color = "grey80") +
+  geom_node_point(aes(size = popularity^2.5), color = "grey20") +
+  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)),
+                 repel = TRUE, segment.size = 1,
+                 segment.color = "blue", color = "blue"), size = 8) +
+  theme_void() +
+  theme(legend.position="none")
+cat('\n![](network-pov-graph.jpeg)\n')
+```
+
+This is much better and 
 
 # Bibliography
 https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/

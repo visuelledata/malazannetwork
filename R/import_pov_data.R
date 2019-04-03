@@ -35,6 +35,5 @@ pov_data <-
   remove_NAs() %>% 
   standardize_names_net() %>% 
   filter(!is.na(order)) %>% 
-  rename(name = names)
-
-
+  rename(name = names) %>% 
+  write_rds("data/pov-data.rds")
