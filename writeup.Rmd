@@ -136,19 +136,51 @@ After cleaning the data, I began to analyze the co-occurrence data.
 
 ## Results
 
+In the following network graphs, I've used PageRank as the primary centrality measure. I chose to use PageRank, because the co-occurrence network is directed and PageRank gives more interesting information than degree centrality. 
+
+Here are the top 10 most important characters by PageRank compared with their degree centrality importance. 
+```{r}
+as_tbl_graph(network_data) %>% 
+  mutate(pop_deg = centrality_degree(), 
+         pop_pr = centrality_pagerank(), ) %>% 
+  arrange(desc(pop_deg)) %>% 
+  mutate(rank_degree = 1:1479) %>% 
+  arrange(desc(pop_pr)) %>% 
+  mutate(rank_pagerank = 1:1479) %>% 
+  as.tibble() %>% 
+  select(-pop_deg, -pop_pr) %>%
+```
+
 I'll start with showing the complete network graph: 
 
-```{r echo=F, results='asis'}
-# # Code for full graph
-# as_tbl_graph(network_data) %>% 
-#   activate(nodes) %>% 
-#   mutate(popularity = centrality_degree()) %>% 
-#   activate(nodes) %>% 
-#   filter(!node_is_isolated()) %>% 
-#   ggraph(layout = "nicely") + 
-#   geom_edge_link(color = "grey80") + 
-#   geom_node_point(aes(size = popularity^2.5), color = "grey20") + 
-#   theme_void() + 
+```{r results='asis'}
+book_introduced <- pre_network_data %>%
+  mutate(name = str_split(names, ";")) %>%
+  unnest(name) %>%
+  group_by(name) %>%
+  summarize(book_introduced = as.factor(min(book))) %>%
+  filter(!str_detect(name, "^ "))
+
+Mode <- function(x) {
+  unique_x <- unique(x)
+  unique_x[which.max(tabulate(match(x, unique_x)))]
+}
+
+book_most_mentioned <-
+  pre_network_data %>%
+  mutate(name = str_split(names, ";")) %>%
+  unnest(name) %>%
+  group_by(name) %>%
+  summarize(book_most_mentioned = as.factor(Mode(book)))
+
+# Code for full graph
+# as_tbl_graph(network_data) %>%
+#   mutate(popularity = centrality_pagerank()) %>%
+#   filter(!node_is_isolated()) %>%
+#   ggraph(layout = "nicely") +
+#   geom_edge_link(color = "grey80") +
+#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
+#   theme_void() +
 #   theme(legend.position="none")
 cat('\n![](full-network-graph.png)\n')
 ```
@@ -158,25 +190,50 @@ The only interesting observation I can make from this graph is that there is a c
 
 Let's look at a graph with only characters who are given points of view in the series. I'll also remove any nodes with under 10 edges.  
 
-```{r echo=F, results='asis'}
+LAST 2 GRAPHS CONVERT TO PAGERANK
+PLAY WITH DIFFERENT LAYOUTS
+```{r results='asis'}
 as_tbl_graph(network_data) %>%
-  mutate(popularity = centrality_degree()) %>%
-  activate(nodes) %>%
-  filter(name %in% pov_characters,
-         popularity >= 10,
-         !node_is_isolated()) %>%
+  mutate(popularity = centrality_pagerank()) %>%
+  filter(name %in% pov_characters) %>%
+  filter(popularity > 0.0002301824) %>%
+  filter(!node_is_isolated()) %>%
   ggraph(layout = "kk") +
   geom_edge_link(color = "grey80") +
   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)),
                  repel = TRUE, segment.size = 1,
-                 segment.color = "blue", color = "blue"), size = 8) +
+                 segment.color = "blue", color = "blue"), size = 12) +
   theme_void() +
   theme(legend.position="none")
 cat('\n![](network-pov-graph.jpeg)\n')
 ```
 
-This is much better and 
+This is much better and actually provides useful information, but it's very challenging to see any specific node's edges. 
+
+NOTE: Don't label character names unless you majorly reduce the numbers of nodes. 
+```{r}
+as_tbl_graph(network_data) %>%
+  left_join(book_most_mentioned) %>% 
+  mutate(book_most_int = as.integer(book_most_mentioned)) %>% 
+  mutate(popularity = centrality_degree()) %>%
+  activate(edges) %>% 
+  filter(book == 6) %>% 
+  activate(nodes) %>% 
+  filter(!node_is_isolated()) %>% 
+  ggraph() +
+  geom_node_point(aes(size = popularity^2.5, color = book_most_mentioned)) +
+  geom_edge_link(color = "grey80") +
+  # geom_node_text(aes(label = name, color = book_most_mentioned), 
+  #                segment.color = "#a4c2f2", size = 12) +
+  scale_size(guide = FALSE) +
+  theme_void() +
+  theme(legend.position="none")
+
+network_data %>% 
+  ggplot() + 
+  geom_bar(aes(as.factor(book)))
+```
 
 # Bibliography
 https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
