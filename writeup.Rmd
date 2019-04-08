@@ -36,6 +36,7 @@ library(readr)
 network_data <- read_rds("data/network_data.rds")
 pre_network_data <- read_rds("data/pre_network_data.rds")
 pov_data <- read_rds("data/pov-data.rds")
+char_appearances <- read_rds("data/")
 #network_data <- read_rds("data/network_data.rds")
 source("R/import_books.R")
 source("R/import_characters.R")
@@ -119,6 +120,7 @@ The goal of this study was to analyze the network data of the Malazan series, an
 
 ## Assumption 
 * The partial names were shorter in length than the full names. 
+
 ## Method
 I'll begin this section with a detailed description of the methods and assumptions I used in mining the character names from the novels as that was the most difficult part of the project. 
 
@@ -139,21 +141,24 @@ After cleaning the data, I began to analyze the co-occurrence data.
 In the following network graphs, I've used PageRank as the primary centrality measure. I chose to use PageRank, because the co-occurrence network is directed and PageRank gives more interesting information than degree centrality. 
 
 Here are the top 10 most important characters by PageRank compared with their degree centrality importance. 
+
 ```{r}
 as_tbl_graph(network_data) %>% 
   mutate(pop_deg = centrality_degree(), 
-         pop_pr = centrality_pagerank(), ) %>% 
+         pop_pr = centrality_pagerank()) %>% 
   arrange(desc(pop_deg)) %>% 
   mutate(rank_degree = 1:1479) %>% 
   arrange(desc(pop_pr)) %>% 
   mutate(rank_pagerank = 1:1479) %>% 
   as.tibble() %>% 
-  select(-pop_deg, -pop_pr) %>%
+  select(-pop_deg, -pop_pr) %>% 
+  head(10) %>% 
+  knitr::kable(col.names = c("Character", "Rank from Degree Centrality", "Rank from PageRank"))
 ```
 
-I'll start with showing the complete network graph: 
 
-```{r results='asis'}
+I'll start with showing the complete network graph: 
+```{r results='asis', fig.fullwidth=TRUE,out.width="450px"}
 book_introduced <- pre_network_data %>%
   mutate(name = str_split(names, ";")) %>%
   unnest(name) %>%
@@ -173,68 +178,78 @@ book_most_mentioned <-
   group_by(name) %>%
   summarize(book_most_mentioned = as.factor(Mode(book)))
 
-# Code for full graph
+# # Code for full graph
+# pallette <-  RColorBrewer::brewer.pal(10, "Set3")
 # as_tbl_graph(network_data) %>%
 #   mutate(popularity = centrality_pagerank()) %>%
 #   filter(!node_is_isolated()) %>%
+#   activate(edges) %>% 
+#   mutate(book = as.factor(boook)) %>% 
+#   activate(nodes)
 #   ggraph(layout = "nicely") +
 #   geom_edge_link(color = "grey80") +
 #   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
 #   theme_void() +
+#   theme(legend.position="none") + 
+#   scale_color_discrete(values = pallette)
+knitr::include_graphics("full-network-graph.png")
+#cat('\n![](full-network-graph.png)\n')
+```
+```{marginfigure echo=T, include=FALSE}
+The only interesting observation I can make from this graph is that there is a clear distinction between the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
+```
+The only interesting observation I can make from this graph is that there is a clear distinction between the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
+
+Since there's not really any useful way to view this data as a static image, I'll be sticking to numbers and subsets of the network data from here. 
+```{r results='asis', fig.fullwidth=TRUE}
+# as_tbl_graph(network_data) %>%
+#   mutate(popularity = centrality_pagerank()) %>%
+#   filter(name %in% pov_characters) %>% 
+#   filter(popularity > 0.0002301824) %>%
+#   filter(!node_is_isolated()) %>%
+#   ggraph(layout = "kk") +
+#   geom_edge_link(color = "grey80") +
+#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
+#   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)),
+#                  repel = TRUE, segment.size = 1,
+#                  segment.color = "blue", color = "blue"), size = 8) +
+#   theme_void() +
 #   theme(legend.position="none")
-cat('\n![](full-network-graph.png)\n')
-```
-```{marginfigure echo=T}
-The only interesting observation I can make from this graph is that there is a clear distinction the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
-```
-
-Let's look at a graph with only characters who are given points of view in the series. I'll also remove any nodes with under 10 edges.  
-
-LAST 2 GRAPHS CONVERT TO PAGERANK
-PLAY WITH DIFFERENT LAYOUTS
-```{r results='asis'}
-as_tbl_graph(network_data) %>%
-  mutate(popularity = centrality_pagerank()) %>%
-  filter(name %in% pov_characters) %>%
-  filter(popularity > 0.0002301824) %>%
-  filter(!node_is_isolated()) %>%
-  ggraph(layout = "kk") +
-  geom_edge_link(color = "grey80") +
-  geom_node_point(aes(size = popularity^2.5), color = "grey20") +
-  geom_node_text(aes(label = name, #alpha = (name %in% important_labels)),
-                 repel = TRUE, segment.size = 1,
-                 segment.color = "blue", color = "blue"), size = 12) +
-  theme_void() +
-  theme(legend.position="none")
 cat('\n![](network-pov-graph.jpeg)\n')
 ```
 
-This is much better and actually provides useful information, but it's very challenging to see any specific node's edges. 
+This is much better and actually provides useful information, but it's very challenging to see any specific node's edges. From here I'll stick to numeric summaries and plotting the network's metrics rather than the network itself. 
 
 NOTE: Don't label character names unless you majorly reduce the numbers of nodes. 
-```{r}
-as_tbl_graph(network_data) %>%
-  left_join(book_most_mentioned) %>% 
-  mutate(book_most_int = as.integer(book_most_mentioned)) %>% 
-  mutate(popularity = centrality_degree()) %>%
-  activate(edges) %>% 
-  filter(book == 6) %>% 
-  activate(nodes) %>% 
-  filter(!node_is_isolated()) %>% 
-  ggraph() +
-  geom_node_point(aes(size = popularity^2.5, color = book_most_mentioned)) +
-  geom_edge_link(color = "grey80") +
-  # geom_node_text(aes(label = name, color = book_most_mentioned), 
-  #                segment.color = "#a4c2f2", size = 12) +
-  scale_size(guide = FALSE) +
-  theme_void() +
-  theme(legend.position="none")
 
-network_data %>% 
-  ggplot() + 
-  geom_bar(aes(as.factor(book)))
+```{r include=FALSE}
+# as_tbl_graph(network_data) %>%
+#   mutate(popularity = centrality_pagerank()) %>% 
+#   filter(!node_is_isolated()) %>%
+#   activate(edges) %>% 
+#   mutate(edge_importance = centrality_edge_betweenness()) %>% 
+#   activate(nodes) %>% 
+#   filter(popularity > 0.0019) %>% 
+#   ggraph(layout = "nicely") +
+#   geom_edge_link(aes(edge_width = edge_importance/7, 
+#                      edge_alpha = edge_importance)) +
+#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
+#   theme_void() +
+#   theme(legend.position="none")
 ```
 
+```{r}
+books %>% 
+  unnest_tokens(word, line) %>% 
+  inner_join(get_sentiments("bing")) %>% 
+  filter(book == 7) %>% 
+  mutate(sentiment = if_else(sentiment == "positive", 1, -1)) %>% 
+  group_by(book, chapter) %>% 
+  summarize(sentiment = mean(sentiment)) %>% 
+  ggplot(aes(chapter, sentiment)) +
+  geom_line()
+
+```
 # Bibliography
 https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
 

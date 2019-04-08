@@ -106,6 +106,19 @@ pre_network_data <- list.files("data/network_data") %>%
 write_rds(pre_network_data, path = "data/pre_network_data.rds", compress = "gz")
 write_csv(pre_network_data, "data/pre_network_data.csv")
 
+char_appearances <- list.files("data/network_data") %>% 
+  map_df(~read_rds(paste0("data/network_data/", .))) %>% 
+  remove_NAs() %>% 
+  filter(names != "") %>%
+  standardize_names_net() %>% 
+  distinct(names, book, chapter) %>% 
+  mutate(names = str_split(names, ";")) %>% 
+  unnest(names) %>% 
+  distinct(names, book, chapter)
+
+write_rds(char_appearances, "data/char_appearances.rds", compress = "gz")
+write_csv(char_appearances, "data/char_appearances.rds")
+
 network_data <- pre_network_data %>% 
   separate(names, into = paste0("name", 1:21), sep = ";")
 
