@@ -7,6 +7,7 @@ output:
   toc: true
 editor_options: 
   chunk_output_type: console
+urlcolor: blue
 ---
 
 ```{r setup, include=TRUE, echo=FALSE, cache=FALSE, message=FALSE, warning=FALSE}
@@ -31,12 +32,13 @@ library(ggraph)
 library(tidygraph)
 library(tidytext)
 library(readr)
+library(hrbrthemes)
 
 # Read in data
 network_data <- read_rds("data/network_data.rds")
 pre_network_data <- read_rds("data/pre_network_data.rds")
 pov_data <- read_rds("data/pov-data.rds")
-char_appearances <- read_rds("data/")
+char_appearances <- read_rds("data/char_appearances.rds")
 #network_data <- read_rds("data/network_data.rds")
 source("R/import_books.R")
 source("R/import_characters.R")
@@ -105,45 +107,42 @@ pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>%
 ```
 # Abstract
 
-In this project, I attempted to visualize the co-occurrence data of characters in the series ["Malazan Book of the Fallen"](https://en.wikipedia.org/wiki/Malazan_Book_of_the_Fallen). This series is notable in that it is one of the most complex and long fantasy series with a continuous single plotline. There are `r num_words` words in the series and somewhere between `r num_char()[[1]]` and `r num_char()[[2]]` characters in the series with `r num_pov` unique points of view. Additionally, many of the characters have multiple aliases and nicknames adding another layer of complexity. A character might go by completely different names in different novels. 
+In this project I attempt to find the climaxes of the series [**Malazan Book of the Fallen**](https://en.wikipedia.org/wiki/Malazan_Book_of_the_Fallen) by using network data and sentiment analysis. This series is notable in that it is one of the most complex and long fantasy series with a continuous single plotline. There are `r num_words` words in the series and I estimated that there are `r num_char()[[2]]` characters in the series with approximately `r num_pov` unique points of view. Additionally, many of the characters have multiple aliases and nicknames adding another layer of complexity. A character might go by completely different names in different novels. 
 
-To mine the character co-occurrence data, I started by converting the novels to `.txt` file and reading them into R. Then I added book numbers, chapter numbers, and stripped the front and back matter. From there, I turned the text into a series of ngrams of length 20 split by book and chapter. At this point, I wrote a function that extracts the characters' names from the ngrams by row and then puts the co-occurrence data into a workable format. Cleaning and formatting the co-occurrence data was the next step. Finally, I used a variety of methods to visualize the text and the network data. 
+I began by mining the co-occurrence data from the ngrams; I used a combinitation of regular expressions, parallelization, and more. I'll go more into that process later on. From there, I had to get the co-occurrence data into a reasonable format and clean the name data, so that it was usable. I then used the AFFINN Sentiment Lexicon to get the sentiment data. Finally, I compared the sentiment data with the network data to try to see which works better to determine the climax of each of the 10 books. 
 
-The base network graph was quite convuluted due to the sheer number of characters, so I use a few different methods to make it into a readable graph. 
-**ADD CONCLUSIONS**
+My general conclusion was that edge betweenness centrality aggregated by chapter using the mean does the best job of finding the actual climaxes of each book.
 
 # Introduction
 
-The goal of this study was to analyze the network data of the Malazan series, and to see if there were any interesting conclusions. I used numerous datasets from several sources in this project. The co-occurrence data was mined from the books by me. The books were converted from `.epub` format to `.txt` format. I made most of the `alias` data manually and crowdsourced some of aliases on [Reddit](https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/). The `name` data was manually extracted from the *Dramatis Personae* sections at the start of each book and manually extracted from the [Malazan Wiki](https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/). 
+The goal of this study was to use network and sentiment data to find the climaxes of the series. I used numerous datasets from several sources in this project. The co-occurrence data was mined from the books by me. The books were converted from `.epub` format to `.txt` format. I made most of the `alias` data manually and crowdsourced some of aliases on [**Reddit**](https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/). The `name` data was manually extracted from the *Dramatis Personae* sections at the start of each book and manually extracted from the [**Malazan Wiki**](https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/). 
+
+To mine the character co-occurrence data, I started by converting `epub` versions of the novels to `.txt` file and reading them into R. Then I added book numbers, chapter numbers, and stripped the front and back matter from each book. From there, I turned the text into a series of ngrams of length 20 split by book and chapter. At this point, I wrote a function that extracts the characters' names from the ngrams by row and then puts the co-occurrence data into a workable format. Cleaning and formatting the co-occurrence data was the next step. Finally, I used a variety of methods to visualize the text and the network data. 
 
 # Method and results
-
-## Assumption 
-* The partial names were shorter in length than the full names. 
 
 ## Method
 I'll begin this section with a detailed description of the methods and assumptions I used in mining the character names from the novels as that was the most difficult part of the project. 
 
-I began by joining the character name data with the alias data into a single dataset. I then split all of this data by spaces in order to get variations of the names and rejoined the partial name data back to the full name data to get a comprehensive dataset of full and partial names. I then filtered out stop words, formal titles, and commonly capitalized words that aren't names from this list. Then, I arranged the list by character length.
+I began by joining the character name data with the alias data into a single dataset. I then split all of this data by spaces in order to get variations of the names and rejoined the partial name data back to the full name data to get a comprehensive dataset of full and partial names. I then filtered out stop words, formal titles, military ranks, and commonly capitalized words that aren't names from this list. Then, I arranged the list by character length.
 
-At this point, I went back to the book data and turned the text into ngrams of length 20 by book and chapter. I then wrote a function that tries to extract the first name in the name list from the string and tries with every name in the list for every name and every ngram. This method was incredibly computationally intensive as there were 3,080 names in my name list and 3,250,530 ngrams. I changed my code a bit, added some code for parallelization, and broke my data into 263 chunks; all of this managed to get my code to run in around 40 hours on my laptop. 
+At this point, I went back to the book data and turned the text into ngrams of length 20 by book and chapter. I chose to use ngrams so that I would get the full co-occurrence relations within the 20 word groups. For example, "Ron Jon" then "Ron Jon Bob" and finally "Jon Bob". Then I wrote a function that tries to extract the first name in the name list from the string and tries with every name in the list for every name and every ngram. This method was incredibly computationally intensive as there were 3,080 names in my name list and 3,250,530 ngrams. I changed my code a bit, added some code for parallelization, and broke my data into 263 chunks; all of this managed to get my code to run in around 40 hours on my laptop. I attached the code for this part in the appendix. 
 
-Once I got the co-occurrence data into a usable format, I had a lot of data cleaning to do. I formatted and removed variations of all names with over 100 appearances in the network data. I used regular expressions to achieve this. I made two important assumptions at this point: 
+Once I got the co-occurrence data into a usable format, I had a lot of data cleaning to do. A lot of the data cleaning was due to the fact that there were partial name matches due to the use of ngrams "John Smith" matched as "John", and due to the fact that some characters have up to 9 different names that they might go by. I formatted and removed variations of all names with over 100 appearances in the network data. I used over 130 regular expressions to achieve this. I made three important assumptions at this point: 
 
-* The names with over 100 occurrences in the co-occurrence data are representative of all co-occurrence relationships.  
+* The names with over 100 occurrences in the co-occurrence data in addition to the uncleaned names of the less featured characters are sufficient to fully represent the true co-occurrence network. 
 *  The most common variations of names accurately represent the co-occurrence relationships of their specific character. 
-* Any extremely uncommon name variations will be filtered out by 
+* Any extremely uncommon name variations will be filtered out as isolated nodes or by a small filter removing the most uncommon nodes.
  
 After cleaning the data, I began to analyze the co-occurrence data. 
 
 ## Results
 
-In the following network graphs, I've used PageRank as the primary centrality measure. I chose to use PageRank, because the co-occurrence network is directed and PageRank gives more interesting information than degree centrality. 
+In the following network graph, I used PageRank to calculate the centrality because I don't feel that Degree Centrality is as suitable for complex networks. 
 
 Here are the top 10 most important characters by PageRank compared with their degree centrality importance. 
-
 ```{r}
-as_tbl_graph(network_data) %>% 
+as_tbl_graph(network_data, directed = FALSE) %>% 
   mutate(pop_deg = centrality_degree(), 
          pop_pr = centrality_pagerank()) %>% 
   arrange(desc(pop_deg)) %>% 
@@ -153,9 +152,21 @@ as_tbl_graph(network_data) %>%
   as.tibble() %>% 
   select(-pop_deg, -pop_pr) %>% 
   head(10) %>% 
-  knitr::kable(col.names = c("Character", "Rank from Degree Centrality", "Rank from PageRank"))
+  knitr::kable(col.names = c("Character", "Ranking - Degree Centrality", "Ranking - PageRank"))
 ```
-
+```{r fig.margin=TRUE, fig.cap="Importance rankings of degree centrality vs PageRank"}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  mutate(pop_deg = centrality_degree(), 
+         pop_pr = centrality_pagerank()) %>% 
+  arrange(desc(pop_deg)) %>% 
+  mutate(rank_degree = 1:1479) %>% 
+  arrange(desc(pop_pr)) %>% 
+  mutate(rank_pagerank = 1:1479) %>%
+  ggplot(aes(rank_degree, rank_pagerank)) + 
+  geom_line(color = "grey25") + 
+  theme_ipsum()
+```
+Degree centrality and PageRank mostly agree on the most important characters in the series, but they start to greatly diverge the further they get away from the top 10. As shown in the figure to the right. 
 
 I'll start with showing the complete network graph: 
 ```{r results='asis', fig.fullwidth=TRUE,out.width="450px"}
@@ -166,7 +177,7 @@ book_introduced <- pre_network_data %>%
   summarize(book_introduced = as.factor(min(book))) %>%
   filter(!str_detect(name, "^ "))
 
-Mode <- function(x) {
+mode_s <- function(x){
   unique_x <- unique(x)
   unique_x[which.max(tabulate(match(x, unique_x)))]
 }
@@ -176,11 +187,11 @@ book_most_mentioned <-
   mutate(name = str_split(names, ";")) %>%
   unnest(name) %>%
   group_by(name) %>%
-  summarize(book_most_mentioned = as.factor(Mode(book)))
+  summarize(book_most_mentioned = as.factor(mode_s(book)))
 
 # # Code for full graph
 # pallette <-  RColorBrewer::brewer.pal(10, "Set3")
-# as_tbl_graph(network_data) %>%
+# as_tbl_graph(network_data, directed = FALSE) %>%
 #   mutate(popularity = centrality_pagerank()) %>%
 #   filter(!node_is_isolated()) %>%
 #   activate(edges) %>% 
@@ -193,63 +204,86 @@ book_most_mentioned <-
 #   theme(legend.position="none") + 
 #   scale_color_discrete(values = pallette)
 knitr::include_graphics("full-network-graph.png")
-#cat('\n![](full-network-graph.png)\n')
-```
-```{marginfigure echo=T, include=FALSE}
-The only interesting observation I can make from this graph is that there is a clear distinction between the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
 ```
 The only interesting observation I can make from this graph is that there is a clear distinction between the two main continents from the 4 first books in the series and the third main continent introduced in book 5.
-
-Since there's not really any useful way to view this data as a static image, I'll be sticking to numbers and subsets of the network data from here. 
-```{r results='asis', fig.fullwidth=TRUE}
-# as_tbl_graph(network_data) %>%
-#   mutate(popularity = centrality_pagerank()) %>%
-#   filter(name %in% pov_characters) %>% 
-#   filter(popularity > 0.0002301824) %>%
-#   filter(!node_is_isolated()) %>%
-#   ggraph(layout = "kk") +
-#   geom_edge_link(color = "grey80") +
-#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
-#   geom_node_text(aes(label = name, #alpha = (name %in% important_labels)),
-#                  repel = TRUE, segment.size = 1,
-#                  segment.color = "blue", color = "blue"), size = 8) +
-#   theme_void() +
-#   theme(legend.position="none")
-cat('\n![](network-pov-graph.jpeg)\n')
-```
-
-This is much better and actually provides useful information, but it's very challenging to see any specific node's edges. From here I'll stick to numeric summaries and plotting the network's metrics rather than the network itself. 
-
-NOTE: Don't label character names unless you majorly reduce the numbers of nodes. 
-
-```{r include=FALSE}
-# as_tbl_graph(network_data) %>%
-#   mutate(popularity = centrality_pagerank()) %>% 
-#   filter(!node_is_isolated()) %>%
-#   activate(edges) %>% 
-#   mutate(edge_importance = centrality_edge_betweenness()) %>% 
-#   activate(nodes) %>% 
-#   filter(popularity > 0.0019) %>% 
-#   ggraph(layout = "nicely") +
-#   geom_edge_link(aes(edge_width = edge_importance/7, 
-#                      edge_alpha = edge_importance)) +
-#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
-#   theme_void() +
-#   theme(legend.position="none")
-```
 
 ```{r}
-books %>% 
+sentiment_scores <- books %>% 
   unnest_tokens(word, line) %>% 
-  inner_join(get_sentiments("bing")) %>% 
-  filter(book == 7) %>% 
-  mutate(sentiment = if_else(sentiment == "positive", 1, -1)) %>% 
+  inner_join(get_sentiments("afinn")) %>% 
   group_by(book, chapter) %>% 
-  summarize(sentiment = mean(sentiment)) %>% 
-  ggplot(aes(chapter, sentiment)) +
-  geom_line()
+  summarize(score = sum(score)) %>% 
+  ungroup()
 
+# char_score <- char_appearances %>% 
+#   left_join(sentiment_scores) %>% 
+#   group_by(names) %>% 
+#   summarize(mean_score = mean(score, na.rm = TRUE)) %>% 
+#   arrange(mean_score)
+# 
+# #OMIT
+# as_tbl_graph(network_data, directed = FALSE) %>% 
+#   mutate(popularity = centrality_pagerank()) %>% 
+#   arrange(desc(popularity)) %>% 
+#   left_join(char_score, by = c("name" = "names")) %>% 
+#   as.tibble() %>% 
+#   ggplot(aes(mean_score, popularity)) + 
+#   geom_point(alpha = .15) +
+#   theme_ipsum()
 ```
-# Bibliography
+
+Before I begin trying to find the best way to find the climaxes in the series, I'll check if a chapter's sentiment score is corellated to it's importance. I'll calculate the chapters' importance by taking the mean of the edge betweenness centrality values of all of the edges in each chapter. 
+
+```{r}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  activate(edges) %>% 
+  mutate(importance = centrality_edge_betweenness()) %>% 
+  as.tibble() %>% 
+  select(book, chapter, importance) %>% 
+  group_by(book, chapter) %>% 
+  summarize(mean_importance = mean(importance)) %>% 
+  ungroup() %>% 
+  arrange(desc(mean_importance)) %>%
+  left_join(sentiment_scores) %>% 
+  ggplot(aes(score, mean_importance)) + 
+  geom_point()
+```
+
+It appears that there is little to no correllation between a chapter's mean sentiment and mean edge betweenness centrality. 
+
+Now, I'm going to try to see whether or not I can find the climaxes of the series using the mean edge betweenness centrality of each chapter weighted with the total sentiment score of each chapter. 
+```{r}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  activate(edges) %>% 
+  mutate(importance = centrality_edge_betweenness()) %>% 
+  as.tibble() %>% 
+  select(book, chapter, importance) %>% 
+  group_by(book, chapter) %>% 
+  summarize(mean_importance = mean(importance)) %>% 
+  ungroup() %>% 
+  left_join(sentiment_scores) %>% 
+  mutate(importance_weighted = score * mean_importance) %>% 
+  arrange(importance_weighted) %>% 
+  mutate(book = as.factor(book)) %>% 
+  group_by(book) %>% 
+  mutate(rank =  row_number()) %>% 
+  filter(rank == 1) %>% 
+  select(book, chapter, mean_importance, score, importance_weighted) %>% 
+  arrange(book) %>% 
+  knitr::kable(col.names = c("Book", "Chapter", "Mean importance", "Sentiment score",
+                             "Weighted importance"))
+```
+
+
+# Appendices
+## Bibliography
 https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
+
+affinn
+
+all malazan books
+
+malazan wiki 
+
+reddit people who helped make alias data
 

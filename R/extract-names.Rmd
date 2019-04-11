@@ -117,7 +117,7 @@ char_appearances <- list.files("data/network_data") %>%
   distinct(names, book, chapter)
 
 write_rds(char_appearances, "data/char_appearances.rds", compress = "gz")
-write_csv(char_appearances, "data/char_appearances.rds")
+write_csv(char_appearances, "data/char_appearances.csv")
 
 network_data <- pre_network_data %>% 
   separate(names, into = paste0("name", 1:21), sep = ";")
