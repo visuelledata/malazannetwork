@@ -161,7 +161,7 @@ standardize_names_net <- function(df){
            names = str_replace_all(names, "Stonewielder|Orjin Samarr|Orjin|Samarr|Great Betrayer", "Greymane"),
            names = str_replace_all(names, "Redeemer", "Itkovian"),
            names = str_replace_all(names, "Dessembrae|Lord of Tragedy|Traveller|Dassem Ultor|Dassem|Ultor", "Dessembrae"),
-           names = str_replace_all(names, "Onos T'oolan|Onos Toolan|Tool|First Sword|Onos", "Onos T'oolan"),
+           names = str_replace_all(names, "Onos T'oolan|Onos Toolan|Tool|Onos", "Onos T'oolan"),
            names = str_replace_all(names, "Felisin Paran|Felisin", "Felisin Paran"),
            names = str_replace_all(names, "Rud Elalle|Ryadd Eleis|Ryadd", "Rud Elalle"),
            names = str_replace_all(names, "Sheltatha Lore|Sheltatha|Dusk", "Sheltatha Lore"),

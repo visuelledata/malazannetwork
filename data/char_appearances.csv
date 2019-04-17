@@ -2,7 +2,6 @@ book,chapter,names
 1,1,Ammanas
 1,1,Ganoes Stabro Paran
 1,1,Brid
-1,1,Onos T'oolan
 1,1,Dessembrae
 1,1,Hood
 1,1,Laseen
@@ -106,7 +105,7 @@ book,chapter,names
 1,12,Kron
 1,12,Chole
 1,12,Malle
-1,12,K’rul
+1,12,K'rul
 1,12,Tattersail
 1,12,Rallick Nom
 1,12,Murillio
@@ -132,7 +131,7 @@ book,chapter,names
 1,12,Ammanas
 1,12,Irilta
 1,12,Meese
-1,12,D’Arle
+1,12,D'Arle
 1,12,Chert
 1,12,Scurve
 1,12,Sheltatha Lore
@@ -186,7 +185,7 @@ book,chapter,names
 1,13,Alar
 1,13,Scurve
 1,13,Maybe
-1,13,D’Arle
+1,13,D'Arle
 1,14,Blind
 1,14,Blind Warleader Gallan
 1,14,Ben Adaephon Delat
@@ -208,7 +207,7 @@ book,chapter,names
 1,14,Whiskeyjack
 1,14,Crokus Younghand
 1,14,Challice
-1,14,D’Arle
+1,14,D'Arle
 1,14,Chal
 1,14,Younghand
 1,14,Alar
@@ -233,10 +232,10 @@ book,chapter,names
 1,14,Trotts
 1,14,Malle
 1,14,Estraysian
-1,14,Estraysian D’Arle
+1,14,Estraysian D'Arle
 1,14,Turban Orr
 1,14,Alchemist
-1,14,K’rul
+1,14,K'rul
 1,14,Tattersail
 1,14,Aparal Forge
 1,14,Knight
@@ -375,13 +374,13 @@ book,chapter,names
 1,18,Crokus Younghand
 1,18,Moby
 1,18,Maybe
-1,18,D’Arle
+1,18,D'Arle
 1,18,Challice
 1,18,Chal
 1,18,Serrat
 1,18,Scurve
 1,18,Hood
-1,18,K’rul
+1,18,K'rul
 1,18,Best
 1,19,Blind
 1,19,Blind Warleader Gallan
@@ -465,7 +464,7 @@ book,chapter,names
 1,20,Chert
 1,20,Hood
 1,20,Challice
-1,20,D’Arle
+1,20,D'Arle
 1,20,Serrat
 1,20,Murillio
 1,20,Rallick Nom
@@ -492,7 +491,7 @@ book,chapter,names
 1,20,Lorn
 1,20,Onos T'oolan
 1,20,Cotillion
-1,20,K’rul
+1,20,K'rul
 1,20,Blessed
 1,20,Mowri
 1,20,Grallin
@@ -544,7 +543,7 @@ book,chapter,names
 1,21,Meese
 1,21,Irilta
 1,21,Challice
-1,21,D’Arle
+1,21,D'Arle
 1,21,Maybe
 1,21,Serrat
 1,21,Raest
@@ -574,7 +573,7 @@ book,chapter,names
 1,22,Alchemist
 1,22,Apsalar
 1,22,Challice
-1,22,D’Arle
+1,22,D'Arle
 1,22,Hood
 1,22,Whiskeyjack
 1,22,Trotts
@@ -596,7 +595,7 @@ book,chapter,names
 1,22,Maybe
 1,22,Rall
 1,22,Estraysian
-1,22,Estraysian D’Arle
+1,22,Estraysian D'Arle
 1,22,Widow
 1,22,Lady Simtal
 1,22,Simtal
@@ -619,7 +618,7 @@ book,chapter,names
 1,23,Aven
 1,23,Hood
 1,23,Death
-1,23,K’rul
+1,23,K'rul
 1,23,Maker
 1,23,Kalam Mekhar
 1,23,Ganoes Stabro Paran
@@ -685,7 +684,7 @@ book,chapter,names
 1,24,Boar
 1,24,Vorcan
 1,24,Silanah
-1,24,K’rul
+1,24,K'rul
 1,24,Serrat
 1,24,Kalam Mekhar
 1,24,Fiddler
@@ -798,7 +797,7 @@ book,chapter,names
 1,3,Blind
 1,3,Scant
 1,3,Sandalath Drukorlat
-1,3,Onos T'oolan
+1,3,Dessembrae
 1,3,Anomandaris
 1,3,Fisher
 1,3,Anomander Rake
@@ -874,7 +873,7 @@ book,chapter,names
 1,5,Cotillion
 1,5,Kala
 1,5,Hood
-1,5,Onos T'oolan
+1,5,Dessembrae
 1,5,Ganoes Stabro Paran
 1,5,Twist
 1,5,Maybe
@@ -901,9 +900,9 @@ book,chapter,names
 1,6,Fisher
 1,6,Shan
 1,6,Kruppe
-1,6,D’Arle
+1,6,D'Arle
 1,6,Crokus Younghand
-1,6,K’rul
+1,6,K'rul
 1,6,Aven
 1,6,Temple
 1,6,Talo Krafar
@@ -950,7 +949,7 @@ book,chapter,names
 1,7,Mammot
 1,8,Crokus Younghand
 1,8,Kruppe
-1,8,K’rul
+1,8,K'rul
 1,8,Circle
 1,8,Circle Breaker
 1,8,Breaker
@@ -970,7 +969,7 @@ book,chapter,names
 1,8,Lady Orr
 1,8,Ocelot
 1,8,Rall
-1,8,D’Arle
+1,8,D'Arle
 1,8,Osseric
 1,8,Beru
 1,8,List
@@ -978,7 +977,7 @@ book,chapter,names
 1,8,Tiny
 1,8,Seguleh
 1,8,Boar
-1,8,D’rek
+1,8,D'rek
 1,8,Dessembrae
 1,8,Favo
 1,8,Hinter
@@ -996,7 +995,7 @@ book,chapter,names
 1,8,Grave
 1,8,Bule
 1,9,Ammanas
-1,9,Onos T'oolan
+1,9,Dessembrae
 1,9,Whiskeyjack
 1,9,Kalam Mekhar
 1,9,Fiddler
@@ -1043,7 +1042,7 @@ book,chapter,names
 10,1,Bugg
 10,1,Tiny
 10,1,Faint
-10,1,K’rul
+10,1,K'rul
 10,1,Onos T'oolan
 10,1,Olar
 10,1,Olar Ethil
@@ -1097,7 +1096,7 @@ book,chapter,names
 10,1,Sorry
 10,1,Mother
 10,1,Sandalath Drukorlat
-10,1,Apsal’ara
+10,1,Apsal'ara
 10,1,Nimander
 10,1,Skintick
 10,1,Desra
@@ -1145,7 +1144,7 @@ book,chapter,names
 10,10,Brother
 10,10,Tanakalian
 10,10,Erekala
-10,10,Run’Thurvian
+10,10,Run'Thurvian
 10,10,Wolves
 10,10,Wolves of Winter
 10,10,Winter
@@ -1165,7 +1164,7 @@ book,chapter,names
 10,11,Banaschar
 10,11,Blistig
 10,11,Hood
-10,11,D’rek
+10,11,D'rek
 10,11,Autumn
 10,11,Worm
 10,11,Faradan
@@ -1379,9 +1378,9 @@ book,chapter,names
 10,13,Prince
 10,13,Death
 10,13,Wolves
-10,13,Run’Thurvian
+10,13,Run'Thurvian
 10,13,Lamb
-10,13,K’ell
+10,13,K'ell
 10,13,Hunter
 10,13,Bent
 10,13,Hunt
@@ -1396,7 +1395,7 @@ book,chapter,names
 10,13,Sinn
 10,13,Gunth Mach
 10,13,Mach
-10,13,Gu’Rull
+10,13,Gu'Rull
 10,13,Jade
 10,13,Matron
 10,13,Ammanas
@@ -1572,7 +1571,7 @@ book,chapter,names
 10,16,Kilmandaros
 10,16,Sechul Lath
 10,16,Lath
-10,16,K’rul
+10,16,K'rul
 10,16,Draconus
 10,16,Anomander Rake
 10,16,Tulas
@@ -1662,7 +1661,7 @@ book,chapter,names
 10,17,Stormy
 10,17,Banaschar
 10,17,Temple
-10,17,D’rek
+10,17,D'rek
 10,17,Maybe
 10,17,Smiles
 10,17,Bottle
@@ -1805,11 +1804,11 @@ book,chapter,names
 10,18,Winter
 10,18,Shard
 10,18,Talo Krafar
-10,18,Gu’Rull
+10,18,Gu'Rull
 10,18,Gesler
 10,18,Stormy
 10,18,Malle
-10,18,Gunth Mach’an
+10,18,Gunth Mach'an Acyl
 10,18,Abrastal
 10,18,Spax
 10,18,Humbrall Taur
@@ -1823,7 +1822,6 @@ book,chapter,names
 10,18,Jade
 10,18,Brys Beddict
 10,18,Aranict
-10,18,K’ell
 10,18,Hunter
 10,18,Pannion Seer
 10,18,Kalyth
@@ -1875,7 +1873,7 @@ book,chapter,names
 10,19,Desra
 10,19,Nenanda
 10,19,Korlat
-10,19,Apsal’ara
+10,19,Apsal'ara
 10,19,Dathenar
 10,19,Prazek Goul
 10,19,Stone
@@ -2024,7 +2022,7 @@ book,chapter,names
 10,20,Grunter Gafan
 10,20,Canarab
 10,20,Cora
-10,20,Sha’ik
+10,20,Sha'ik
 10,20,Toblakai
 10,20,Gesler
 10,20,Stormy
@@ -2110,7 +2108,7 @@ book,chapter,names
 10,21,Kalam Mekhar
 10,21,Ben Adaephon Delat
 10,21,Mathok
-10,21,T’morol
+10,21,T'morol
 10,21,Yedan Derryg
 10,21,Dujek Onearm
 10,21,Lost
@@ -2170,7 +2168,7 @@ book,chapter,names
 10,21,Bent
 10,21,Roach
 10,21,List
-10,21,Gu’Rull
+10,21,Gu'Rull
 10,21,Tanakalian
 10,21,Pran
 10,21,Setoc
@@ -2318,10 +2316,10 @@ book,chapter,names
 10,23,Jade
 10,23,Hood
 10,23,Kalyth
-10,23,Sag’Churok
-10,23,K’ell
+10,23,Sag'Churok
 10,23,Squint
 10,23,Carr
+10,23,K'ell
 10,23,Logros
 10,23,Onos T'oolan
 10,23,Ammanas
@@ -2368,7 +2366,7 @@ book,chapter,names
 10,23,Hunter
 10,23,Mist
 10,23,Howl
-10,23,Gu’Rull
+10,23,Gu'Rull
 10,23,Boar
 10,23,Fener
 10,23,Summer
@@ -2414,7 +2412,7 @@ book,chapter,names
 10,24,Ganoes Stabro Paran
 10,24,Hanavat
 10,24,Chal
-10,24,D’rek
+10,24,D'rek
 10,24,Maybe
 10,24,Tayschrenn
 10,24,Worm
@@ -2525,7 +2523,7 @@ book,chapter,names
 10,24,Cora
 10,24,Honey
 10,24,Malle
-10,24,Gu’Rull
+10,24,Gu'Rull
 10,24,Kalyth
 10,24,Gunth Mach
 10,24,Mach
@@ -2601,7 +2599,7 @@ book,chapter,names
 10,24,Nefarias Bredd
 10,24,Bredd
 10,24,Mekhar
-10,24,Apsal’ara
+10,24,Apsal'ara
 10,24,Desra
 10,24,Skintick
 10,24,Korlat
@@ -2610,7 +2608,7 @@ book,chapter,names
 10,24,Aparal Forge
 10,24,Bugg
 10,24,Heboric Light Touch
-10,24,K’rul
+10,24,K'rul
 10,24,Maker
 10,24,Touch
 10,24,Limp
@@ -2623,7 +2621,7 @@ book,chapter,names
 10,24,Braven Tooth
 10,24,Tooth
 10,24,Mallet
-10,24,Gunth Mach’an
+10,24,Gunth Mach'an Acyl
 10,24,Ublala
 10,24,Ralata
 10,24,Ublala Pung
@@ -2639,14 +2637,13 @@ book,chapter,names
 10,25,Silchas Ruin
 10,25,Skintick
 10,25,Desra
-10,25,Apsal’ara
+10,25,Apsal'ara
 10,25,Fiddler
 10,25,Tulas
 10,25,Tulas Shorn
 10,25,Shorn
 10,25,Nightchill
 10,25,Nights
-10,25,K’ell
 10,25,Matron
 10,25,Hedge
 10,25,Ben Adaephon Delat
@@ -2696,9 +2693,9 @@ book,chapter,names
 10,25,Cuttle
 10,25,Corabb Bhilan Thenu'alas
 10,25,Limp
-10,25,Corabb Bhilan Thenu'alas Thenu’alas
+10,25,Corabb Bhilan Thenu'alas Thenu'alas
 10,25,Sinter
-10,25,Thenu’alas
+10,25,Thenu'alas
 10,25,Kisswhere
 10,25,Nep Furrow
 10,25,Furrow
@@ -2762,7 +2759,7 @@ book,chapter,names
 10,3,Sinn
 10,3,Grub
 10,3,Hood
-10,3,Gu’Rull
+10,3,Gu'Rull
 10,3,Tavore Paran
 10,3,Ganoes Stabro Paran
 10,3,Brys Beddict
@@ -2817,7 +2814,7 @@ book,chapter,names
 10,4,Autumn
 10,4,Mother
 10,4,Pall
-10,4,D’rek
+10,4,D'rek
 10,4,Dead Hedge
 10,4,Hedge
 10,4,Brid
@@ -2891,8 +2888,8 @@ book,chapter,names
 10,4,Cuttle
 10,4,Koryk
 10,4,Cora
-10,4,Corabb Bhilan Thenu'alas Thenu’alas
-10,4,Thenu’alas
+10,4,Corabb Bhilan Thenu'alas Thenu'alas
+10,4,Thenu'alas
 10,4,Bottle
 10,4,Drin
 10,4,Henar
@@ -2960,7 +2957,7 @@ book,chapter,names
 10,5,Lath
 10,5,Kilmandaros
 10,5,Korabas
-10,5,K’rul
+10,5,K'rul
 10,5,Olar
 10,5,Icarium
 10,5,Chal
@@ -2994,8 +2991,7 @@ book,chapter,names
 10,6,Stormy
 10,6,Gesler
 10,6,Kalyth
-10,6,Sag’Churok
-10,6,K’ell
+10,6,Sag'Churok
 10,6,Elan
 10,6,Grub
 10,6,Sinn
@@ -3047,6 +3043,7 @@ book,chapter,names
 10,6,Treach
 10,6,Stonny Menackis
 10,6,Icarium
+10,6,K'ell
 10,6,Hunter
 10,6,Calm
 10,6,Wither
@@ -3080,7 +3077,7 @@ book,chapter,names
 10,7,Tehol Beddict
 10,7,Worm
 10,7,Warchief
-10,7,D’rek
+10,7,D'rek
 10,7,Beddict
 10,7,Prince
 10,7,Warleader Gall
@@ -3112,7 +3109,7 @@ book,chapter,names
 10,7,Bottle
 10,7,Rudd
 10,7,Swirl
-10,7,T’amber
+10,7,T'amber
 10,7,Dujek Onearm
 10,7,Crust
 10,7,Dessembrae
@@ -3123,7 +3120,6 @@ book,chapter,names
 10,7,Smiles
 10,7,Stormy
 10,7,Twist
-10,7,K’ell
 10,7,Hunter
 10,7,Gesler
 10,7,Kalyth
@@ -3171,7 +3167,7 @@ book,chapter,names
 10,8,Jhess
 10,8,Anomander Rake
 10,8,Ammanas
-10,8,D’rek
+10,8,D'rek
 10,8,T'riss
 10,8,Dreams
 10,8,Coltaine
@@ -3291,14 +3287,14 @@ book,chapter,names
 2,1,Touch
 2,1,Duiker
 2,1,Lorn
-2,1,T’amber
+2,1,T'amber
 2,1,Mother
 2,10,Kalam Mekhar
 2,10,Kala
 2,10,Hands
 2,10,Kamist Reloe
 2,10,Coltaine
-2,10,Sha’ik
+2,10,Sha'ik
 2,10,Nights
 2,10,Bordu
 2,10,Faint
@@ -3361,8 +3357,6 @@ book,chapter,names
 2,11,Sormo E'nath
 2,11,Chenned
 2,11,Sulmar
-2,11,Sormo E'nath E’nath
-2,11,E’nath
 2,11,Nethpara
 2,11,Tumlit
 2,11,Lucky
@@ -3423,7 +3417,7 @@ book,chapter,names
 2,12,Dujek Onearm
 2,12,Duiker
 2,12,Carr
-2,12,Sha’ik
+2,12,Sha'ik
 2,12,Fiddler
 2,12,Kalam Mekhar
 2,12,Iskaral Pust
@@ -3464,7 +3458,7 @@ book,chapter,names
 2,13,Kamist Reloe
 2,13,List
 2,13,Laseen
-2,13,Sha’ik
+2,13,Sha'ik
 2,13,Hood
 2,13,Shrouded
 2,13,Shrouded One
@@ -3539,7 +3533,7 @@ book,chapter,names
 2,14,Sormo E'nath
 2,14,Kamist Reloe
 2,14,Coll
-2,14,Sha’ik
+2,14,Sha'ik
 2,14,Tavore Paran
 2,14,Laseen
 2,14,Ganoes Stabro Paran
@@ -3594,7 +3588,7 @@ book,chapter,names
 2,15,Ammanas
 2,15,Death
 2,15,Ben Adaephon Delat
-2,15,Sha’ik
+2,15,Sha'ik
 2,15,Clam
 2,15,Thal
 2,15,Best
@@ -3634,7 +3628,7 @@ book,chapter,names
 2,16,Pearl
 2,16,Elan
 2,16,Mebra
-2,16,Sha’ik
+2,16,Sha'ik
 2,16,Laseen
 2,16,Mekhar
 2,16,Megara
@@ -3714,7 +3708,7 @@ book,chapter,names
 2,17,Ammanas
 2,17,Crust
 2,17,Humble
-2,17,Sha’ik
+2,17,Sha'ik
 2,17,Nethpara
 2,17,Pullyk
 2,17,Pullyk Alar
@@ -3768,7 +3762,7 @@ book,chapter,names
 2,18,Beru
 2,18,Leoman
 2,18,Felisin Paran
-2,18,Sha’ik
+2,18,Sha'ik
 2,18,Karsa Orlong
 2,18,Heboric Light Touch
 2,18,Vole
@@ -3799,7 +3793,7 @@ book,chapter,names
 2,19,Felisin Paran
 2,19,Leoman
 2,19,Karsa Orlong
-2,19,Sha’ik
+2,19,Sha'ik
 2,19,Heboric Light Touch
 2,19,Duiker
 2,19,Laseen
@@ -3808,7 +3802,7 @@ book,chapter,names
 2,19,Bidithal
 2,19,Febryl
 2,19,Dessembrae
-2,19,L’oric
+2,19,L'oric
 2,2,Laseen
 2,2,Mappo
 2,2,Mappo Runt
@@ -3816,7 +3810,7 @@ book,chapter,names
 2,2,Icarium
 2,2,Squint
 2,2,Ammanas
-2,2,Sha’ik
+2,2,Sha'ik
 2,2,Twist
 2,2,Gryllen
 2,2,Faint
@@ -3855,8 +3849,6 @@ book,chapter,names
 2,20,Duiker
 2,20,List
 2,20,Sormo E'nath
-2,20,Sormo E'nath E’nath
-2,20,E’nath
 2,20,Lull
 2,20,Lost
 2,20,Sorry
@@ -3870,7 +3862,7 @@ book,chapter,names
 2,20,Mince
 2,20,Bungle
 2,20,Tight
-2,20,Sha’ik
+2,20,Sha'ik
 2,20,Kalam Mekhar
 2,20,Salk
 2,20,Pearl
@@ -3974,16 +3966,16 @@ book,chapter,names
 2,21,Apto
 2,21,Panek
 2,21,Topper
-2,21,Sha’ik
+2,21,Sha'ik
 2,21,Kala
 2,21,Gran
 2,21,Voice
 2,21,Palet
 2,21,Beru
 2,21,Bugg
-2,22,Sha’ik
+2,22,Sha'ik
 2,22,Heboric Light Touch
-2,22,L’oric
+2,22,L'oric
 2,22,Sorry
 2,22,Ammanas
 2,22,Hood
@@ -4036,7 +4028,7 @@ book,chapter,names
 2,23,Nether
 2,23,Temul
 2,23,Tavore Paran
-2,23,Sha’ik
+2,23,Sha'ik
 2,23,Ganoes Stabro Paran
 2,23,Mallick Rel
 2,23,Pormqual
@@ -4099,13 +4091,13 @@ book,chapter,names
 2,24,Aragan
 2,24,Sorry
 2,25,Bugg
-2,25,Sha’ik
+2,25,Sha'ik
 2,25,Korbolo Dom
 2,25,Coltaine
 2,25,Heboric Light Touch
 2,25,Leoman
 2,25,Death
-2,25,L’oric
+2,25,L'oric
 2,25,Bidithal
 2,25,Febryl
 2,25,Mother
@@ -4152,8 +4144,6 @@ book,chapter,names
 2,3,Bult
 2,3,Dujek Onearm
 2,3,Sormo E'nath
-2,3,Sormo E'nath E’nath
-2,3,E’nath
 2,3,Hood
 2,3,Pormqual
 2,3,Admiral Nok
@@ -4191,7 +4181,7 @@ book,chapter,names
 2,3,Mercy
 2,3,Kala
 2,3,Adaephon
-2,3,Sha’ik
+2,3,Sha'ik
 2,3,Lostara
 2,3,Aralt
 2,3,Aralt Arpat
@@ -4240,8 +4230,6 @@ book,chapter,names
 2,4,List
 2,4,Belie
 2,4,Sormo E'nath
-2,4,Sormo E'nath E’nath
-2,4,E’nath
 2,4,Bult
 2,4,Mist
 2,4,Fiddler
@@ -4249,7 +4237,7 @@ book,chapter,names
 2,4,Apsalar
 2,4,Kalam Mekhar
 2,4,Kala
-2,4,Sha’ik
+2,4,Sha'ik
 2,4,Laseen
 2,4,Whirlwind
 2,4,Whirlwind 
@@ -4318,8 +4306,6 @@ book,chapter,names
 2,5,Strap
 2,5,Kulp
 2,5,Sormo E'nath
-2,5,Sormo E'nath E’nath
-2,5,E’nath
 2,5,Moss
 2,5,Calm
 2,5,Best
@@ -4329,7 +4315,7 @@ book,chapter,names
 2,6,Apsalar
 2,6,Arak
 2,6,Ammanas
-2,6,Sha’ik
+2,6,Sha'ik
 2,6,Hood
 2,6,Recruit
 2,6,Touch
@@ -4404,10 +4390,8 @@ book,chapter,names
 2,7,Laseen
 2,7,Bult
 2,7,Sormo E'nath
-2,7,Sha’ik
+2,7,Sha'ik
 2,7,Pormqual
-2,7,Sormo E'nath E’nath
-2,7,E’nath
 2,7,Freedom
 2,7,Kamist Reloe
 2,7,Geburah
@@ -4463,7 +4447,7 @@ book,chapter,names
 2,8,Mappo
 2,8,Icarium
 2,8,Hands
-2,8,Sha’ik
+2,8,Sha'ik
 2,8,Iskaral Pust
 2,8,Fiddler
 2,8,Apsalar
@@ -4475,7 +4459,7 @@ book,chapter,names
 2,9,Coltaine
 2,9,Duiker
 2,9,Kamist Reloe
-2,9,Sha’ik
+2,9,Sha'ik
 2,9,Karas
 2,9,Hood
 2,9,Maybe
@@ -4535,7 +4519,7 @@ book,chapter,names
 3,1,Onos T'oolan
 3,1,Malle
 3,1,Crippled God
-3,1,K’rul
+3,1,K'rul
 3,1,Temple
 3,1,Kallor
 3,1,Brother
@@ -4568,7 +4552,6 @@ book,chapter,names
 3,10,Relent
 3,10,Garath
 3,10,Treach
-3,10,K’ell
 3,10,Aral
 3,10,Fill
 3,10,Seerdomin
@@ -4577,6 +4560,7 @@ book,chapter,names
 3,10,Bell
 3,10,Shattered
 3,10,Death
+3,10,K'ell
 3,10,Hunter
 3,10,Morn
 3,10,Anomander Rake
@@ -4618,34 +4602,34 @@ book,chapter,names
 3,11,Bek Okhan
 3,11,Malle
 3,11,Okhan
-3,11,K’ell
 3,11,Hunter
+3,11,K'ell
 3,11,Caladan Brood
-3,11,Rath’Dessembrae
-3,11,Rath’D’rek
+3,11,Rath'Dessembrae
+3,11,Rath'D'rek
 3,11,Worm
 3,11,Worm of Autumn
 3,11,Autumn
 3,11,Brother
 3,11,List
-3,11,Rath’Hood
-3,11,Rath’Ammanas
-3,11,Rath’Queen
-3,11,Rath’
+3,11,Rath'Hood
+3,11,Rath'Ammanas
+3,11,Rath'Queen
+3,11,Rath'
 3,11,T'riss
 3,11,Dreams
-3,11,Rath’Burn
+3,11,Rath'Burn
 3,11,Humbrall Taur
-3,11,Rath’Oponn
+3,11,Rath'Oponn
 3,11,Ammanas
-3,11,Rath’Beru
-3,11,Rath’Fener
+3,11,Rath'Beru
+3,11,Rath'Fener
 3,11,Ben Adaephon Delat
 3,11,Crow
 3,11,Tiger
 3,11,Treach
 3,11,Summer
-3,11,Rath’Treach
+3,11,Rath'Treach
 3,11,Fill
 3,11,Voice
 3,11,Toblakai
@@ -4717,7 +4701,7 @@ book,chapter,names
 3,13,Anaster
 3,13,Pannion Seer
 3,13,Toc the Younger
-3,13,K’ell
+3,13,K'ell
 3,13,Hunter
 3,13,Envy
 3,13,Seguleh
@@ -4758,7 +4742,7 @@ book,chapter,names
 3,14,Kallor
 3,14,Death
 3,14,Blind
-3,14,K’rul
+3,14,K'rul
 3,14,Crippled God
 3,14,Gethol
 3,14,Herald
@@ -4812,16 +4796,15 @@ book,chapter,names
 3,15,T'riss
 3,15,Dreams
 3,15,Voice
-3,15,Rath’Hood
-3,15,Rath’Burn
-3,15,K’rul
+3,15,Rath'Hood
+3,15,Rath'Burn
 3,15,Mane
-3,15,Rath’Fener
-3,15,Rath’Queen
-3,15,Rath’
-3,15,Rath’Ammanas
+3,15,Rath'Fener
+3,15,Rath'Queen
+3,15,Rath'
+3,15,Rath'Ammanas
 3,15,Kalan
-3,15,D’Arle
+3,15,D'Arle
 3,15,Silchas Ruin
 3,15,Generous
 3,15,Carr
@@ -4846,7 +4829,6 @@ book,chapter,names
 3,16,Kruppe
 3,16,Hood
 3,16,Malle
-3,16,K’ell
 3,16,Hunter
 3,16,Tattersail
 3,16,Wolves
@@ -4865,6 +4847,7 @@ book,chapter,names
 3,16,Hurlochel
 3,16,Artanthos
 3,16,Haradas
+3,16,K'ell
 3,16,Matron
 3,16,Pannion Seer
 3,16,Gran
@@ -4910,7 +4893,7 @@ book,chapter,names
 3,17,Stonny Menackis
 3,17,Treach
 3,17,Hood
-3,17,Rath’Fener
+3,17,Rath'Fener
 3,17,Thrall
 3,17,Recruit
 3,17,Nilbanas
@@ -4945,7 +4928,7 @@ book,chapter,names
 3,18,Mother
 3,18,Swirl
 3,18,Seerdomin
-3,18,K’ell
+3,18,K'ell
 3,18,Hunter
 3,18,Leath
 3,18,Baaljagg
@@ -4994,19 +4977,18 @@ book,chapter,names
 3,18,List
 3,18,Anomander Rake
 3,18,Gran
-3,18,K’rul
+3,18,K'rul
 3,18,Draconus
 3,18,Sorry
 3,18,Itkovian
 3,18,Yedan Derryg
 3,18,Jelarkan
 3,18,Velbara
-3,18,Rath’Hood
+3,18,Rath'Hood
 3,18,Death
 3,18,Brukhalian
-3,18,Rath’Treach
-3,18,K'rul
-3,18,Rath’Fener
+3,18,Rath'Treach
+3,18,Rath'Fener
 3,18,Norul
 3,18,Karnadas
 3,18,Boar
@@ -5032,7 +5014,7 @@ book,chapter,names
 3,19,Hood
 3,19,Brid
 3,19,Maybe
-3,19,K’rul
+3,19,K'rul
 3,19,Treach
 3,19,T'riss
 3,19,Dreams
@@ -5091,7 +5073,6 @@ book,chapter,names
 3,19,Duiker
 3,19,Cafal
 3,19,Mull
-3,19,K'rul
 3,19,Emancipor Reese
 3,19,Reese
 3,19,Best
@@ -5171,7 +5152,7 @@ book,chapter,names
 3,20,Pran Chole
 3,20,Chole
 3,20,Kron
-3,20,K’rul
+3,20,K'rul
 3,20,Okral
 3,20,Okral Lom
 3,20,Bendal
@@ -5219,7 +5200,6 @@ book,chapter,names
 3,21,Seerdomin
 3,21,Matron
 3,21,Malle
-3,21,K’ell
 3,21,Hunter
 3,21,Mother
 3,21,Baaljagg
@@ -5243,9 +5223,9 @@ book,chapter,names
 3,21,Jelarkan
 3,21,Hetan
 3,21,Cafal
-3,21,Rath’Hood
-3,21,Rath’Burn
-3,21,Rath’Ammanas
+3,21,Rath'Hood
+3,21,Rath'Burn
+3,21,Rath'Ammanas
 3,21,Farakalian
 3,21,Torun
 3,21,Sidlis
@@ -5282,7 +5262,6 @@ book,chapter,names
 3,21,Kulpath
 3,21,Anomander Rake
 3,21,Kallor
-3,21,K’rul
 3,21,Harllo
 3,21,Sorrow
 3,21,Pannion Seer
@@ -5393,7 +5372,7 @@ book,chapter,names
 3,22,Icarium
 3,22,Coltaine
 3,22,Anaster
-3,22,Rath’Fener
+3,22,Rath'Fener
 3,23,Seerdomin
 3,23,Pannion Seer
 3,23,Ultentha
@@ -5480,7 +5459,7 @@ book,chapter,names
 3,24,Carr
 3,24,Laseen
 3,24,Tavore Paran
-3,24,Sha’ik
+3,24,Sha'ik
 3,24,Korlat
 3,24,Cora
 3,24,Limbs
@@ -5550,11 +5529,11 @@ book,chapter,names
 3,25,Coll
 3,25,Prince
 3,25,Arard
-3,25,Rath’Ammanas
+3,25,Rath'Ammanas
 3,25,Murillio
-3,25,Rath’Hood
-3,25,Rath’Togg
-3,25,Rath’Fanderay
+3,25,Rath'Hood
+3,25,Rath'Togg
+3,25,Rath'Fanderay
 3,25,Thrall
 3,25,Mhybe
 3,25,Picker
@@ -5604,8 +5583,8 @@ book,chapter,names
 3,25,Toc the Younger
 3,25,Silverfox
 3,25,Sorry
-3,25,K’ell
 3,25,Hunter
+3,25,K'ell
 3,25,Aimless
 3,25,Crust
 3,25,Artanthos
@@ -5626,11 +5605,11 @@ book,chapter,names
 3,26,Ormulogun
 3,26,Coll
 3,26,Knight
-3,26,K’rul
+3,26,K'rul
 3,26,Murillio
 3,26,Beru
 3,26,Mhybe
-3,26,Rath’Togg
+3,26,Rath'Togg
 3,26,Death
 3,26,Hood
 3,26,Itkovian
@@ -5703,11 +5682,11 @@ book,chapter,names
 3,26,Antsy
 3,26,Hunter
 3,26,Lock
-3,26,K’ell
 3,26,Hareb
 3,26,Hare
 3,26,Gran
 3,26,Summer
+3,26,K'ell
 3,26,Blind
 3,26,Anomander Rake
 3,26,Seguleh
@@ -5735,7 +5714,7 @@ book,chapter,names
 3,26,Wolves
 3,26,Freedom
 3,26,Otan
-3,26,Rath’Fanderay
+3,26,Rath'Fanderay
 3,26,Pallid
 3,26,Morn
 3,26,Torn
@@ -5786,7 +5765,7 @@ book,chapter,names
 3,27,Coll
 3,27,Murillio
 3,27,Picker
-3,27,K’rul
+3,27,K'rul
 3,27,Temple
 3,27,Faint
 3,27,List
@@ -5879,7 +5858,7 @@ book,chapter,names
 3,4,Touch
 3,4,Tattersail
 3,4,Nightchill
-3,4,K’rul
+3,4,K'rul
 3,4,Bellurdan
 3,4,Tayschrenn
 3,4,Ammanas
@@ -5894,12 +5873,11 @@ book,chapter,names
 3,5,Nightchill
 3,5,Draconus
 3,5,Nights
-3,5,K’rul
+3,5,K'rul
 3,5,Harllo
 3,5,Stonny Menackis
 3,5,Gruntle
 3,5,Hood
-3,5,K'rul
 3,5,Bauchelain
 3,5,Korbal
 3,5,Korbal Broach
@@ -6022,8 +6000,8 @@ book,chapter,names
 3,6,Meese
 3,6,Coll
 3,6,Estraysian
-3,6,Estraysian D’Arle
-3,6,D’Arle
+3,6,Estraysian D'Arle
+3,6,D'Arle
 3,6,Baruk
 3,6,Ruffle
 3,6,Challice
@@ -6089,7 +6067,6 @@ book,chapter,names
 3,7,Ben Adaephon Delat
 3,7,Coil
 3,7,Malle
-3,7,K’ell
 3,7,Matron
 3,7,Blind
 3,8,Fener
@@ -6099,11 +6076,11 @@ book,chapter,names
 3,8,Prince
 3,8,Jelarkan
 3,8,Brukhalian
-3,8,Rath’Fener
+3,8,Rath'Fener
 3,8,Boar
 3,8,Itkovian
 3,8,Thrall
-3,8,Rath’Treach
+3,8,Rath'Treach
 3,8,Tiger
 3,8,Pannion Seer
 3,8,Mane
@@ -6132,8 +6109,8 @@ book,chapter,names
 3,8,Kron
 3,8,Chole
 3,8,Bait
-3,8,K’ell
 3,8,Hunter
+3,8,K'ell
 3,8,Morn
 3,8,Seguleh
 3,8,Toc the Younger
@@ -6171,7 +6148,7 @@ book,chapter,names
 3,8,Brother
 3,8,Tavore Paran
 3,8,Lorn
-3,8,K’rul
+3,8,K'rul
 3,8,Matron
 3,8,Draconus
 3,8,Crippled God
@@ -6204,7 +6181,6 @@ book,chapter,names
 3,8,Stonny Menackis
 3,8,Harllo
 3,8,Netok
-3,8,K'rul
 3,9,Gethol
 3,9,Hood
 3,9,Herald
@@ -6304,7 +6280,7 @@ book,chapter,names
 4,10,Cotillion
 4,10,Tavore Paran
 4,10,Ganoes Stabro Paran
-4,10,Sha’ik
+4,10,Sha'ik
 4,10,Carr
 4,10,Hood
 4,10,Beru
@@ -6376,14 +6352,14 @@ book,chapter,names
 4,11,Toblakai
 4,11,Heboric Light Touch
 4,11,Hands
-4,11,Sha’ik
+4,11,Sha'ik
 4,11,Tavore Paran
 4,11,Korbolo Dom
 4,11,Ganoes Stabro Paran
 4,11,Mathok
 4,11,Bidithal
 4,11,Consort
-4,11,L’oric
+4,11,L'oric
 4,11,Chains
 4,11,Febryl
 4,11,List
@@ -6426,7 +6402,7 @@ book,chapter,names
 4,12,Coltaine
 4,12,Ganoes Stabro Paran
 4,12,Tene Baralta
-4,12,Sha’ik
+4,12,Sha'ik
 4,12,Crow
 4,12,Vatha
 4,12,Temul
@@ -6480,7 +6456,7 @@ book,chapter,names
 4,12,Tiger
 4,12,Treach
 4,12,Summer
-4,12,T’amber
+4,12,T'amber
 4,12,Trotts
 4,12,Mallet
 4,12,Picker
@@ -6564,7 +6540,7 @@ book,chapter,names
 4,13,Rott
 4,13,Home
 4,14,Korbolo Dom
-4,14,Sha’ik
+4,14,Sha'ik
 4,14,Heboric Light Touch
 4,14,Hands
 4,14,Leoman
@@ -6575,7 +6551,7 @@ book,chapter,names
 4,14,Dujek Onearm
 4,14,Febryl
 4,14,Toblakai
-4,14,L’oric
+4,14,L'oric
 4,14,Bidithal
 4,14,Little
 4,14,Whirlwind
@@ -6611,7 +6587,7 @@ book,chapter,names
 4,15,Faint
 4,15,Mappo
 4,15,Icarium
-4,15,Sha’ik
+4,15,Sha'ik
 4,15,Little
 4,15,Mappo Runt
 4,15,Runt
@@ -6683,12 +6659,10 @@ book,chapter,names
 4,16,List
 4,16,Maybe
 4,16,Sormo E'nath
-4,16,Sormo E'nath E’nath
-4,16,E’nath
 4,16,Tene Baralta
 4,16,Hands
 4,16,Admiral Nok
-4,16,Sha’ik
+4,16,Sha'ik
 4,17,Kalam Mekhar
 4,17,Iskaral Pust
 4,17,Faint
@@ -6724,7 +6698,7 @@ book,chapter,names
 4,17,Baudin
 4,17,Gesler
 4,17,Touch
-4,17,Sha’ik
+4,17,Sha'ik
 4,17,Onrack T'emlava
 4,17,Thal
 4,17,Absi
@@ -6782,7 +6756,7 @@ book,chapter,names
 4,19,Felisin Paran
 4,19,Kenussen
 4,19,Ganoes Stabro Paran
-4,19,Sha’ik
+4,19,Sha'ik
 4,19,Mathok
 4,19,Korbolo Dom
 4,19,Toblakai
@@ -6790,7 +6764,7 @@ book,chapter,names
 4,19,Whirlwind 
 4,19,Chains
 4,19,Laseen
-4,19,L’oric
+4,19,L'oric
 4,19,Heboric Light Touch
 4,19,Hands
 4,19,Kamist Reloe
@@ -6809,9 +6783,9 @@ book,chapter,names
 4,19,Bugg
 4,19,Mallick Rel
 4,19,Corabb Bhilan Thenu'alas
-4,19,Corabb Bhilan Thenu'alas Thenu’alas
+4,19,Corabb Bhilan Thenu'alas Thenu'alas
 4,19,Flails
-4,19,Thenu’alas
+4,19,Thenu'alas
 4,19,Vatha
 4,19,Shrouded
 4,19,Sheltatha Lore
@@ -6827,8 +6801,6 @@ book,chapter,names
 4,19,Felisin Paran Younger
 4,19,Gris
 4,19,Sormo E'nath
-4,19,Sormo E'nath E’nath
-4,19,E’nath
 4,19,Topper
 4,19,Scillara
 4,19,Bala
@@ -6887,7 +6859,7 @@ book,chapter,names
 4,20,Ganoes Stabro Paran
 4,20,Temul
 4,20,Tene Baralta
-4,20,Sha’ik
+4,20,Sha'ik
 4,20,Vatha
 4,20,Warleader Gall
 4,20,Dessembrae
@@ -6923,9 +6895,9 @@ book,chapter,names
 4,20,Hedge
 4,20,Nether
 4,20,Corabb Bhilan Thenu'alas
-4,20,Corabb Bhilan Thenu'alas Thenu’alas
+4,20,Corabb Bhilan Thenu'alas Thenu'alas
 4,20,Leoman
-4,20,Thenu’alas
+4,20,Thenu'alas
 4,20,Flails
 4,20,Laseen
 4,20,Mistress
@@ -6984,7 +6956,7 @@ book,chapter,names
 4,21,Lostara
 4,21,Lostara Yil
 4,21,Pearl
-4,21,Sha’ik
+4,21,Sha'ik
 4,21,Toblakai
 4,21,Felisin Paran
 4,21,Felisin Paran Ganoes Stabro Paran
@@ -7007,7 +6979,7 @@ book,chapter,names
 4,21,Admiral Nok
 4,22,Febryl
 4,22,Whirlwind
-4,22,Sha’ik
+4,22,Sha'ik
 4,22,Enqura
 4,22,Ugarat
 4,22,Dessembrae
@@ -7021,7 +6993,7 @@ book,chapter,names
 4,22,Kamist Reloe
 4,22,Dessimbelackis
 4,22,Best
-4,22,L’oric
+4,22,L'oric
 4,22,Felisin Paran
 4,22,Heboric Light Touch
 4,22,T'riss
@@ -7032,9 +7004,9 @@ book,chapter,names
 4,22,Toblakai
 4,22,Karas
 4,22,Malle
-4,22,K’ell
 4,22,Hunter
 4,22,Anomander Rake
+4,22,K'ell
 4,22,Mother
 4,22,Sandalath Drukorlat
 4,22,Polielfrog
@@ -7056,8 +7028,8 @@ book,chapter,names
 4,22,Dawn
 4,22,Leoman
 4,22,Corabb Bhilan Thenu'alas
-4,22,Corabb Bhilan Thenu'alas Thenu’alas
-4,22,Thenu’alas
+4,22,Corabb Bhilan Thenu'alas Thenu'alas
+4,22,Thenu'alas
 4,22,Warleader Gall
 4,22,Broad
 4,22,Karsa Orlong
@@ -7096,7 +7068,7 @@ book,chapter,names
 4,23,Tugg
 4,23,Tavore Paran
 4,23,Ganoes Stabro Paran
-4,23,Sha’ik
+4,23,Sha'ik
 4,23,Maybe
 4,23,Dujek Onearm
 4,23,Tayschrenn
@@ -7140,7 +7112,7 @@ book,chapter,names
 4,24,Ammanas
 4,24,Cotillion
 4,24,Mekhar
-4,24,Sha’ik
+4,24,Sha'ik
 4,24,Iskaral Pust
 4,24,Trull Sengar
 4,24,Ibra
@@ -7176,7 +7148,7 @@ book,chapter,names
 4,25,Keneb
 4,25,Ganoes Stabro Paran
 4,25,Korbolo Dom
-4,25,Sha’ik
+4,25,Sha'ik
 4,25,Nether
 4,25,Kamist Reloe
 4,25,Talo Krafar
@@ -7204,7 +7176,7 @@ book,chapter,names
 4,25,Treach
 4,25,Scillara
 4,25,Sheltatha Lore
-4,25,L’oric
+4,25,L'oric
 4,25,Felisin Paran
 4,25,Felisin Paran Younger
 4,25,Laseen
@@ -7213,8 +7185,8 @@ book,chapter,names
 4,25,Mother
 4,25,Hoarder
 4,25,Boil
-4,25,Corabb Bhilan Thenu'alas Thenu’alas
-4,25,Thenu’alas
+4,25,Corabb Bhilan Thenu'alas Thenu'alas
+4,25,Thenu'alas
 4,25,Flails
 4,25,Whirlwind 
 4,25,Henaras
@@ -7228,14 +7200,14 @@ book,chapter,names
 4,25,Osseric
 4,25,Karsa Orlong
 4,26,Febryl
-4,26,Sha’ik
+4,26,Sha'ik
 4,26,Korbolo Dom
 4,26,Kamist Reloe
 4,26,Tavore Paran
 4,26,Ganoes Stabro Paran
 4,26,Hood
 4,26,Death
-4,26,L’oric
+4,26,L'oric
 4,26,Henaras
 4,26,Bidithal
 4,26,Scillara
@@ -7257,7 +7229,7 @@ book,chapter,names
 4,26,Heboric Light Touch
 4,26,Heboric Light Touch Heboric Light Touch
 4,26,Hands
-4,26,T’morol
+4,26,T'morol
 4,26,Warchief
 4,26,Treach
 4,26,Kalam Mekhar
@@ -7274,8 +7246,8 @@ book,chapter,names
 4,26,Silgar
 4,26,Knight
 4,26,Corabb Bhilan Thenu'alas
-4,26,Corabb Bhilan Thenu'alas Thenu’alas
-4,26,Thenu’alas
+4,26,Corabb Bhilan Thenu'alas Thenu'alas
+4,26,Thenu'alas
 4,26,Cora
 4,26,Ammanas
 4,26,Kala
@@ -7307,11 +7279,11 @@ book,chapter,names
 4,26,Anomander Rake
 4,26,Touch
 4,27,Felisin Paran
-4,27,Sha’ik
+4,27,Sha'ik
 4,27,Spite
 4,27,Felisin Paran Ganoes Stabro Paran
 4,27,Ganoes Stabro Paran
-4,27,L’oric
+4,27,L'oric
 4,27,Brid
 4,27,Mathok
 4,27,Leoman
@@ -7328,7 +7300,7 @@ book,chapter,names
 4,27,Keneb
 4,27,Tavore Paran
 4,27,Gamet
-4,27,T’amber
+4,27,T'amber
 4,27,Temul
 4,27,Moss
 4,27,Cotillion
@@ -7514,7 +7486,7 @@ book,chapter,names
 4,4,Slavemaster
 4,4,Gripp
 4,4,Belie
-4,4,Ba’ienrok
+4,4,Ba'ienrok
 4,4,Urko Crust
 4,4,Lucky
 4,4,Mist
@@ -7545,7 +7517,7 @@ book,chapter,names
 4,5,Clam
 4,5,List
 4,5,Leoman
-4,5,Sha’ik
+4,5,Sha'ik
 4,5,Toblakai
 4,6,Gamet
 4,6,Blistig
@@ -7555,7 +7527,7 @@ book,chapter,names
 4,6,Pormqual
 4,6,Coltaine
 4,6,Mallick Rel
-4,6,Sha’ik
+4,6,Sha'ik
 4,6,Duiker
 4,6,Squint
 4,6,Lean
@@ -7599,9 +7571,9 @@ book,chapter,names
 4,6,Nightchill
 4,6,Hawl
 4,6,Dessembrae
-4,6,D’rek
+4,6,D'rek
 4,6,Best
-4,6,T’amber
+4,6,T'amber
 4,6,Brid
 4,6,Tarr
 4,6,Cough
@@ -7663,9 +7635,9 @@ book,chapter,names
 4,8,Korbolo Dom
 4,8,Leoman
 4,8,Bidithal
-4,8,L’oric
+4,8,L'oric
 4,8,Mathok
-4,8,Sha’ik
+4,8,Sha'ik
 4,8,Mallick Rel
 4,8,Pullyk
 4,8,Pullyk Alar
@@ -7760,16 +7732,16 @@ book,chapter,names
 4,9,Ranal
 4,9,Brid
 4,9,Hedge
-4,9,D’rek
+4,9,D'rek
 4,9,Worm
 4,9,Worm of Autumn
 4,9,Autumn
 4,9,Truth
 4,9,Laseen
-4,9,Sha’ik
+4,9,Sha'ik
 4,9,Orto
 4,9,Orto Setral
-4,9,T’amber
+4,9,T'amber
 4,9,Cage
 4,9,Gran
 4,9,T'riss
@@ -7805,7 +7777,7 @@ book,chapter,names
 4,9,Coltaine
 5,1,Scabandari Bloodeye
 5,1,Malle
-5,1,K’ell
+5,1,K'ell
 5,1,Hunt
 5,1,Hunter
 5,1,Matron
@@ -7818,7 +7790,7 @@ book,chapter,names
 5,1,Sandalath Drukorlat
 5,1,Anomandaris
 5,1,Little
-5,1,K’rul
+5,1,K'rul
 5,1,Draconus
 5,1,Nightchill
 5,1,Osseric
@@ -7855,7 +7827,6 @@ book,chapter,names
 5,10,Tomad
 5,10,Uruth Sengar
 5,10,Tomad Sengar
-5,10,K’risnan
 5,10,Udinaas
 5,10,Theradas
 5,10,Midik
@@ -7945,7 +7916,6 @@ book,chapter,names
 5,12,Errant
 5,12,Hannan Mosag
 5,12,Rhulad Sengar
-5,12,K’risnan
 5,12,Trull Sengar
 5,12,Binadas Sengar
 5,12,Buruk the Pale
@@ -8052,7 +8022,6 @@ book,chapter,names
 5,14,Hull Beddict
 5,14,Beddict
 5,14,Scabandari Bloodeye
-5,14,K’risnan
 5,14,Binadas Sengar
 5,14,Gerun
 5,14,Gerun Eberict
@@ -8168,7 +8137,6 @@ book,chapter,names
 5,16,Tomad
 5,16,Tomad Sengar
 5,16,Torn
-5,16,K’risnan
 5,16,Ahlrada
 5,16,Ahlrada Ahn
 5,16,Canarth
@@ -8211,7 +8179,7 @@ book,chapter,names
 5,16,Kessobahn
 5,16,Olar
 5,16,Draconus
-5,16,K’rul
+5,16,K'rul
 5,16,Anomandaris
 5,16,Osseric
 5,16,Silchas Ruin
@@ -8284,7 +8252,6 @@ book,chapter,names
 5,17,Midik
 5,17,Midik Buhn
 5,17,Buhn
-5,17,K’risnan
 5,17,Bugg
 5,18,Gran
 5,18,Errant
@@ -8331,7 +8298,6 @@ book,chapter,names
 5,19,Beddict
 5,19,Trull Sengar
 5,19,Rhulad Sengar
-5,19,K’risnan
 5,19,Voice
 5,19,Moroch
 5,19,Moroch Nevath
@@ -8368,7 +8334,6 @@ book,chapter,names
 5,2,Tomad Sengar
 5,2,Winter
 5,2,Hannan Mosag
-5,2,K’risnan
 5,2,Binadas Sengar
 5,2,Voice
 5,2,Favo
@@ -8561,7 +8526,6 @@ book,chapter,names
 5,22,Huldo
 5,22,Tehol Beddict
 5,22,Hannan Mosag
-5,22,K’risnan
 5,22,Strong
 5,22,Ramp
 5,22,Sorry
@@ -8580,7 +8544,6 @@ book,chapter,names
 5,23,Mother
 5,23,Fingers
 5,23,Brother
-5,23,K’risnan
 5,23,Seren Pedac
 5,23,Unnutal
 5,23,Unnutal Hebaz
@@ -8625,7 +8588,6 @@ book,chapter,names
 5,24,Udinaas
 5,24,Rhulad Sengar
 5,24,Trull Sengar
-5,24,K’risnan
 5,24,Little
 5,24,Hannan Mosag
 5,24,Feather
@@ -8708,7 +8670,6 @@ book,chapter,names
 5,25,Trull Sengar
 5,25,Rhulad Sengar
 5,25,Hannan Mosag
-5,25,K’risnan
 5,25,Udinaas
 5,25,Uruth Sengar
 5,25,Hull Beddict
@@ -8744,7 +8705,6 @@ book,chapter,names
 5,26,Hannan Mosag
 5,26,Mayen
 5,26,Binadas Sengar
-5,26,K’risnan
 5,26,Theradas
 5,26,Midik
 5,26,Midik Buhn
@@ -8886,7 +8846,6 @@ book,chapter,names
 5,3,Binadas Sengar
 5,4,Menandore
 5,4,Hannan Mosag
-5,4,K’risnan
 5,4,Trull Sengar
 5,4,Sheltatha Lore
 5,4,Udinaas
@@ -9029,7 +8988,6 @@ book,chapter,names
 5,6,Midik Buhn
 5,6,Buhn
 5,6,Theradas Buhn
-5,6,K’risnan
 5,6,Menandore
 5,6,Mistress
 5,7,Errant
@@ -9118,7 +9076,6 @@ book,chapter,names
 5,8,Draconus
 5,8,Freedom
 5,8,Tomad
-5,8,K’risnan
 5,8,Sentinel
 5,8,Ezgara
 5,8,Ezgara Diskanar
@@ -9167,8 +9124,8 @@ book,chapter,names
 5,9,Brother
 5,9,Pond
 6,1,Worm of Autumn
-6,1,Sha’ik
-6,1,D’rek
+6,1,Sha'ik
+6,1,D'rek
 6,1,Autumn
 6,1,Hellian
 6,1,Worm
@@ -9300,7 +9257,7 @@ book,chapter,names
 6,11,Tavos Pond
 6,11,Pond
 6,11,Lutes
-6,11,D’rek
+6,11,D'rek
 6,11,Gesler
 6,11,Shortnose
 6,11,Flashwit
@@ -9355,7 +9312,7 @@ book,chapter,names
 6,12,Boar
 6,12,Treach
 6,12,Maybe
-6,12,Sha’ik
+6,12,Sha'ik
 6,12,Bidithal
 6,12,Crippled God
 6,12,Chained
@@ -9397,7 +9354,7 @@ book,chapter,names
 6,12,Baudin
 6,12,Kulp
 6,12,Felisin Paran Ganoes Stabro Paran
-6,12,L’oric
+6,12,L'oric
 6,13,Prophet
 6,13,Whiskeyjack
 6,13,Samar Dev
@@ -9427,10 +9384,10 @@ book,chapter,names
 6,13,Stuk
 6,13,Maybe
 6,13,Treach
-6,13,L’oric
+6,13,L'oric
 6,13,T'riss
 6,13,Dreams
-6,13,Sha’ik
+6,13,Sha'ik
 6,13,Bara
 6,13,Chaur
 6,13,Urdan
@@ -9493,7 +9450,7 @@ book,chapter,names
 6,14,Faradan
 6,14,Faradan Sort
 6,14,Tene Baralta
-6,14,Sha’ik
+6,14,Sha'ik
 6,14,Sinn
 6,14,Ben Adaephon Delat
 6,14,Keneb
@@ -9518,8 +9475,8 @@ book,chapter,names
 6,14,Sobelone
 6,14,Tugg
 6,14,Corabb Bhilan Thenu'alas
-6,14,Corabb Bhilan Thenu'alas Thenu’alas
-6,14,Thenu’alas
+6,14,Corabb Bhilan Thenu'alas Thenu'alas
+6,14,Thenu'alas
 6,14,Dunsparrow
 6,14,T'riss
 6,14,Dreams
@@ -9570,7 +9527,7 @@ book,chapter,names
 6,14,Nether
 6,14,Blistig
 6,14,Temul
-6,14,T’amber
+6,14,T'amber
 6,14,Warleader Gall
 6,14,Imrahl
 6,14,Ruthan Gudd
@@ -9588,7 +9545,7 @@ book,chapter,names
 6,15,Chaur
 6,15,Mekhar
 6,15,Scillara
-6,15,L’oric
+6,15,L'oric
 6,15,Nulliss
 6,15,Filiad
 6,15,Urdan
@@ -9600,7 +9557,7 @@ book,chapter,names
 6,15,Felisin Paran
 6,15,Felisin Paran Younger
 6,15,Heboric Light Touch
-6,15,Sha’ik
+6,15,Sha'ik
 6,15,Wolves
 6,15,Polielfrog
 6,15,Bara
@@ -9689,7 +9646,7 @@ book,chapter,names
 6,16,Ben Adaephon Delat
 6,16,Bridthok
 6,16,Sribin
-6,16,Sha’ik
+6,16,Sha'ik
 6,16,Crippled God
 6,16,Bottle
 6,16,Fiddler
@@ -9813,7 +9770,7 @@ book,chapter,names
 6,17,Crow
 6,17,Coltaine
 6,17,Bult
-6,17,T’amber
+6,17,T'amber
 6,17,Poliel
 6,17,Poliel 
 6,17,Faradan
@@ -9828,11 +9785,9 @@ book,chapter,names
 6,17,Lull
 6,17,Mincer
 6,17,Sormo E'nath
-6,17,Sormo E'nath E’nath
 6,17,Baria
 6,17,Mesker Setral
-6,17,E’nath
-6,17,Sha’ik
+6,17,Sha'ik
 6,17,Kulp
 6,17,Duiker
 6,17,Pormqual
@@ -9841,13 +9796,13 @@ book,chapter,names
 6,18,Haran
 6,18,Coop
 6,18,Banaschar
-6,18,D’rek
+6,18,D'rek
 6,18,Little
 6,18,Worm
 6,18,Worm of Autumn
 6,18,Autumn
 6,18,Coltaine
-6,18,Sha’ik
+6,18,Sha'ik
 6,18,Tavore Paran
 6,18,Ganoes Stabro Paran
 6,18,Leoman
@@ -9960,7 +9915,7 @@ book,chapter,names
 6,19,Faradan
 6,19,Faradan Sort
 6,19,Sinn
-6,19,T’amber
+6,19,T'amber
 6,19,Laseen
 6,19,Bottle
 6,19,Shard
@@ -9968,8 +9923,8 @@ book,chapter,names
 6,19,Fourteen
 6,19,Smiles
 6,19,Corabb Bhilan Thenu'alas
-6,19,Corabb Bhilan Thenu'alas Thenu’alas
-6,19,Thenu’alas
+6,19,Corabb Bhilan Thenu'alas Thenu'alas
+6,19,Thenu'alas
 6,19,Koryk
 6,19,Tarr
 6,19,Apsalar
@@ -9978,7 +9933,7 @@ book,chapter,names
 6,19,Chains
 6,19,Crippled God
 6,19,Pearl
-6,19,Sha’ik
+6,19,Sha'ik
 6,19,Korbolo Dom
 6,19,Leoman
 6,19,Calm
@@ -10038,15 +9993,15 @@ book,chapter,names
 6,2,Duiker
 6,2,Laseen
 6,2,Tayschrenn
-6,2,Sha’ik
+6,2,Sha'ik
 6,2,Dujek Onearm
 6,2,Thal
 6,2,Leoman
 6,2,Flails
 6,2,Tavore Paran
 6,2,Corabb Bhilan Thenu'alas
-6,2,Corabb Bhilan Thenu'alas Thenu’alas
-6,2,Thenu’alas
+6,2,Corabb Bhilan Thenu'alas Thenu'alas
+6,2,Thenu'alas
 6,2,Cora
 6,2,Hood
 6,2,Samar Dev
@@ -10118,7 +10073,7 @@ book,chapter,names
 6,20,Gholan
 6,20,Onrack T'emlava 
 6,20,Banaschar
-6,20,D’rek
+6,20,D'rek
 6,20,Tayschrenn
 6,20,Worm
 6,20,Pearl
@@ -10146,8 +10101,8 @@ book,chapter,names
 6,20,Cuttle
 6,20,Tarr
 6,20,Corabb Bhilan Thenu'alas
-6,20,Corabb Bhilan Thenu'alas Thenu’alas
-6,20,Thenu’alas
+6,20,Corabb Bhilan Thenu'alas Thenu'alas
+6,20,Thenu'alas
 6,20,Gesler
 6,20,Balm
 6,20,Stormy
@@ -10181,7 +10136,7 @@ book,chapter,names
 6,21,Hurlochel
 6,21,Boil
 6,21,Kindly
-6,21,D’rek
+6,21,D'rek
 6,21,Hood
 6,21,Healing
 6,21,Ipshank
@@ -10263,7 +10218,7 @@ book,chapter,names
 6,21,Pallid
 6,21,Cotillion
 6,21,Admiral Nok
-6,21,Run’Thurvian
+6,21,Run'Thurvian
 6,21,Krughava
 6,21,Tanakalian
 6,21,Wolves of Winter
@@ -10275,7 +10230,7 @@ book,chapter,names
 6,22,Felisin Paran
 6,22,Felisin Paran Younger
 6,22,Kulat
-6,22,Sha’ik
+6,22,Sha'ik
 6,22,Bidithal
 6,22,Crokus Younghand
 6,22,Scillara
@@ -10285,7 +10240,7 @@ book,chapter,names
 6,22,Hands
 6,22,Mathok
 6,22,Leoman
-6,22,T’morol
+6,22,T'morol
 6,22,Felisin Paran the Younger
 6,22,Rythe
 6,22,Rythe Bude
@@ -10329,14 +10284,14 @@ book,chapter,names
 6,22,Hunch
 6,22,Ammanas
 6,22,Lesser
-6,22,Run’Thurvian
+6,22,Run'Thurvian
 6,22,Admiral Nok
 6,22,Ben Adaephon Delat
 6,22,Keneb
 6,22,Togg
 6,22,Hood
 6,22,Kalam Mekhar
-6,22,T’amber
+6,22,T'amber
 6,22,Sorry
 6,22,Calm
 6,22,Laseen
@@ -10354,7 +10309,7 @@ book,chapter,names
 6,22,Braven Tooth
 6,22,Tooth
 6,22,Tayschrenn
-6,22,D’rek
+6,22,D'rek
 6,22,Worm
 6,22,Mudslinger
 6,22,Aparal Forge
@@ -10395,7 +10350,7 @@ book,chapter,names
 6,23,Mekhar
 6,23,Topper
 6,23,Maybe
-6,23,Run’Thurvian
+6,23,Run'Thurvian
 6,23,Fiddler
 6,23,Bottle
 6,23,Koryk
@@ -10416,7 +10371,7 @@ book,chapter,names
 6,23,Tayschrenn
 6,23,Whiskeyjack
 6,23,Dujek Onearm
-6,23,T’amber
+6,23,T'amber
 6,23,Fast
 6,23,Blistig
 6,23,Temul
@@ -10459,7 +10414,7 @@ book,chapter,names
 6,23,Gentur
 6,23,Tooth
 6,23,Autumn
-6,23,D’rek
+6,23,D'rek
 6,23,Yedan Derryg
 6,23,Temple
 6,23,Faint
@@ -10477,8 +10432,8 @@ book,chapter,names
 6,23,Lean
 6,23,Balm
 6,23,Corabb Bhilan Thenu'alas
-6,23,Corabb Bhilan Thenu'alas Thenu’alas
-6,23,Thenu’alas
+6,23,Corabb Bhilan Thenu'alas Thenu'alas
+6,23,Thenu'alas
 6,23,Shortnose
 6,23,Flashwit
 6,23,Uru Hela
@@ -10494,7 +10449,7 @@ book,chapter,names
 6,24,Yedan Derryg
 6,24,Faint
 6,24,Worm
-6,24,D’rek
+6,24,D'rek
 6,24,Laseen
 6,24,Bottle
 6,24,Twist
@@ -10506,19 +10461,19 @@ book,chapter,names
 6,24,Cuttle
 6,24,Tarr
 6,24,Corabb Bhilan Thenu'alas
-6,24,Corabb Bhilan Thenu'alas Thenu’alas
+6,24,Corabb Bhilan Thenu'alas Thenu'alas
 6,24,Uru Hela
 6,24,Mayfly
 6,24,Shortnose
 6,24,Flashwit
-6,24,Thenu’alas
+6,24,Thenu'alas
 6,24,Hela
 6,24,Gesler
 6,24,Deadsmell
 6,24,Keneb
 6,24,Balm
 6,24,Fiddler
-6,24,Run’Thurvian
+6,24,Run'Thurvian
 6,24,Galt
 6,24,Lobe
 6,24,Maybe
@@ -10543,7 +10498,7 @@ book,chapter,names
 6,24,Whiskeyjack
 6,24,Hedge
 6,24,Trotts
-6,24,T’amber
+6,24,T'amber
 6,24,Tene Baralta
 6,24,Lubben
 6,24,Ammanas
@@ -10674,7 +10629,7 @@ book,chapter,names
 6,26,Ben Adaephon Delat
 6,26,Kalam Mekhar
 6,26,Laseen
-6,26,D’rek
+6,26,D'rek
 6,26,Gran
 6,26,Worm
 6,26,Worm of Autumn
@@ -10702,7 +10657,7 @@ book,chapter,names
 6,3,Kalse
 6,3,Eloth
 6,3,Anomandaris
-6,3,K’rul
+6,3,K'rul
 6,3,Scabandari Bloodeye
 6,3,Osseric
 6,3,Olar
@@ -10726,7 +10681,7 @@ book,chapter,names
 6,3,Felisin Paran Younger
 6,3,Heboric Light Touch
 6,3,Grub
-6,3,L’oric
+6,3,L'oric
 6,3,Younghand
 6,3,Hands
 6,3,Little
@@ -10735,7 +10690,7 @@ book,chapter,names
 6,3,Maybe
 6,3,Bidithal
 6,3,Korbolo Dom
-6,3,Sha’ik
+6,3,Sha'ik
 6,3,Guthrim
 6,3,Guth
 6,3,Best
@@ -10774,7 +10729,7 @@ book,chapter,names
 6,3,Kala
 6,3,Gamet
 6,3,Cough
-6,3,T’amber
+6,3,T'amber
 6,3,Strong
 6,3,Leoman
 6,3,Flails
@@ -10799,7 +10754,7 @@ book,chapter,names
 6,4,Mebra
 6,4,Ammanas
 6,4,Gran
-6,4,Sha’ik
+6,4,Sha'ik
 6,4,Edgewalker
 6,4,Iskaral Pust
 6,4,Best
@@ -10850,8 +10805,8 @@ book,chapter,names
 6,4,Twist
 6,4,Blessed
 6,4,Corabb Bhilan Thenu'alas
-6,4,Corabb Bhilan Thenu'alas Thenu’alas
-6,4,Thenu’alas
+6,4,Corabb Bhilan Thenu'alas Thenu'alas
+6,4,Thenu'alas
 6,4,Dessembrae
 6,4,Onos T'oolan
 6,4,Dujek Onearm
@@ -10880,15 +10835,13 @@ book,chapter,names
 6,4,Maybe
 6,4,Gesler
 6,4,Sormo E'nath
-6,4,Sormo E'nath E’nath
-6,4,E’nath
 6,4,Bult
 6,4,Sands
 6,4,Stormy
 6,4,Fourteen
 6,4,Truth
 6,4,Pella
-6,5,K’rul
+6,5,K'rul
 6,5,Squint
 6,5,Mappo
 6,5,Mappo Runt
@@ -10900,7 +10853,7 @@ book,chapter,names
 6,5,Malle
 6,5,Stub
 6,5,Crokus Younghand
-6,5,D’rek
+6,5,D'rek
 6,5,Worm
 6,5,Worm of Autumn
 6,5,Autumn
@@ -10915,10 +10868,10 @@ book,chapter,names
 6,5,Scillara
 6,5,Felisin Paran
 6,5,Felisin Paran Younger
-6,5,Sha’ik
+6,5,Sha'ik
 6,5,Leoman
 6,5,Bidithal
-6,5,L’oric
+6,5,L'oric
 6,5,Toblakai
 6,5,Hood
 6,5,Drin
@@ -10962,14 +10915,14 @@ book,chapter,names
 6,5,Sentinel
 6,5,Circle
 6,5,Corabb Bhilan Thenu'alas
-6,5,Corabb Bhilan Thenu'alas Thenu’alas
+6,5,Corabb Bhilan Thenu'alas Thenu'alas
 6,5,Flails
-6,5,Thenu’alas
+6,5,Thenu'alas
 6,5,Vedor
 6,5,Cora
 6,5,Dunsparrow
 6,6,Tavore Paran
-6,6,Sha’ik
+6,6,Sha'ik
 6,6,Ganoes Stabro Paran
 6,6,Lost
 6,6,Duiker
@@ -11028,7 +10981,7 @@ book,chapter,names
 6,6,Flails
 6,6,Maybe
 6,6,Hellian
-6,6,D’rek
+6,6,D'rek
 6,6,Truth
 6,6,Brethless
 6,6,Touchy
@@ -11062,14 +11015,14 @@ book,chapter,names
 6,6,Scillara
 6,6,Chained
 6,6,Treach
-6,6,K’rul
+6,6,K'rul
 6,6,Tugg
 6,6,Tiger
 6,6,Summer
 6,7,Corabb Bhilan Thenu'alas
-6,7,Corabb Bhilan Thenu'alas Thenu’alas
+6,7,Corabb Bhilan Thenu'alas Thenu'alas
 6,7,Leoman
-6,7,Thenu’alas
+6,7,Thenu'alas
 6,7,Flails
 6,7,Dunsparrow
 6,7,Temple
@@ -11150,7 +11103,7 @@ book,chapter,names
 6,7,Recruit
 6,7,Fourteen
 6,7,Gamet
-6,7,T’amber
+6,7,T'amber
 6,7,Mekhar
 6,7,Apsalar
 6,7,Brid
@@ -11158,14 +11111,14 @@ book,chapter,names
 6,7,Antsy
 6,7,Blend
 6,7,Mallet
-6,7,K’rul
+6,7,K'rul
 6,7,Pannion Seer
 6,7,Crippled God
 6,7,Cotillion
 6,7,Telorast
 6,7,Curdle
 6,7,Poliel
-6,7,D’rek
+6,7,D'rek
 6,7,Samar Dev
 6,7,Karsa Orlong
 6,7,Toblakai
@@ -11201,8 +11154,8 @@ book,chapter,names
 6,8,Leoman
 6,8,T'riss
 6,8,Dreams
-6,8,Corabb Bhilan Thenu'alas Thenu’alas
-6,8,Thenu’alas
+6,8,Corabb Bhilan Thenu'alas Thenu'alas
+6,8,Thenu'alas
 6,8,Cora
 6,8,Lostara
 6,8,Lostara Yil
@@ -11262,7 +11215,7 @@ book,chapter,names
 6,8,Fourteen
 6,8,Smiles
 6,8,Tarr
-6,8,L’oric
+6,8,L'oric
 6,8,Jamber Bole
 6,8,Ramp
 6,8,Able
@@ -11277,7 +11230,7 @@ book,chapter,names
 6,8,Cough
 6,8,Temple
 6,8,Seba Krafar
-6,8,T’amber
+6,8,T'amber
 6,8,Warleader Gall
 6,8,Tavos
 6,8,Tavos Pond
@@ -11310,7 +11263,7 @@ book,chapter,names
 6,8,Ben Adaephon Delat
 6,8,Anger
 6,8,Osseric
-6,8,Sha’ik
+6,8,Sha'ik
 6,8,Whirlwind 
 6,8,Whirlwind
 6,8,Shortnose
@@ -11396,9 +11349,9 @@ book,chapter,names
 6,9,Bottle
 6,9,Gesler
 6,9,Corabb Bhilan Thenu'alas
-6,9,Corabb Bhilan Thenu'alas Thenu’alas
+6,9,Corabb Bhilan Thenu'alas Thenu'alas
 6,9,Fiddler
-6,9,Thenu’alas
+6,9,Thenu'alas
 6,9,Faradan
 6,9,Faradan Sort
 6,9,Sinn
@@ -11613,8 +11566,7 @@ book,chapter,names
 7,11,Silverfox
 7,11,Redmask
 7,11,Envy
-7,11,Sag’Churok
-7,11,K’ell
+7,11,Sag'Churok
 7,11,Matron
 7,11,Gunth Mach
 7,11,Mach
@@ -11658,7 +11610,7 @@ book,chapter,names
 7,12,Gerun Eberict
 7,12,Eberict
 7,12,Kuru Qan
-7,12,K’rul
+7,12,K'rul
 7,12,Draconus
 7,12,Kilmandaros
 7,12,Crippled God
@@ -11704,7 +11656,6 @@ book,chapter,names
 7,12,Gerrun
 7,12,Alar
 7,12,Scabandari Bloodeye
-7,12,K’risnan
 7,12,Arbanat
 7,13,Brohl
 7,13,Brohl Handar
@@ -11712,7 +11663,6 @@ book,chapter,names
 7,13,Bivatt
 7,13,Maybe
 7,13,Redmask
-7,13,K’risnan
 7,13,Letur
 7,13,Letur Anict
 7,13,Stone
@@ -11812,11 +11762,11 @@ book,chapter,names
 7,14,Tavore Paran
 7,14,Ganoes Stabro Paran
 7,14,Keneb
-7,14,T’amber
+7,14,T'amber
 7,14,Lostara
 7,14,Lostara Yil
 7,14,Banaschar
-7,14,D’rek
+7,14,D'rek
 7,14,Hunt
 7,14,Grub
 7,14,Fourteen
@@ -11909,7 +11859,7 @@ book,chapter,names
 7,15,Scabandari Bloodeye
 7,15,Rhulad Sengar
 7,15,Hannan Mosag
-7,15,K’rul
+7,15,K'rul
 7,15,Corlo
 7,15,Buruk the Pale
 7,15,Ganoes Stabro Paran
@@ -11960,8 +11910,8 @@ book,chapter,names
 7,15,Crokus Younghand
 7,15,Cotillion
 7,15,Aval
-7,15,Corabb Bhilan Thenu'alas Thenu’alas
-7,15,Thenu’alas
+7,15,Corabb Bhilan Thenu'alas Thenu'alas
+7,15,Thenu'alas
 7,15,Leoman
 7,15,Cora
 7,15,T'riss
@@ -11996,12 +11946,12 @@ book,chapter,names
 7,15,Fourteen
 7,15,Lostara
 7,15,Lostara Yil
-7,15,T’amber
+7,15,T'amber
 7,15,Blistig
 7,15,Rada
 7,15,Kindly
 7,15,Withal
-7,15,D’rek
+7,15,D'rek
 7,15,Worm
 7,15,Worm of Autumn
 7,15,Autumn
@@ -12020,7 +11970,6 @@ book,chapter,names
 7,16,Uruth Sengar
 7,16,Triban Gnol
 7,16,Rhulad Sengar
-7,16,K’risnan
 7,16,Bruthen Trana
 7,16,Karos
 7,16,Karos Invictad
@@ -12040,7 +11989,7 @@ book,chapter,names
 7,16,Osseric
 7,16,Draconus
 7,16,Kilmandaros
-7,16,K’rul
+7,16,K'rul
 7,16,Trench
 7,16,Mother
 7,16,Sirryn
@@ -12095,7 +12044,6 @@ book,chapter,names
 7,17,Brohl
 7,17,Brohl Handar
 7,17,Handar
-7,17,K’risnan
 7,17,Redmask
 7,17,Bivatt
 7,17,Ramp
@@ -12163,7 +12111,7 @@ book,chapter,names
 7,17,Ganoes Stabro Paran
 7,17,Cotillion
 7,17,Talo Krafar
-7,17,D’rek
+7,17,D'rek
 7,17,Telorast
 7,17,Curdle
 7,17,Apsalar
@@ -12251,8 +12199,8 @@ book,chapter,names
 7,18,Hedge
 7,18,Sorry
 7,18,Dawn
-7,18,Corabb Bhilan Thenu'alas Thenu’alas
-7,18,Thenu’alas
+7,18,Corabb Bhilan Thenu'alas Thenu'alas
+7,18,Thenu'alas
 7,18,Fourteen
 7,18,Tayschrenn
 7,18,Aragan
@@ -12347,7 +12295,6 @@ book,chapter,names
 7,19,Nekal
 7,19,Nekal Bara
 7,19,Bara
-7,19,K’risnan
 7,19,Able
 7,19,Hanradi
 7,19,Hanradi Khalag
@@ -12452,7 +12399,6 @@ book,chapter,names
 7,2,Errant
 7,2,Scabandari Bloodeye
 7,2,Crow
-7,2,K’risnan
 7,2,Death
 7,2,Gerun
 7,2,Gerun Eberict
@@ -12516,7 +12462,6 @@ book,chapter,names
 7,20,Karos
 7,20,Karos Invictad
 7,20,Invictad
-7,20,K’risnan
 7,20,Orbyn
 7,20,Orbyn Truthfinder
 7,20,Truthfinder
@@ -12582,13 +12527,13 @@ book,chapter,names
 7,21,Kilava 
 7,21,Hostille
 7,21,Hostille Rator
-7,21,Til’aras
-7,21,Til’aras Benok
+7,21,Til'aras
+7,21,Til'aras Benok
 7,21,Rator
-7,21,Gr’istanas
-7,21,Gr’istanas Ish’ilm
+7,21,Gr'istanas
+7,21,Gr'istanas Ish'ilm
 7,21,Benok
-7,21,Ish’ilm
+7,21,Ish'ilm
 7,21,Tavore Paran
 7,21,Ganoes Stabro Paran
 7,21,Fourteen
@@ -12634,7 +12579,7 @@ book,chapter,names
 7,21,Skorgen
 7,21,Skorgen Kaban
 7,21,Kaban
-7,21,D’rek
+7,21,D'rek
 7,21,Worm
 7,21,Worm of Autumn
 7,21,Autumn
@@ -12720,8 +12665,8 @@ book,chapter,names
 7,22,Cora
 7,22,Flashwit
 7,22,Bowl
-7,22,Corabb Bhilan Thenu'alas Thenu’alas
-7,22,Thenu’alas
+7,22,Corabb Bhilan Thenu'alas Thenu'alas
+7,22,Thenu'alas
 7,22,Lutes
 7,22,Went
 7,22,Badan Gruk
@@ -12771,7 +12716,7 @@ book,chapter,names
 7,22,Little
 7,22,Cotillion
 7,22,Kalam Mekhar
-7,22,T’amber
+7,22,T'amber
 7,22,Sorry
 7,22,Crippled God
 7,22,Ammanas
@@ -12790,8 +12735,8 @@ book,chapter,names
 7,22,Rud Ellale
 7,22,Pral
 7,22,Shurq Elalle
-7,22,Til’aras
-7,22,Til’aras Benok
+7,22,Til'aras
+7,22,Til'aras Benok
 7,22,Benok
 7,22,Stone
 7,22,Onrack T'emlava 
@@ -12865,8 +12810,8 @@ book,chapter,names
 7,23,Thom Tissy
 7,23,Tissy
 7,23,Corabb Bhilan Thenu'alas
-7,23,Corabb Bhilan Thenu'alas Thenu’alas
-7,23,Thenu’alas
+7,23,Corabb Bhilan Thenu'alas Thenu'alas
+7,23,Thenu'alas
 7,23,Leoman
 7,23,Flails
 7,23,Fourteen
@@ -12880,15 +12825,13 @@ book,chapter,names
 7,23,Kanar
 7,23,Hanradi
 7,23,Errant
-7,23,K’ell
-7,23,Sag’Churok
+7,23,Sag'Churok
 7,23,Gunth Mach
 7,23,Mach
 7,23,Natarkas
 7,23,Voice
 7,23,Hands
 7,23,Ben Adaephon Delat
-7,23,K’risnan
 7,23,Hannan Mosag
 7,23,Tugg
 7,23,Mother
@@ -12941,7 +12884,7 @@ book,chapter,names
 7,24,Sheltatha Lore
 7,24,Sukul Ankhadu
 7,24,Scabandari Bloodeye
-7,24,K’rul
+7,24,K'rul
 7,24,Silchas Ruin
 7,24,Dawn
 7,24,Seren Pedac
@@ -12959,13 +12902,13 @@ book,chapter,names
 7,24,Rend
 7,24,Hostille
 7,24,Hostille Rator
-7,24,Til’aras
-7,24,Til’aras Benok
-7,24,Gr’istanas
-7,24,Gr’istanas Ish’ilm
+7,24,Til'aras
+7,24,Til'aras Benok
+7,24,Gr'istanas
+7,24,Gr'istanas Ish'ilm
 7,24,Rator
 7,24,Benok
-7,24,Ish’ilm
+7,24,Ish'ilm
 7,24,Death
 7,24,Twist
 7,24,Crow
@@ -13117,7 +13060,7 @@ book,chapter,names
 7,25,Gart
 7,25,Stormy
 7,25,Taxilian
-7,25,K’rul
+7,25,K'rul
 7,25,Stone
 7,25,Badan Gruk
 7,25,Reliko
@@ -13215,12 +13158,11 @@ book,chapter,names
 7,3,Orbyn
 7,3,Orbyn Truthfinder
 7,3,Truthfinder
-7,3,K’risnan
 7,3,Lean
 7,3,Coll
 7,3,Bivatt
 7,3,Redmask
-7,3,Sag’Churok
+7,3,Sag'Churok
 7,3,Gunth Mach
 7,3,Mach
 7,3,Buri
@@ -13250,7 +13192,6 @@ book,chapter,names
 7,4,Tomad
 7,4,Binadas Sengar
 7,4,Shorn
-7,4,K’risnan
 7,4,Death
 7,4,Bruthen Trana
 7,4,Karos
@@ -13292,8 +13233,7 @@ book,chapter,names
 7,4,Nast
 7,5,Redmask
 7,5,Malle
-7,5,Sag’Churok
-7,5,K’ell
+7,5,Sag'Churok
 7,5,Gunth Mach
 7,5,Mach
 7,5,Masarch
@@ -13308,9 +13248,9 @@ book,chapter,names
 7,5,Trull Sengar
 7,5,Kettle
 7,5,Silchas Ruin
+7,5,K'ell
 7,5,Matron
 7,5,Hannan Mosag
-7,5,K’risnan
 7,5,Errant
 7,5,Wither
 7,5,Sorry
@@ -13323,6 +13263,7 @@ book,chapter,names
 7,5,Crow
 7,5,Tomad
 7,5,Tomad Sengar
+7,5,White
 7,5,Crippled God
 7,5,Scabandari Bloodeye
 7,5,Soft
@@ -13385,7 +13326,6 @@ book,chapter,names
 7,6,Chains
 7,6,Triban Gnol
 7,6,Yedan Derryg
-7,6,K’risnan
 7,6,Bruthen Trana
 7,6,Tomad
 7,6,Tomad Sengar
@@ -13418,7 +13358,6 @@ book,chapter,names
 7,7,Redmask
 7,7,Brohl
 7,7,Brohl Handar
-7,7,K’risnan
 7,7,Handar
 7,7,Outrider
 7,7,Letur
@@ -13436,7 +13375,6 @@ book,chapter,names
 7,7,Togg
 7,7,Anaster
 7,7,Onos T'oolan
-7,7,K’ell
 7,7,Consort
 7,7,Hood
 7,7,Dessembrae
@@ -13479,7 +13417,6 @@ book,chapter,names
 7,8,Diskanar
 7,8,Aval
 7,8,Maybe
-7,8,K’risnan
 7,8,Errant
 7,8,Brizad
 7,8,Dessimbelackis
@@ -13500,7 +13437,7 @@ book,chapter,names
 7,8,Venitt
 7,8,Venitt Sathad
 7,8,Sathad
-7,8,K’rul
+7,8,K'rul
 7,8,Karos
 7,8,Karos Invictad
 7,8,Invictad
@@ -13539,7 +13476,7 @@ book,chapter,names
 7,9,Onrack T'emlava
 7,9,Onrack T'emlava 
 7,9,Ben Adaephon Delat
-7,9,K’rul
+7,9,K'rul
 7,9,Kalam Mekhar
 7,9,Tavore Paran
 7,9,Mekhar
@@ -13601,7 +13538,6 @@ book,chapter,names
 7,9,Brohl Handar
 7,9,Bivatt
 7,9,Handar
-7,9,K’risnan
 7,9,Letur
 7,9,Letur Anict
 7,9,Anict
@@ -13630,9 +13566,9 @@ book,chapter,names
 8,1,Ditch
 8,1,Betrayer
 8,1,Draconus
-8,1,Apsal’ara
+8,1,Apsal'ara
 8,1,Taun
-8,1,K’rul
+8,1,K'rul
 8,1,Kruppe
 8,1,Hunt
 8,10,Thordy
@@ -13672,7 +13608,7 @@ book,chapter,names
 8,10,Hanut Orr
 8,10,Scillara
 8,10,Gran
-8,10,Sha’ik
+8,10,Sha'ik
 8,10,Heboric Light Touch
 8,10,Duiker
 8,10,Fisher
@@ -13717,7 +13653,7 @@ book,chapter,names
 8,10,Osseric
 8,10,Lady Simtal
 8,10,Simtal
-8,10,D’Arle
+8,10,D'Arle
 8,10,Fill
 8,10,Buri
 8,10,Baruk
@@ -13821,7 +13757,7 @@ book,chapter,names
 8,12,Talient
 8,12,Murillio
 8,12,Stonny Menackis
-8,12,K’rul
+8,12,K'rul
 8,12,Picker
 8,12,Scillara
 8,12,Duiker
@@ -13844,7 +13780,7 @@ book,chapter,names
 8,12,Soft
 8,12,Limbs
 8,12,Treach
-8,12,D’Arle
+8,12,D'Arle
 8,12,Death
 8,12,Stone
 8,13,Howl
@@ -13929,7 +13865,7 @@ book,chapter,names
 8,13,Hairlock
 8,13,Nightchill
 8,13,Silanah
-8,13,K’rul
+8,13,K'rul
 8,14,Fisher
 8,14,Fisher kel Tath
 8,14,Tath
@@ -13975,9 +13911,9 @@ book,chapter,names
 8,14,Kadaspala
 8,14,Enesdia
 8,14,Andarist
-8,14,Apsal’ara
+8,14,Apsal'ara
 8,14,Brother
-8,14,K’rul
+8,14,K'rul
 8,14,Krute
 8,14,Krute of Talient
 8,14,Rallick Nom
@@ -14134,7 +14070,7 @@ book,chapter,names
 8,16,Hint
 8,16,Kruppe
 8,16,Blend
-8,16,K’rul
+8,16,K'rul
 8,16,Mallet
 8,16,Coll
 8,16,Picker
@@ -14226,7 +14162,7 @@ book,chapter,names
 8,17,Andarist
 8,17,Silchas Ruin
 8,17,Scabandari Bloodeye
-8,17,Apsal’ara
+8,17,Apsal'ara
 8,17,Draconus
 8,17,Stone
 8,17,Kadaspala
@@ -14298,7 +14234,7 @@ book,chapter,names
 8,18,Seba Krafar 
 8,18,Measure
 8,18,Vorcan
-8,18,K’rul
+8,18,K'rul
 8,18,Coll
 8,18,Hanut
 8,18,Hanut Orr
@@ -14306,9 +14242,9 @@ book,chapter,names
 8,18,Gorlas
 8,18,Gorlas Vidikas
 8,18,Estraysian
-8,18,Estraysian D’Arle
+8,18,Estraysian D'Arle
 8,18,Vidikas
-8,18,D’Arle
+8,18,D'Arle
 8,18,List
 8,18,Lucky
 8,18,Generous
@@ -14481,7 +14417,7 @@ book,chapter,names
 8,2,Picker
 8,2,Bluepearl
 8,2,Antsy
-8,2,K’rul
+8,2,K'rul
 8,2,Blend
 8,2,Mallet
 8,2,Hood
@@ -14558,7 +14494,7 @@ book,chapter,names
 8,20,Bain
 8,20,Gruntle
 8,20,List
-8,20,K’rul
+8,20,K'rul
 8,20,Blend
 8,20,Picker
 8,20,Antsy
@@ -14740,7 +14676,7 @@ book,chapter,names
 8,22,Stone
 8,22,List
 8,22,Truth
-8,22,D’Arle
+8,22,D'Arle
 8,22,Hood
 8,22,Yedan Derryg
 8,22,Havet
@@ -14799,7 +14735,7 @@ book,chapter,names
 8,22,Saborgan
 8,22,Laseen
 8,22,Rott
-8,22,K’rul
+8,22,K'rul
 8,22,Brid
 8,22,Talo Krafar
 8,22,Talo Krafar 
@@ -14876,7 +14812,7 @@ book,chapter,names
 8,23,Adaephon
 8,23,Ben Adaephon Ben Adaephon Delat
 8,23,Draconus
-8,23,Apsal’ara
+8,23,Apsal'ara
 8,23,Mistress
 8,23,Knight
 8,23,Skinner
@@ -14977,7 +14913,7 @@ book,chapter,names
 8,25,Spinnock
 8,25,Spinnock Durav
 8,25,Durav
-8,25,Apsal’ara
+8,25,Apsal'ara
 8,25,Chains
 8,25,Yedan Derryg
 8,25,Stone
@@ -15065,7 +15001,7 @@ book,chapter,names
 8,25,Swirl
 8,25,Kallor
 8,25,Blend
-8,25,K’rul
+8,25,K'rul
 8,25,Duiker
 8,25,Scillara
 8,25,Generous
@@ -15165,7 +15101,7 @@ book,chapter,names
 8,3,Birds
 8,3,Skint
 8,3,Cowl
-8,3,K’rul
+8,3,K'rul
 8,3,Bucch
 8,3,Harak
 8,3,Dela
@@ -15369,7 +15305,7 @@ book,chapter,names
 8,6,Spite
 8,6,Best
 8,6,Kalam Mekhar
-8,6,K’rul
+8,6,K'rul
 8,6,Laseen
 8,6,Brid
 8,6,Dujek Onearm
@@ -15523,7 +15459,7 @@ book,chapter,names
 8,8,Meese
 8,8,Irilta
 8,8,Sulty
-8,8,D’Arle
+8,8,D'Arle
 8,8,Sorry
 8,8,Seba Krafar
 8,8,Seba Krafar 
@@ -15558,7 +15494,7 @@ book,chapter,names
 8,8,Went
 8,8,Mallet
 8,8,Fellurkanath
-8,8,K’rul
+8,8,K'rul
 8,8,Little
 8,9,Anomandaris
 8,9,Fisher
@@ -15653,21 +15589,20 @@ book,chapter,names
 9,1,Chal
 9,1,Ampelas
 9,1,Kalyth
-9,1,J’an
-9,1,K’ell
+9,1,J'an
 9,1,Malle
 9,1,Matron
 9,1,Acyl
 9,1,Sentinel
-9,1,Bre’nigan
-9,1,Gunth Mach’an
-9,1,K’ell Hunter Sag’Churok
+9,1,Bre'nigan
+9,1,Gunth Mach'an Acyl
+9,1,K'ell
+9,1,Sag'Churok
 9,1,Gunth Mach
-9,1,Sag’Churok
 9,1,Mach
 9,1,Rythok
 9,1,Kor Thuran
-9,1,Gu’Rull
+9,1,Gu'Rull
 9,1,Thuran
 9,1,Lamb
 9,1,Champion
@@ -15746,8 +15681,8 @@ book,chapter,names
 9,10,Tarr
 9,10,Crokus Younghand
 9,10,Went
-9,10,Corabb Bhilan Thenu'alas Thenu’alas
-9,10,Thenu’alas
+9,10,Corabb Bhilan Thenu'alas Thenu'alas
+9,10,Thenu'alas
 9,10,T'riss
 9,10,Dreams
 9,10,Cora
@@ -15789,15 +15724,15 @@ book,chapter,names
 9,11,Belie
 9,11,Malle
 9,11,Gunth Mach
-9,11,Sag’Churok
+9,11,Sag'Churok
 9,11,Mach
 9,11,Talo Krafar
-9,11,K’ell
+9,11,K'ell
 9,11,Hunter
 9,11,Kor Thuran
 9,11,Rythok
 9,11,Thuran
-9,11,Gu’Rull
+9,11,Gu'Rull
 9,11,List
 9,11,Zaravow
 9,11,Brid
@@ -15866,7 +15801,7 @@ book,chapter,names
 9,12,Olar Ethil
 9,12,Ethil
 9,12,Kilmandaros
-9,12,K’rul
+9,12,K'rul
 9,12,Lath
 9,12,Ardata
 9,12,Ruthan Gudd
@@ -15960,7 +15895,7 @@ book,chapter,names
 9,12,Little
 9,12,Yedan Derryg
 9,12,Eater
-9,12,T’amber
+9,12,T'amber
 9,12,Kallor
 9,12,Anomander Rake
 9,12,Lostara
@@ -16083,21 +16018,21 @@ book,chapter,names
 9,14,Blessed
 9,14,Ampelas
 9,14,Malle
-9,14,Sag’Churok
+9,14,Sag'Churok
 9,14,Rythok
 9,14,Gunth Mach
 9,14,Kor Thuran
-9,14,K’ell
 9,14,Mach
 9,14,Thuran
-9,14,Gu’Rull
+9,14,Gu'Rull
+9,14,K'ell
 9,14,Hunter
 9,14,Matron
 9,14,Glisten
 9,14,Redmask
 9,14,List
 9,14,Acyl
-9,14,J’an
+9,14,J'an
 9,14,Sentinel
 9,14,Crow
 9,14,Yedan Derryg
@@ -16196,12 +16131,12 @@ book,chapter,names
 9,16,List
 9,16,Kalyth
 9,16,Malle
-9,16,Sag’Churok
-9,16,K’ell
+9,16,Sag'Churok
+9,16,K'ell
 9,16,Gunth Mach
 9,16,Mach
 9,16,Matron
-9,16,Gu’Rull
+9,16,Gu'Rull
 9,16,Acyl
 9,16,Irkullas
 9,16,Crow
@@ -16263,7 +16198,7 @@ book,chapter,names
 9,17,Anomander Rake
 9,17,Matron
 9,17,Kallor
-9,17,K’rul
+9,17,K'rul
 9,17,Nightchill
 9,17,Wolves
 9,17,Nights
@@ -16373,7 +16308,7 @@ book,chapter,names
 9,18,Lera
 9,18,Lera Epar
 9,18,Epar
-9,18,K’ell
+9,18,K'ell
 9,18,Hunter
 9,18,Kalt
 9,18,Kalt Urmanal
@@ -16513,7 +16448,7 @@ book,chapter,names
 9,19,Lost
 9,19,Cough
 9,19,Mist
-9,19,J’an
+9,19,J'an
 9,19,Sentinel
 9,19,Eskil
 9,19,Rautos Hivanar
@@ -16521,7 +16456,7 @@ book,chapter,names
 9,19,Held
 9,19,Feather
 9,19,Feather Witch
-9,19,K’rul
+9,19,K'rul
 9,19,Shattered
 9,19,Bandaris
 9,19,Warleader Gall
@@ -16654,7 +16589,7 @@ book,chapter,names
 9,20,Dessembrae
 9,20,Andarist
 9,20,Crippled God
-9,20,K’rul
+9,20,K'rul
 9,20,Olar
 9,20,Olar Ethil
 9,20,Ardata
@@ -16857,7 +16792,7 @@ book,chapter,names
 9,21,List
 9,21,Beru
 9,21,Bole brothers
-9,21,K’ell
+9,21,K'ell
 9,21,Hunter
 9,21,Glanno
 9,21,Glanno Tarp
@@ -16920,7 +16855,7 @@ book,chapter,names
 9,22,Kilmandaros
 9,22,Bala
 9,22,Malle
-9,22,K’rul
+9,22,K'rul
 9,22,Crippled God
 9,22,Torrent
 9,22,Olar
@@ -17077,10 +17012,9 @@ book,chapter,names
 9,23,Lookback
 9,23,Kalyth
 9,23,Acyl
-9,23,Gunth Mach’an
-9,23,Matron Gunth Mach’an Acyl
+9,23,Gunth Mach'an Acyl
 9,23,Elan
-9,23,Gu’Rull
+9,23,Gu'Rull
 9,23,Blind
 9,23,Coll
 9,23,Dreams
@@ -17221,19 +17155,19 @@ book,chapter,names
 9,25,Tayschrenn
 9,25,Anomander Rake
 9,25,Hood
-9,25,K’ell
+9,25,K'ell
 9,25,Hunter
 9,25,Malle
-9,25,Gunth Mach’an
+9,25,Gunth Mach'an Acyl
 9,25,Acyl
 9,25,Gunth Mach
-9,25,Sag’Churok
+9,25,Sag'Churok
 9,25,Mach
-9,25,Bre’nigan
-9,25,J’an
+9,25,Bre'nigan
+9,25,J'an
 9,25,Sentinel
 9,25,Redmask
-9,25,Gu’Rull
+9,25,Gu'Rull
 9,25,Sorry
 9,25,List
 9,25,Toblakai
@@ -17324,7 +17258,7 @@ book,chapter,names
 9,3,Tanakalian
 9,3,Krughava
 9,3,Tavore Paran
-9,3,Run’Thurvian
+9,3,Run'Thurvian
 9,3,Ganoes Stabro Paran
 9,3,Generous
 9,3,List
@@ -17441,23 +17375,22 @@ book,chapter,names
 9,5,Kalyth
 9,5,Malle
 9,5,Ampelas
-9,5,K’ell
-9,5,K’ell Hunter Sag’Churok
-9,5,Sag’Churok
+9,5,Sag'Churok
 9,5,Matron
 9,5,Gunth Mach
 9,5,Mach
 9,5,Hunter
-9,5,J’an
+9,5,K'ell
+9,5,J'an
 9,5,Sentinel
-9,5,Gunth Mach’an
+9,5,Gunth Mach'an Acyl
 9,5,Acyl
 9,5,Redmask
 9,5,Rythok
 9,5,Kor Thuran
 9,5,Thuran
 9,5,Best
-9,5,Gu’Rull
+9,5,Gu'Rull
 9,5,Hunt
 9,5,Talia
 9,5,Faint
@@ -17521,7 +17454,7 @@ book,chapter,names
 9,6,Crippled God
 9,6,Ammanas
 9,6,Togg
-9,6,K’rul
+9,6,K'rul
 9,6,Kilmandaros
 9,6,Cotillion
 9,6,Whiskeyjack
@@ -17573,7 +17506,7 @@ book,chapter,names
 9,7,Wolves
 9,7,Wolves of Winter
 9,7,Winter
-9,7,Run’Thurvian
+9,7,Run'Thurvian
 9,7,Avalt
 9,7,Tehol Beddict
 9,7,Errant
@@ -17633,9 +17566,9 @@ book,chapter,names
 9,8,Beddict
 9,8,Smiles
 9,8,Corabb Bhilan Thenu'alas
-9,8,Corabb Bhilan Thenu'alas Thenu’alas
+9,8,Corabb Bhilan Thenu'alas Thenu'alas
 9,8,Hood
-9,8,Thenu’alas
+9,8,Thenu'alas
 9,8,Cora
 9,8,Cuttle
 9,8,Ben Adaephon Delat
@@ -17660,7 +17593,7 @@ book,chapter,names
 9,8,List
 9,8,Temple
 9,8,Crippled God
-9,8,D’rek
+9,8,D'rek
 9,8,Koryk
 9,8,Laseen
 9,8,Gullstream
@@ -17703,12 +17636,12 @@ book,chapter,names
 9,9,Kalyth
 9,9,Gunth Mach
 9,9,Mach
-9,9,K’ell
+9,9,K'ell
 9,9,Rythok
 9,9,Kor Thuran
-9,9,Sag’Churok
+9,9,Sag'Churok
 9,9,Thuran
-9,9,Gunth Mach’an
+9,9,Gunth Mach'an Acyl
 9,9,Acyl
 9,9,Matron
 9,9,Freedom
@@ -17742,7 +17675,7 @@ book,chapter,names
 9,9,Maybe
 9,9,Asane
 9,9,Kalse
-9,9,J’an
+9,9,J'an
 9,9,Sentinel
 9,9,Errant
 9,9,Hivanar

@@ -100,8 +100,28 @@ pre_network_data <- list.files("data/network_data") %>%
   filter(names != "", 
          str_detect(names, ";")) %>%
   standardize_names_net() %>% 
-  distinct(names, book, chapter) # Removes duplicate observations 
-#Start at n=117 with Ibra Gholan
+  distinct(names, book, chapter) %>% 
+  mutate(names = if_else(book == 1, 
+                         str_replace_all(names, "First Sword", "Dessembrae"), 
+                         str_replace_all(names, "First Sword", "Onos T'oolan"))) %>% 
+  mutate(names = str_split(names, ";")) %>%
+  mutate(row_id = row_number()) %>% 
+  unnest() %>% 
+  distinct(row_id, book, chapter, names) %>% 
+  group_by(row_id, book, chapter) %>% 
+  dplyr::summarise(names = paste(names, collapse = ";")) %>% 
+  ungroup() %>% 
+  select(-row_id) %>% 
+  mutate(names = str_split(names, ";")) %>%
+  mutate(size = lengths(names)) %>% 
+  filter(size != 1) %>% 
+  select(-size) %>% 
+  rowwise() %>% 
+  mutate(names = list(combn(names, 2, FUN = paste, collapse = ";"))) %>% 
+  unnest() %>% 
+  select(names, everything()) %>% 
+  mutate(book = as.factor(book), 
+         chapter = as.factor(chapter))
 
 write_rds(pre_network_data, path = "data/pre_network_data.rds", compress = "gz")
 write_csv(pre_network_data, "data/pre_network_data.csv")
@@ -112,6 +132,9 @@ char_appearances <- list.files("data/network_data") %>%
   filter(names != "") %>%
   standardize_names_net() %>% 
   distinct(names, book, chapter) %>% 
+  mutate(names = if_else(book == 1, 
+                         str_replace_all(names, "First Sword", "Dessembrae"), 
+                         str_replace_all(names, "First Sword", "Onos T'oolan"))) %>% 
   mutate(names = str_split(names, ";")) %>% 
   unnest(names) %>% 
   distinct(names, book, chapter)
@@ -120,10 +143,32 @@ write_rds(char_appearances, "data/char_appearances.rds", compress = "gz")
 write_csv(char_appearances, "data/char_appearances.csv")
 
 network_data <- pre_network_data %>% 
-  separate(names, into = paste0("name", 1:21), sep = ";")
+  separate(names, into = paste0("name", 1:2), sep = ";")
 
 write_rds(network_data, "data/network_data.rds", compress = "gz")
 write_csv(network_data, "data/network_data.csv")
+
+occurrence_data <- list.files("data/network_data") %>% 
+  map_df(~read_rds(paste0("data/network_data/", .))) %>% 
+  remove_NAs() %>% 
+  filter(names != "", 
+         str_detect(names, ";")) %>%
+  standardize_names_net() %>% 
+  distinct(names, book, chapter) %>% 
+  mutate(names = if_else(book == 1, 
+                         str_replace_all(names, "First Sword", "Dessembrae"), 
+                         str_replace_all(names, "First Sword", "Onos T'oolan"))) %>% 
+  mutate(names = str_split(names, ";")) %>%
+  mutate(row_id = row_number()) %>% 
+  unnest() %>% 
+  distinct(row_id, book, chapter, names) %>% 
+  group_by(row_id, book, chapter) %>% 
+  dplyr::summarise(names = paste(names, collapse = ";")) %>% 
+  ungroup() %>% 
+  select(-row_id)
+
+write_rds(occurrence_data, "data/occurrence_data.rds", compress = "gz")
+write_csv(occurrence_data, "data/occurrence_data.csv")
 ```
 
 
