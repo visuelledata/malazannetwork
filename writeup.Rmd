@@ -37,8 +37,7 @@ library(hrbrthemes)
 network_data <- read_rds("data/network_data.rds")
 pre_network_data <- read_rds("data/pre_network_data.rds")
 pov_data <- read_rds("data/pov-data.rds")
-char_appearances <- read_rds("data/char_appearances.rds")
-occurrence_data <- read_rds("data/char_appearances.rds")
+occurrence_data <- read_rds("data/occurrence_data.rds")
 #network_data <- read_rds("data/network_data.rds")
 source("R/import_books.R")
 source("R/import_characters.R")
@@ -52,15 +51,6 @@ source("R/standardize_names.R")
 ```
 
 ```{r numbers}
-# characters %>% 
-#   rename(names = name) %>% 
-#   remove_NAs() %>% 
-#   #standardize_names_net() %>% 
-#   distinct(names) 
-
-# pre_network_data %>% mutate(names = str_split(names, ";")) %>% unnest() %>% 
-#   distinct(names) 
-
 num_char <- function(){
   num_char_low <- as_tbl_graph(network_data, directed = FALSE) %>% 
     activate(nodes) %>%
@@ -265,22 +255,6 @@ sentiment_scores <- books %>%
   group_by(book, chapter) %>% 
   summarize(score = sum(score)) %>% 
   ungroup()
-
-# char_score <- char_appearances %>% 
-#   left_join(sentiment_scores) %>% 
-#   group_by(names) %>% 
-#   summarize(mean_score = mean(score, na.rm = TRUE)) %>% 
-#   arrange(mean_score)
-# 
-# #OMIT
-# as_tbl_graph(network_data, directed = FALSE) %>% 
-#   mutate(popularity = centrality_pagerank()) %>% 
-#   arrange(desc(popularity)) %>% 
-#   left_join(char_score, by = c("name" = "names")) %>% 
-#   as.tibble() %>% 
-#   ggplot(aes(mean_score, popularity)) + 
-#   geom_point(alpha = .15) +
-#   theme_ipsum()
 ```
 
 Before I begin trying to find the best way to find the climaxes in the series, I'll check if a chapter's sentiment score is correlated to it's importance. I initially thought that either of them could be used to predict climaxes on their own and that they may be correlated. The importance of the chapters was calculated by taking the mean of the edge betweenness centrality values of all of the edges in each chapter. 
@@ -584,4 +558,3 @@ for (i in seq_along(book1)){
 * R/Malazan - Main series character POV data. Data from https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
 
 * R/Malazan - Malazan alias data. Data created by me. Some aliases crowd-sourced from https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/ 
-
