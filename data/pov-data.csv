@@ -1,0 +1,3431 @@
+order,chapter,name,word_count,book
+1,0,Ganoes Stabro Paran,1755,1
+2,1,Sorry,2411,1
+3,1,Nameless captain,1720,1
+4,1,Lorn,1076,1
+5,1,Nameless captain,442,1
+6,1,Aragan,548,1
+7,1,Ganoes Stabro Paran,5292,1
+8,2,Tattersail,9450,1
+9,2,Whiskeyjack,768,1
+10,2,Tattersail,2101,1
+11,3,Ganoes Stabro Paran,1103,1
+12,3,Nameless Claw agent,909,1
+13,3,Tattersail,987,1
+14,3,Whiskeyjack,1261,1
+15,3,Tattersail,1639,1
+16,3,Ganoes Stabro Paran,3938,1
+17,4,Tattersail,2684,1
+18,4,Ganoes Stabro Paran,1978,1
+19,4,Nameless marine guard,595,1
+20,4,Tattersail,826,1
+21,4,Whiskeyjack,1525,1
+22,4,Tattersail,1405,1
+23,4,Whiskeyjack,1367,1
+24,4,Gear,520,1
+25,4,Nameless marine guard,220,1
+26,4,Tattersail,1605,1
+27,5,Kruppe,2021,1
+28,5,Crokus Younghand,1219,1
+29,5,Talo Krafar,866,1
+30,5,Crokus Younghand,473,1
+31,5,Talo Krafar,130,1
+32,5,Crokus Younghand,85,1
+33,5,Talo Krafar,62,1
+34,5,Crokus Younghand,70,1
+35,5,Nameless Tiste Andii,186,1
+36,5,Crokus Younghand,1325,1
+37,5,Nameless Tiste Andii,266,1
+38,6,Crone,333,1
+39,6,Circle Breaker,739,1
+40,6,Baruk,1255,1
+41,6,Rallick Nom,672,1
+42,6,Baruk,767,1
+43,6,Crone,61,1
+44,6,Rallick Nom,874,1
+45,6,Baruk,1827,1
+46,6,Crokus Younghand,1472,1
+47,7,Kruppe,843,1
+48,7,Circle Breaker,1157,1
+49,7,Simtal,879,1
+50,7,Murillio,931,1
+51,7,Rallick Nom,473,1
+52,7,Crokus Younghand,2515,1
+53,7,Murillio,1450,1
+54,7,Baruk,1900,1
+55,8,Whiskeyjack,1033,1
+56,8,Ben Adaephon Delat,1584,1
+57,8,Whiskeyjack,596,1
+58,9,Toc the Younger,958,1
+59,9,Lorn,2060,1
+60,9,Toc the Younger,709,1
+61,9,Ganoes Stabro Paran,1643,1
+62,9,Lorn,3933,1
+63,9,Tattersail,1159,1
+64,9,Toc the Younger,3201,1
+65,9,Tattersail,2053,1
+66,9,Lorn,1102,1
+67,9,Crone,224,1
+68,10,Toc the Younger,1310,1
+69,10,Tattersail,1462,1
+70,10,Lorn,488,1
+71,10,Crone,1409,1
+72,10,Caladan Brood,300,1
+73,10,Kallor,48,1
+74,10,Ganoes Stabro Paran,803,1
+75,10,Toc the Younger,121,1
+76,10,Crone,1037,1
+77,10,Lorn,685,1
+78,11,Kruppe,2965,1
+79,11,Whiskeyjack,1617,1
+80,11,Crokus Younghand,1465,1
+81,11,Sorry,278,1
+82,11,Kruppe,419,1
+83,11,Sorry,652,1
+84,11,Crokus Younghand,136,1
+85,11,Sorry,737,1
+86,11,Kalam Mekhar,823,1
+87,11,Crokus Younghand,475,1
+88,11,Ben Adaephon Delat,566,1
+89,12,Kruppe,1395,1
+90,12,Crone,887,1
+91,12,Baruk,144,1
+92,12,Ben Adaephon Delat,1478,1
+93,12,Kruppe,666,1
+94,12,Kalam Mekhar,735,1
+95,12,Rallick Nom,766,1
+96,12,Crokus Younghand,393,1
+97,13,Kalam Mekhar,1158,1
+98,13,Rallick Nom,177,1
+99,13,Baruk's demon,442,1
+100,13,Kalam Mekhar,722,1
+101,13,Rallick Nom,475,1
+102,13,Sorry,548,1
+103,13,Crokus Younghand,1045,1
+104,13,Kalam Mekhar,265,1
+105,13,Ben Adaephon Delat,403,1
+106,13,Rallick Nom,982,1
+107,13,Anomander Rake,482,1
+108,13,Whiskeyjack,1436,1
+109,13,Sorry,705,1
+110,13,Baruk,1263,1
+111,13,Kruppe,455,1
+112,14,Lorn,1211,1
+113,14,Murillio,1040,1
+114,14,Sorry,251,1
+115,14,Lorn,969,1
+116,14,Toc the Younger,738,1
+117,15,Ben Adaephon Delat,358,1
+118,15,Ganoes Stabro Paran,849,1
+119,15,Ben Adaephon Delat,285,1
+120,15,Lorn,949,1
+121,15,Sorry,463,1
+122,15,Ganoes Stabro Paran,183,1
+123,15,Ben Adaephon Delat,34,1
+124,15,Ganoes Stabro Paran,3997,1
+125,15,Crokus Younghand,852,1
+126,16,Lorn,1276,1
+127,16,Crokus Younghand,1064,1
+128,16,Murillio,981,1
+129,16,Ganoes Stabro Paran,4194,1
+130,17,Rallick Nom,854,1
+131,17,Baruk,1909,1
+132,17,Circle Breaker,263,1
+133,17,Meese,178,1
+134,17,Crokus Younghand,729,1
+135,17,Serrat,234,1
+136,17,Murillio,515,1
+137,17,Rallick Nom,516,1
+138,18,Whiskeyjack,1127,1
+139,18,Ganoes Stabro Paran,407,1
+140,18,Rallick Nom,178,1
+141,18,Ganoes Stabro Paran,388,1
+142,18,Rallick Nom,688,1
+143,18,Ganoes Stabro Paran,104,1
+144,18,Serrat,310,1
+145,18,Meese,537,1
+146,18,Ganoes Stabro Paran,474,1
+147,18,Kalam Mekhar,534,1
+148,18,Ganoes Stabro Paran,2236,1
+149,18,Lorn,388,1
+150,19,Meese,217,1
+151,19,Crokus Younghand,250,1
+152,19,Serrat,218,1
+153,19,Crokus Younghand,99,1
+154,19,Murillio,625,1
+155,19,Kruppe,372,1
+156,19,Ganoes Stabro Paran,576,1
+157,19,Lorn,436,1
+158,19,Sorry,292,1
+159,19,Crokus Younghand,314,1
+160,20,Murillio,1289,1
+161,20,Baruk,1199,1
+162,20,Lorn,270,1
+163,20,Circle Breaker,532,1
+164,20,Lorn,1796,1
+165,20,Whiskeyjack,120,1
+166,20,Crokus Younghand,636,1
+167,20,Serrat,274,1
+168,20,Crokus Younghand,46,1
+169,20,Raest,898,1
+170,20,Crone,206,1
+171,20,Raest,1074,1
+172,21,Lorn,688,1
+173,21,Kruppe,509,1
+174,21,Crokus Younghand,356,1
+175,21,Whiskeyjack,431,1
+176,21,Ganoes Stabro Paran,580,1
+177,21,Baruk,281,1
+178,21,Turban Orr,355,1
+179,21,Baruk,157,1
+180,21,Murillio,209,1
+181,21,Baruk,447,1
+182,21,Turban Orr,948,1
+183,21,Murillio,285,1
+184,21,Baruk,325,1
+185,21,Whiskeyjack,450,1
+186,21,Crokus Younghand,385,1
+187,21,Circle Breaker,235,1
+188,21,Turban Orr,622,1
+189,21,Anomander Rake,429,1
+190,21,Kruppe,147,1
+191,21,Murillio,591,1
+192,21,Crokus Younghand,257,1
+193,21,Circle Breaker,306,1
+194,22,Raest,1491,1
+195,22,Kruppe,17,1
+196,22,Ganoes Stabro Paran,834,1
+197,22,Rallick Nom,492,1
+198,22,Crokus Younghand,649,1
+199,22,Ganoes Stabro Paran,745,1
+200,22,Crokus Younghand,1431,1
+201,22,Baruk,480,1
+202,22,Whiskeyjack,529,1
+203,22,Ben Adaephon Delat,187,1
+204,22,Ganoes Stabro Paran,820,1
+205,22,Ben Adaephon Delat,290,1
+206,22,Crone,223,1
+207,22,Ben Adaephon Delat,615,1
+208,22,Kalam Mekhar,87,1
+209,22,Ben Adaephon Delat,132,1
+210,23,Ganoes Stabro Paran,893,1
+211,23,Crokus Younghand,558,1
+212,23,Kruppe,100,1
+213,23,Lorn,520,1
+214,23,Baruk,660,1
+215,23,Anomander Rake,764,1
+216,23,Kalam Mekhar,423,1
+217,23,Lorn,72,1
+218,23,Crokus Younghand,489,1
+219,23,Lorn,347,1
+220,23,Ganoes Stabro Paran,350,1
+221,23,Anomander Rake,137,1
+222,24,Crokus Younghand,1323,1
+223,24,Baruk,1166,1
+224,24,Whiskeyjack,950,1
+225,24,Ganoes Stabro Paran,125,1
+226,24,Whiskeyjack,134,1
+227,24,Rallick Nom,507,1
+228,24,Korlat,313,1
+229,24,Murillio,430,1
+230,25,Mallet,228,1
+231,25,Ben Adaephon Delat,106,1
+232,25,Ganoes Stabro Paran,233,1
+233,25,Kalam Mekhar,324,1
+234,25,Circle Breaker,44,1
+1,0,Felisin Paran Ganoes Stabro Paran,3081,2
+2,0,Heboric Light Touch,695,2
+3,0,Felisin Paran Ganoes Stabro Paran,1263,2
+4,1,Mappo,2092,2
+5,1,Duiker,1491,2
+6,1,Fiddler,3158,2
+7,2,Duiker,5779,2
+8,2,Fiddler,4110,2
+9,2,Kalam Mekhar,1599,2
+10,2,Mebra,636,2
+11,2,Mappo,3072,2
+12,3,Felisin Paran Ganoes Stabro Paran,3648,2
+13,3,Duiker,2677,2
+14,3,Fiddler,2812,2
+15,3,Mappo,2171,2
+16,4,Felisin Paran Ganoes Stabro Paran,2718,2
+17,4,Kalam Mekhar,2414,2
+18,4,Lostara Yil,271,2
+19,4,Mappo,1861,2
+20,4,Duiker,1956,2
+21,5,Fiddler,4075,2
+22,5,Kalam Mekhar,1706,2
+23,5,Tene Baralta,944,2
+24,5,Leoman,148,2
+25,6,Felisin Paran Ganoes Stabro Paran,5222,2
+26,6,Duiker,2258,2
+27,6,Kulp,1078,2
+28,6,Duiker,3064,2
+29,6,Mappo,1655,2
+30,6,Fiddler,1587,2
+31,6,Kalam Mekhar,1569,2
+32,7,Duiker,1553,2
+33,7,Felisin Paran Ganoes Stabro Paran,7020,2
+34,7,Mappo,1280,2
+35,7,Fiddler,1960,2
+36,8,Duiker,1232,2
+37,8,Felisin Paran Ganoes Stabro Paran,2113,2
+38,8,Kulp,2234,2
+39,8,Felisin Paran Ganoes Stabro Paran,860,2
+40,8,Kulp,4681,2
+41,8,Felisin Paran Ganoes Stabro Paran,539,2
+42,8,Fiddler,2744,2
+43,9,Kalam Mekhar,6401,2
+44,9,Felisin Paran Ganoes Stabro Paran,2972,2
+45,10,Duiker,14579,2
+46,11,Kulp,2194,2
+47,11,Felisin Paran Ganoes Stabro Paran,2746,2
+48,11,Fiddler,3437,2
+49,11,Mappo,1161,2
+50,11,Fiddler,410,2
+51,11,Kalam Mekhar,1707,2
+52,11,Lostara Yil,438,2
+53,11,Apt,1025,2
+54,12,Duiker,7487,2
+55,12,Kulp,1847,2
+56,12,Felisin Paran Ganoes Stabro Paran,2132,2
+57,12,Kalam Mekhar,2479,2
+58,12,Fiddler,1092,2
+59,12,Lostara Yil,1188,2
+60,13,Duiker,9735,2
+61,13,Kalam Mekhar,2336,2
+62,13,Lostara Yil,596,2
+63,13,Keneb,168,2
+64,14,Felisin Paran Ganoes Stabro Paran,5410,2
+65,14,Fiddler,963,2
+66,14,Leoman,975,2
+67,15,Kalam Mekhar,3007,2
+68,15,Minala,403,2
+69,15,Duiker,4245,2
+70,15,Felisin Paran Ganoes Stabro Paran,3409,2
+71,15,Mappo,4140,2
+72,16,Duiker,5084,2
+73,16,Felisin Paran Ganoes Stabro Paran,1267,2
+74,16,Mappo,4507,2
+75,16,Duiker,3614,2
+76,17,Kalam Mekhar,6018,2
+77,17,Felisin Paran Ganoes Stabro Paran,982,2
+78,17,Kalam Mekhar,1052,2
+79,18,Mappo,1030,2
+80,18,Fiddler,1609,2
+81,18,Felisin Paran Ganoes Stabro Paran,2355,2
+82,18,Fiddler,1252,2
+83,19,Duiker,3345,2
+84,19,Kalam Mekhar,1267,2
+85,19,Mappo,730,2
+86,19,Fiddler,1940,2
+87,19,Duiker,5046,2
+88,20,Kalam Mekhar,784,2
+89,20,Fiddler,3011,2
+90,20,Moby,118,2
+91,20,Duiker,6044,2
+92,20,Apt,989,2
+93,20,Kalam Mekhar,1260,2
+94,20,Pearl,323,2
+95,20,Apt,33,2
+96,20,Cartheron Crust,279,2
+97,20,Nameless ship's captain,189,2
+98,21,Felisin Paran Ganoes Stabro Paran,1087,2
+99,21,Duiker,2849,2
+100,22,Kalam Mekhar,2044,2
+101,22,Fiddler,1043,2
+102,22,Mappo,167,2
+103,22,Fiddler,763,2
+104,22,Duiker,1865,2
+105,22,Keneb,196,2
+106,22,Duiker,2574,2
+107,23,Kalam Mekhar,1941,2
+108,23,Fiddler,1464,2
+109,23,Kalam Mekhar,1932,2
+110,23,Topper,347,2
+111,23,Kalam Mekhar,1540,2
+112,24,Felisin Paran Ganoes Stabro Paran,1633,2
+113,24,Heboric Light Touch,108,2
+114,24,Blistig,326,2
+115,24,Mappo,1289,2
+116,24,Iskaral Pust,372,2
+117,24,Olar Ethil,63,2
+118,24,Iskaral Pust,257,2
+119,24,Rudd,480,2
+120,24,Mappo,381,2
+121,25,Wickan widow,446,2
+1,0,Pran Chole,1017,3
+2,0,Jaghut mother,495,3
+3,0,Kilava,677,3
+4,0,Pran Chole,460,3
+5,0,Kilava,789,3
+6,0,K'rul,2311,3
+7,0,Togg,253,3
+8,1,Gruntle,3198,3
+9,1,Togg,321,3
+10,1,Toc the Younger,4907,3
+11,2,Picker,1722,3
+12,2,Munug,1027,3
+13,2,Picker,1129,3
+14,2,Ben Adaephon Delat,1880,3
+15,2,Ganoes Stabro Paran,1343,3
+16,2,Hedge,336,3
+17,2,Ganoes Stabro Paran,1097,3
+18,2,Whiskeyjack,462,3
+19,3,The Mhybe,8037,3
+20,3,Whiskeyjack,856,3
+21,3,Crone,599,3
+22,3,The Mhybe,1570,3
+23,3,Whiskeyjack,600,3
+24,4,Gruntle,2304,3
+25,4,Ben Adaephon Delat,1036,3
+26,4,Ganoes Stabro Paran,4293,3
+27,4,Picker,1614,3
+28,4,Ganoes Stabro Paran,2132,3
+29,5,Toc the Younger,3896,3
+30,5,Ben Adaephon Delat,950,3
+31,5,Whiskeyjack,1209,3
+32,5,The Mhybe,2356,3
+33,5,Ganoes Stabro Paran,1658,3
+34,5,Crone,788,3
+35,5,The Mhybe,1038,3
+36,5,Ganoes Stabro Paran,654,3
+37,5,The Mhybe,1308,3
+38,5,Picker,112,3
+39,5,Ganoes Stabro Paran,151,3
+40,5,The Mhybe,326,3
+41,5,Ganoes Stabro Paran,3055,3
+42,5,The Mhybe,1148,3
+43,5,Anomander Rake,709,3
+44,5,Whiskeyjack,1615,3
+45,6,Gruntle,10426,3
+46,7,Karnadas,2878,3
+47,7,Ben Adaephon Delat,337,3
+48,7,Itkovian,3978,3
+49,7,Toc the Younger,2361,3
+50,7,Treach,1414,3
+51,7,Togg,48,3
+52,7,Toc the Younger,1498,3
+53,7,Envy,2021,3
+54,7,Itkovian,1628,3
+55,7,Karnadas,1820,3
+56,7,Brukhalian,1430,3
+57,7,Gruntle,396,3
+58,8,Gethol,1038,3
+59,8,Whiskeyjack,4090,3
+60,8,Anomander Rake,429,3
+61,8,The Mhybe,1270,3
+62,8,Picker,1128,3
+63,8,Ganoes Stabro Paran,529,3
+64,8,Ben Adaephon Delat,1449,3
+65,9,Toc the Younger,9153,3
+66,10,Gruntle,1592,3
+67,10,Itkovian,5693,3
+68,10,Gruntle,1857,3
+69,10,Stonny Menackis,104,3
+70,10,Itkovian,1546,3
+71,11,Picker,1775,3
+72,11,Ben Adaephon Delat,387,3
+73,11,Ganoes Stabro Paran,4290,3
+74,11,Picker,984,3
+75,11,Ben Adaephon Delat,925,3
+76,11,Ganoes Stabro Paran,385,3
+77,11,Mallet,549,3
+78,11,Ganoes Stabro Paran,240,3
+79,11,Mulch,201,3
+80,11,Ganoes Stabro Paran,1613,3
+81,11,Picker,1032,3
+82,11,Ganoes Stabro Paran,390,3
+83,12,Toc the Younger,5331,3
+84,13,The Mhybe,1198,3
+85,13,Whiskeyjack,487,3
+86,13,Korlat,192,3
+87,13,Whiskeyjack,1729,3
+88,13,Kallor,1506,3
+89,13,Whiskeyjack,827,3
+90,13,The Mhybe,701,3
+91,14,Gruntle,1216,3
+92,14,Itkovian,2474,3
+93,14,Gruntle,2753,3
+94,14,Itkovian,1315,3
+95,14,Karnadas,692,3
+96,14,Gruntle,202,3
+97,14,Itkovian,826,3
+98,14,Karnadas,441,3
+99,14,Gruntle,601,3
+100,14,Itkovian,1304,3
+101,14,Gruntle,1074,3
+102,14,Itkovian,252,3
+103,14,Buke,1337,3
+104,14,Emancipor Reese,100,3
+105,14,Buke,736,3
+106,15,Whiskeyjack,5371,3
+107,15,The Mhybe,1043,3
+108,15,Whiskeyjack,1191,3
+109,15,The Mhybe,1828,3
+110,15,Whiskeyjack,1141,3
+111,15,Kruppe,1027,3
+112,15,Nameless marine,136,3
+113,15,Kruppe,440,3
+114,15,Murillio,44,3
+115,15,Crone,832,3
+116,16,Itkovian,1943,3
+117,16,Gruntle,529,3
+118,16,Lestari lieutenant,553,3
+119,16,Brukhalian,1535,3
+120,16,Itkovian,505,3
+121,16,Buke,714,3
+122,16,Itkovian,2877,3
+123,17,Toc the Younger,1500,3
+124,17,Ganoes Stabro Paran,4658,3
+125,17,Picker,2179,3
+126,17,Ganoes Stabro Paran,1992,3
+127,17,Itkovian,5859,3
+128,17,Gruntle,1045,3
+129,17,Picker,504,3
+130,17,Buke,269,3
+131,18,Ben Adaephon Delat,1742,3
+132,18,Whiskeyjack,2971,3
+133,18,The Mhybe,893,3
+134,18,Kruppe,604,3
+135,18,Korlat,1971,3
+136,18,Kruppe,410,3
+137,18,Whiskeyjack,1354,3
+138,18,Ben Adaephon Delat,2829,3
+139,18,Ganoes Stabro Paran,2526,3
+140,18,Ben Adaephon Delat,1364,3
+141,18,Bauchelain,178,3
+142,18,Ben Adaephon Delat,1716,3
+143,18,Ganoes Stabro Paran,1807,3
+144,18,Ben Adaephon Delat,852,3
+145,18,Itkovian,1777,3
+146,19,Kruppe,3468,3
+147,19,Whiskeyjack,3650,3
+148,19,Coll,763,3
+149,19,The Mhybe,1354,3
+150,20,Toc the Younger,1575,3
+151,20,Itkovian,990,3
+152,20,Picker,1375,3
+153,20,Ganoes Stabro Paran,891,3
+154,20,Itkovian,6327,3
+155,20,Nameless marine,1642,3
+156,20,Coll,731,3
+157,20,Murillio,292,3
+158,20,Envy,2256,3
+159,21,Ganoes Stabro Paran,1293,3
+160,21,Itkovian,2333,3
+161,21,Ben Adaephon Delat,850,3
+162,21,Coll,1795,3
+163,21,Itkovian,1063,3
+164,21,Picker,1007,3
+165,21,Whiskeyjack,2773,3
+166,21,Ganoes Stabro Paran,1154,3
+167,22,Toc the Younger,1976,3
+168,22,Envy,907,3
+169,22,Korlat,1130,3
+170,22,Itkovian,1889,3
+171,22,Coll,1478,3
+172,22,The Mhybe,717,3
+173,23,Picker,1254,3
+174,23,Ganoes Stabro Paran,527,3
+175,23,Kruppe,925,3
+176,23,Whiskeyjack,1158,3
+177,23,Ganoes Stabro Paran,4092,3
+178,23,Whiskeyjack,433,3
+179,23,Picker,903,3
+180,23,Itkovian,2610,3
+181,23,Whiskeyjack,894,3
+182,23,Korlat,3159,3
+183,23,Gruntle,844,3
+184,23,Whiskeyjack,978,3
+185,23,Kallor,712,3
+186,23,Envy,615,3
+187,23,Ganoes Stabro Paran,1623,3
+188,24,Coll,697,3
+189,24,Picker,565,3
+190,24,Ben Adaephon Delat,805,3
+191,24,Picker,803,3
+192,24,Ganoes Stabro Paran,1790,3
+193,24,Picker,253,3
+194,24,Ganoes Stabro Paran,880,3
+195,24,Whiskeyjack,211,3
+196,24,Korlat,466,3
+197,24,Ganoes Stabro Paran,2345,3
+198,24,Onos T'oolan,128,3
+199,24,Dujek Onearm,573,3
+200,24,Ganoes Stabro Paran,423,3
+201,24,Picker,606,3
+202,24,Korlat,1803,3
+203,24,Itkovian,1058,3
+204,24,Gruntle,402,3
+205,25,Coll,394,3
+206,25,Silverfox,322,3
+207,25,The Mhybe,403,3
+208,25,Itkovian,832,3
+209,25,The Mhybe,154,3
+210,25,Itkovian,179,3
+211,25,The Mhybe,177,3
+212,25,Silverfox,423,3
+213,25,Toc the Younger,751,3
+214,25,Picker,1310,3
+215,25,Ganoes Stabro Paran,448,3
+216,25,Dujek Onearm,451,3
+217,25,Gruntle,649,3
+218,25,Korlat,867,3
+219,25,Caladan Brood,219,3
+220,25,Picker,671,3
+221,25,Mallet,1310,3
+222,25,Toc the Younger,570,3
+223,25,The Mhybe,108,3
+224,25,Toc the Younger,80,3
+225,25,The Mhybe,2,3
+226,25,Togg,10,3
+227,25,Caladan Brood,108,3
+228,25,Kruppe,75,3
+229,25,Ganoes Stabro Paran,608,3
+230,25,Itkovian,76,3
+231,25,Caladan Brood,187,3
+232,25,Korlat,96,3
+233,25,Envy,371,3
+234,25,Onos T'oolan,581,3
+235,25,Kilava,180,3
+236,25,Blend,280,3
+237,25,Ganoes Stabro Paran,642,3
+238,25,Gruntle,675,3
+239,25,Korlat,1216,3
+240,25,Caladan Brood,88,3
+241,25,Silverfox,865,3
+242,25,Rhivi spirit,180,3
+243,25,Togg,295,3
+244,25,The Mhybe,955,3
+245,25,Itkovian,593,3
+246,25,Silverfox,461,3
+247,25,Coll,316,3
+248,25,Ganoes Stabro Paran,2812,3
+249,25,Gruntle,547,3
+250,25,Toc the Younger,314,3
+251,25,Silverfox,535,3
+252,25,Picker,1235,3
+253,25,Gruntle,940,3
+254,25,Ganoes Stabro Paran,809,3
+255,25,Gruntle,1001,3
+256,25,Ganoes Stabro Paran,1438,3
+257,25,Gruntle,937,3
+258,25,Ganoes Stabro Paran,792,3
+259,25,Toc the Younger,346,3
+260,25,Onos T'oolan,102,3
+261,25,Envy,309,3
+262,25,Hetan,283,3
+263,26,Ganoes Stabro Paran,612,3
+264,26,Picker,636,3
+1,0,Trull Sengar,1479,4
+2,1,Karsa Orlong,1391,4
+3,1,Urugal,1006,4
+4,1,Karsa Orlong,1628,4
+5,1,Siballe's Found,477,4
+6,1,Synyg,473,4
+7,1,Karsa Orlong,9634,4
+8,2,Karsa Orlong,26863,4
+9,3,Karsa Orlong,14762,4
+10,3,Urugal,357,4
+11,3,Karsa Orlong,7158,4
+12,4,Karsa Orlong,8717,4
+13,5,Gamet,1098,4
+14,5,Fiddler,913,4
+15,5,Lostara Yil,1289,4
+16,5,Gamet,4239,4
+17,5,Lostara Yil,800,4
+18,5,Gamet,1653,4
+19,5,Fiddler,2210,4
+20,6,Crokus Younghand,1495,4
+21,6,Kalam Mekhar,1542,4
+22,6,Crokus Younghand,1758,4
+23,6,Onrack T'emlava,4076,4
+24,7,Heboric Light Touch,5861,4
+25,7,Karsa Orlong,2520,4
+26,7,Heboric Light Touch,3234,4
+27,8,Gamet,2365,4
+28,8,Fiddler,1016,4
+29,8,Gamet,939,4
+30,8,Lostara Yil,3159,4
+31,8,Maybe,150,4
+32,8,Lostara Yil,3244,4
+33,8,Fiddler,775,4
+34,8,Gamet,210,4
+35,9,Kalam Mekhar,6599,4
+36,9,Crokus Younghand,2915,4
+37,9,Onrack T'emlava,4992,4
+38,10,Karsa Orlong,1624,4
+39,10,Heboric Light Touch,1871,4
+40,10,Karsa Orlong,1752,4
+41,10,Heboric Light Touch,2577,4
+42,10,Karsa Orlong,624,4
+43,10,Korbolo Dom,771,4
+44,11,Gamet,969,4
+45,11,Fiddler,2417,4
+46,11,Gamet,794,4
+47,11,Bottle,285,4
+48,11,Fiddler,1715,4
+49,11,Gamet,855,4
+50,11,Fiddler,659,4
+51,12,Crokus Younghand,6465,4
+52,12,Kalam Mekhar,3195,4
+53,12,Nameless enkar'al,454,4
+54,12,Kalam Mekhar,888,4
+55,12,Onrack T'emlava,3426,4
+56,12,Lostara Yil,3022,4
+57,13,Korbolo Dom,830,4
+58,13,Heboric Light Touch,1026,4
+59,13,Felisin Paran Younger,744,4
+60,13,Silgar,253,4
+61,13,L'oric,1763,4
+62,13,Heboric Light Touch,2023,4
+63,13,Felisin Paran Younger,849,4
+64,14,Karsa Orlong,3750,4
+65,14,Mappo,72,4
+66,14,Karsa Orlong,6096,4
+67,15,Fiddler,2196,4
+68,15,Gamet,1815,4
+69,15,Fiddler,1625,4
+70,15,Gamet,1389,4
+71,15,Fiddler,497,4
+72,15,Gamet,484,4
+73,16,Kalam Mekhar,1385,4
+74,16,Crokus Younghand,549,4
+75,16,Cotillion,391,4
+76,16,Crokus Younghand,342,4
+77,16,Lostara Yil,1899,4
+78,16,Onrack T'emlava,1947,4
+79,16,Malachar,508,4
+80,17,Karsa Orlong,2439,4
+81,17,Trull Sengar,322,4
+82,17,Karsa Orlong,3887,4
+83,17,Cynnigig,484,4
+84,18,Felisin Paran Ganoes Stabro Paran,2628,4
+85,18,Corabb Bhilan Thenu'alas,497,4
+86,18,L'oric,1588,4
+87,18,Felisin Paran Ganoes Stabro Paran,890,4
+88,18,Bidithal,531,4
+89,18,Korbolo Dom,1474,4
+90,18,Scillara,916,4
+91,18,Heboric Light Touch,829,4
+92,18,Nameless girl,34,4
+93,18,Corabb Bhilan Thenu'alas,738,4
+94,18,Maybe,118,4
+95,18,Corabb Bhilan Thenu'alas,195,4
+96,18,Febryl,993,4
+97,19,Gamet,976,4
+98,19,Fiddler,3554,4
+99,19,Gamet,495,4
+100,19,Corabb Bhilan Thenu'alas,446,4
+101,19,Fiddler,161,4
+102,19,Corabb Bhilan Thenu'alas,287,4
+103,19,Gamet,209,4
+104,19,Corabb Bhilan Thenu'alas,138,4
+105,19,Fiddler,417,4
+106,19,Corabb Bhilan Thenu'alas,298,4
+107,19,Fiddler,193,4
+108,19,Gamet,592,4
+109,19,Fiddler,428,4
+110,19,Gamet,307,4
+111,19,Corabb Bhilan Thenu'alas,296,4
+112,20,Crokus Younghand,2022,4
+113,20,Onrack T'emlava,2871,4
+114,20,Lostara Yil,2040,4
+115,20,Kalam Mekhar,2335,4
+116,20,Ammanas,372,4
+117,20,Crokus Younghand,902,4
+118,21,Febryl,1831,4
+119,21,L'oric,4258,4
+120,21,Felisin Paran Ganoes Stabro Paran,1212,4
+121,21,Bidithal,789,4
+122,21,Scillara,1934,4
+123,21,L'oric,494,4
+124,21,Heboric Light Touch,394,4
+125,21,Corabb Bhilan Thenu'alas,445,4
+126,21,Karsa Orlong,1188,4
+127,22,Fiddler,2124,4
+128,22,Gamet,2736,4
+129,22,Fiddler,529,4
+130,22,Gamet,250,4
+131,23,Crokus Younghand,753,4
+132,23,Trull Sengar,59,4
+133,23,Onrack T'emlava,1797,4
+134,23,Lostara Yil,1914,4
+135,23,Apsalar,1310,4
+136,23,Kalam Mekhar,578,4
+137,23,Onrack T'emlava,1610,4
+138,24,Gamet,1799,4
+139,24,Fiddler,1064,4
+140,24,Corabb Bhilan Thenu'alas,907,4
+141,24,Heboric Light Touch,396,4
+142,24,Felisin Paran Ganoes Stabro Paran,695,4
+143,24,Heboric Light Touch,1011,4
+144,24,Felisin Paran Ganoes Stabro Paran,676,4
+145,24,L'oric,1339,4
+146,24,Felisin Paran Younger,325,4
+147,24,Jorrude,375,4
+148,24,Karsa Orlong,52,4
+149,25,Febryl,241,4
+150,25,L'oric,434,4
+151,25,Kasanal,346,4
+152,25,Felisin Paran Younger,273,4
+153,25,Mathok,250,4
+154,25,Heboric Light Touch,311,4
+155,25,Kalam Mekhar,1741,4
+156,25,Karsa Orlong,464,4
+157,25,Corabb Bhilan Thenu'alas,419,4
+158,25,Kalam Mekhar,2593,4
+159,25,Bidithal,570,4
+160,25,Lostara Yil,361,4
+161,25,Febryl,212,4
+162,25,Karsa Orlong,271,4
+163,25,Gamet,1482,4
+164,25,Fiddler,333,4
+165,25,Corabb Bhilan Thenu'alas,648,4
+166,25,Kalam Mekhar,699,4
+167,25,The Deragoth,185,4
+168,25,Karsa Orlong,652,4
+169,25,Kalam Mekhar,130,4
+170,25,Heboric Light Touch,749,4
+171,25,Karsa Orlong,518,4
+172,25,Pearl,332,4
+173,26,Felisin Paran Ganoes Stabro Paran,711,4
+174,26,L'oric,874,4
+175,26,The Whirlwind,536,4
+176,26,Felisin Paran Ganoes Stabro Paran,96,4
+177,26,Keneb,518,4
+178,26,L'oric,1019,4
+179,26,Felisin Paran Ganoes Stabro Paran,695,4
+180,26,Karsa Orlong,353,4
+181,26,Lostara Yil,736,4
+182,26,Keneb,1331,4
+183,26,Fiddler,613,4
+184,26,Gesler,503,4
+185,26,Jorrude,248,4
+186,26,Fiddler,310,4
+187,26,Corabb Bhilan Thenu'alas,199,4
+188,26,Fiddler,462,4
+189,26,Fayelle,355,4
+190,26,Sinn,223,4
+191,26,Lostara Yil,596,4
+192,26,Fiddler,235,4
+193,26,Heboric Light Touch,278,4
+194,26,Crokus Younghand,714,4
+195,26,Karsa Orlong,385,4
+196,27,Onrack T'emlava,720,4
+1,0,Scabandari Bloodeye,1944,5
+2,0,Gothos,554,5
+3,0,Withal,1142,5
+4,1,Trull Sengar,369,5
+5,1,The owl,184,5
+6,1,Trull Sengar,4131,5
+7,1,Udinaas,963,5
+8,1,Trull Sengar,1666,5
+9,1,Udinaas,1710,5
+10,1,Trull Sengar,710,5
+11,1,Udinaas,412,5
+12,1,Trull Sengar,552,5
+13,2,Seren Pedac,3387,5
+14,2,Tehol Beddict,3254,5
+15,2,Brys Beddict,3958,5
+16,2,Tehol Beddict,1827,5
+17,2,Seren Pedac,368,5
+18,3,Trull Sengar,1067,5
+19,3,Udinaas,1336,5
+20,3,Trull Sengar,593,5
+21,3,Udinaas,1337,5
+22,3,Trull Sengar,1442,5
+23,3,Udinaas,457,5
+24,3,Trull Sengar,3126,5
+25,4,Seren Pedac,2104,5
+26,4,Brys Beddict,917,5
+27,4,Tehol Beddict,144,5
+28,4,Brys Beddict,1649,5
+29,4,Tehol Beddict,1454,5
+30,4,Bugg,626,5
+31,4,Tehol Beddict,409,5
+32,4,Brys Beddict,985,5
+33,4,Tehol Beddict,2914,5
+34,4,Brys Beddict,254,5
+35,4,Shurq Elalle,1268,5
+36,4,Silchas Ruin,169,5
+37,5,Udinaas,1136,5
+38,5,Seren Pedac,2647,5
+39,5,The owl,64,5
+40,5,Trull Sengar,928,5
+41,5,Udinaas,1875,5
+42,5,Trull Sengar,1997,5
+43,5,Udinaas,282,5
+44,6,Kuru Qan,911,5
+45,6,Brys Beddict,3490,5
+46,6,Tehol Beddict,2191,5
+47,6,Brys Beddict,2315,5
+48,6,Bugg,920,5
+49,6,Tehol Beddict,760,5
+50,6,Bugg,337,5
+51,6,Tehol Beddict,478,5
+52,6,Shurq Elalle,343,5
+53,6,Brys Beddict,1249,5
+54,7,Seren Pedac,1541,5
+55,7,Udinaas,978,5
+56,7,Seren Pedac,770,5
+57,7,Udinaas,1915,5
+58,7,Seren Pedac,2625,5
+59,7,Udinaas,1474,5
+60,7,Seren Pedac,108,5
+61,8,Trull Sengar,8828,5
+62,9,Withal,2074,5
+63,9,Seren Pedac,956,5
+64,9,Udinaas,1107,5
+65,9,Seren Pedac,445,5
+66,9,Udinaas,356,5
+67,9,Trull Sengar,590,5
+68,9,Udinaas,717,5
+69,9,Trull Sengar,1036,5
+70,9,Udinaas,746,5
+71,9,Trull Sengar,1743,5
+72,10,Tehol Beddict,4363,5
+73,10,Brys Beddict,2778,5
+74,10,Tehol Beddict,1766,5
+75,10,Brys Beddict,1646,5
+76,10,Shurq Elalle,2851,5
+77,10,Kettle,290,5
+78,11,Udinaas,1031,5
+79,11,Seren Pedac,1302,5
+80,11,Trull Sengar,1685,5
+81,11,Udinaas,637,5
+82,11,Seren Pedac,1551,5
+83,11,Udinaas,2135,5
+84,11,Trull Sengar,1185,5
+85,11,Udinaas,217,5
+86,12,Tehol Beddict,633,5
+87,12,Brys Beddict,780,5
+88,12,Bugg,2220,5
+89,12,Brys Beddict,498,5
+90,12,Bugg,487,5
+91,12,Brys Beddict,2854,5
+92,12,Tehol Beddict,2195,5
+93,12,Brys Beddict,1473,5
+94,12,Tehol Beddict,205,5
+95,13,Udinaas,1949,5
+96,13,Seren Pedac,3694,5
+97,13,Udinaas,1564,5
+98,13,Trull Sengar,933,5
+99,13,Udinaas,1088,5
+100,13,Trull Sengar,345,5
+101,14,Bugg,1765,5
+102,14,Brys Beddict,1484,5
+103,14,Rucket,1008,5
+104,14,Bugg,64,5
+105,14,Tehol Beddict,2503,5
+106,14,Kettle,1778,5
+107,14,Tehol Beddict,890,5
+108,15,Seren Pedac,4145,5
+109,15,Trull Sengar,4175,5
+110,15,Udinaas,4764,5
+111,15,Yan Tovis,555,5
+112,16,Udinaas,483,5
+113,16,Trull Sengar,872,5
+114,16,Seren Pedac,1275,5
+115,16,Nekal Bara,1357,5
+116,16,Seren Pedac,1051,5
+117,16,Udinaas,615,5
+118,16,Seren Pedac,248,5
+119,16,Withal,936,5
+120,16,Seren Pedac,1467,5
+121,16,Withal,1089,5
+122,16,Seren Pedac,322,5
+123,16,Sandalath Drukorlat,379,5
+124,16,Udinaas,488,5
+125,16,Withal,365,5
+126,17,Tehol Beddict,2599,5
+127,17,Brys Beddict,1011,5
+128,17,Shurq Elalle,495,5
+129,17,Kettle,1544,5
+130,17,Shurq Elalle,396,5
+131,17,Brys Beddict,408,5
+132,17,Tehol Beddict,1003,5
+133,18,Nameless Nerek,319,5
+134,18,Trull Sengar,575,5
+135,18,Moroch Nevath,1041,5
+136,18,Trull Sengar,971,5
+137,18,Moroch Nevath,351,5
+138,18,Trull Sengar,355,5
+139,18,Moroch Nevath,600,5
+140,18,Trull Sengar,3074,5
+141,19,Udinaas,3472,5
+142,19,Seren Pedac,3035,5
+143,19,Hunch Arbat,506,5
+144,19,Withal,937,5
+145,19,Seren Pedac,1610,5
+146,20,Brys Beddict,870,5
+147,20,Shurq Elalle,1107,5
+148,20,Tehol Beddict,1990,5
+149,20,Brys Beddict,679,5
+150,20,Moroch Nevath,372,5
+151,20,Bugg,675,5
+152,20,Tehol Beddict,809,5
+153,20,Moroch Nevath,483,5
+154,20,Bugg,532,5
+155,20,Brys Beddict,1279,5
+156,21,Seren Pedac,3657,5
+157,21,Trull Sengar,3022,5
+158,21,Udinaas,2365,5
+159,21,Seren Pedac,528,5
+160,22,Trull Sengar,2256,5
+161,22,Seren Pedac,245,5
+162,22,Brys Beddict,1160,5
+163,22,Trull Sengar,1691,5
+164,22,Withal,376,5
+165,22,Brys Beddict,326,5
+166,22,Seren Pedac,770,5
+167,22,The Errant,245,5
+168,23,Udinaas,1618,5
+169,23,Trull Sengar,446,5
+170,23,Udinaas,78,5
+171,23,Unnutal Hebaz,319,5
+172,23,Trull Sengar,380,5
+173,23,Udinaas,966,5
+174,23,Trull Sengar,573,5
+175,23,Udinaas,2085,5
+176,24,Hannan Mosag's demon,452,5
+177,24,Tehol Beddict,821,5
+178,24,Brys Beddict,1007,5
+179,24,Bugg,1355,5
+180,24,Trull Sengar,252,5
+181,24,Hull Beddict,367,5
+182,24,Udinaas,160,5
+183,24,B'nagga,185,5
+184,24,Moroch Nevath,325,5
+185,24,Bugg,190,5
+186,24,Trull Sengar,126,5
+187,24,Moroch Nevath,562,5
+188,24,Rhulad Sengar,87,5
+189,24,Uruth Sengar,124,5
+190,24,Kettle,300,5
+191,24,Udinaas,288,5
+192,24,Bugg,901,5
+193,24,Brys Beddict,105,5
+194,24,Hannan Mosag's demon,186,5
+195,24,Brys Beddict,9,5
+196,24,Bugg,117,5
+197,24,Hannan Mosag's demon,55,5
+198,24,Brys Beddict,12,5
+199,24,Hannan Mosag's demon,43,5
+200,24,Ursto Hoobutt,228,5
+201,25,Shurq Elalle,347,5
+202,25,Trull Sengar,967,5
+203,25,Iron Bars,824,5
+204,25,Bugg,228,5
+205,25,Gerun Eberict,711,5
+206,25,Tehol Beddict,266,5
+207,25,Gerun Eberict,289,5
+208,25,Tehol Beddict,503,5
+209,25,Hull Beddict,326,5
+210,25,Theradas Buhn,197,5
+211,25,The Errant,398,5
+212,25,Corlo,213,5
+213,25,Udinaas,255,5
+214,25,Kettle,334,5
+215,25,Iron Bars,366,5
+216,25,Bugg,290,5
+217,25,Trull Sengar,422,5
+218,25,Brys Beddict,556,5
+219,25,Trull Sengar,270,5
+220,25,Brys Beddict,289,5
+221,25,Trull Sengar,120,5
+222,25,Brys Beddict,133,5
+223,25,Trull Sengar,390,5
+224,25,Brys Beddict,24,5
+225,25,Kettle,441,5
+226,25,Corlo,386,5
+227,25,Iron Bars,384,5
+228,25,Brys Beddict,1658,5
+229,25,Trull Sengar,1245,5
+230,25,Tehol Beddict,993,5
+231,25,Fear Sengar,968,5
+232,25,Trull Sengar,1053,5
+233,25,Shurq Elalle,614,5
+234,25,Bugg,386,5
+235,25,Feather Witch,788,5
+236,25,Seren Pedac,365,5
+237,25,Trull Sengar,1121,5
+238,25,Fear Sengar,545,5
+239,25,Shurq Elalle,260,5
+240,25,Tehol Beddict,170,5
+241,26,Kenryll'ah demon,162,5
+242,26,Withal,709,5
+1,0,Hellian,2419,6
+2,0,Dejim Nebrahl,1920,6
+3,0,Spite,166,6
+4,0,Taralack Veed,192,6
+5,0,Barathol Mekhar,1117,6
+6,1,Apsalar,1078,6
+7,1,Corabb Bhilan Thenu'alas,804,6
+8,1,Samar Dev,1057,6
+9,1,Apsalar,2941,6
+10,1,Corabb Bhilan Thenu'alas,1035,6
+11,1,Leoman,50,6
+12,1,Samar Dev,1530,6
+13,1,Apsalar,2596,6
+14,1,Telorast,164,6
+15,2,Cotillion,4295,6
+16,2,Mappo,1664,6
+17,2,Crokus Younghand,1712,6
+18,2,Scillara,1392,6
+19,2,Crokus Younghand,169,6
+20,2,Bottle,1694,6
+21,2,Kalam Mekhar,2227,6
+22,2,Pearl,246,6
+23,3,Apsalar,5585,6
+24,3,Samar Dev,643,6
+25,3,Karsa Orlong,271,6
+26,3,Samar Dev,63,6
+27,3,Karsa Orlong,2035,6
+28,3,Samar Dev,449,6
+29,3,Karsa Orlong,401,6
+30,3,Samar Dev,309,6
+31,3,Corabb Bhilan Thenu'alas,1505,6
+32,3,Bottle,2831,6
+33,3,Kalam Mekhar,526,6
+34,4,Mappo,2466,6
+35,4,Crokus Younghand,955,6
+36,4,Scillara,508,6
+37,4,Crokus Younghand,1581,6
+38,4,Mappo,1692,6
+39,4,Apsalar,2366,6
+40,4,Taralack Veed,643,6
+41,4,Scillara,1522,6
+42,4,Crokus Younghand,265,6
+43,4,Corabb Bhilan Thenu'alas,926,6
+44,5,Samar Dev,2863,6
+45,5,Kalam Mekhar,1847,6
+46,5,Bottle,312,6
+47,5,Fiddler,368,6
+48,5,Keneb,778,6
+49,5,Hellian,602,6
+50,5,Bottle,1292,6
+51,5,Kalam Mekhar,430,6
+52,5,Apsalar,1112,6
+53,5,Dejim Nebrahl,212,6
+54,5,Apsalar,1839,6
+55,5,Dejim Nebrahl,250,6
+56,5,Samar Dev,1151,6
+57,5,Crokus Younghand,686,6
+58,5,Scillara,578,6
+59,6,Corabb Bhilan Thenu'alas,3048,6
+60,6,Mappo,1217,6
+61,6,Keneb,1725,6
+62,6,Bottle,4333,6
+63,6,Keneb,1354,6
+64,6,Apsalar,1421,6
+65,6,Samar Dev,459,6
+66,6,Kalam Mekhar,2111,6
+67,6,Crokus Younghand,291,6
+68,6,Mappo,716,6
+69,7,Corabb Bhilan Thenu'alas,617,6
+70,7,Lostara Yil,480,6
+71,7,Keneb,599,6
+72,7,Pores,282,6
+73,7,Hellian,536,6
+74,7,Balm,528,6
+75,7,Maybe,220,6
+76,7,Fiddler,394,6
+77,7,Bottle,374,6
+78,7,Corabb Bhilan Thenu'alas,403,6
+79,7,Bottle,627,6
+80,7,Lostara Yil,115,6
+81,7,Hellian,175,6
+82,7,Pella,306,6
+83,7,Corabb Bhilan Thenu'alas,119,6
+84,7,Bottle,846,6
+85,7,Lostara Yil,144,6
+86,7,Corabb Bhilan Thenu'alas,323,6
+87,7,Bottle,318,6
+88,7,Keneb,330,6
+89,7,Bottle,2141,6
+90,7,Gesler,243,6
+91,7,Pella,457,6
+92,7,Gesler,374,6
+93,7,Hellian,262,6
+94,7,Balm,627,6
+95,7,Keneb,551,6
+96,7,Temul,208,6
+97,7,Blistig,250,6
+98,7,Keneb,160,6
+99,7,Lostara Yil,344,6
+100,7,Balm,566,6
+101,7,Faradan Sort,334,6
+102,7,Hellian,219,6
+103,7,Bottle,909,6
+104,7,Corabb Bhilan Thenu'alas,1301,6
+105,7,Balm,101,6
+106,7,Hellian,242,6
+107,7,Bottle,840,6
+108,7,Keneb,211,6
+109,7,Blistig,721,6
+110,7,Corabb Bhilan Thenu'alas,352,6
+111,7,Bottle,1233,6
+112,7,Blistig,689,6
+113,7,Bottle,1138,6
+114,7,Smiles,216,6
+115,7,Gesler,505,6
+116,7,Tarr,224,6
+117,7,Balm,208,6
+118,7,Corabb Bhilan Thenu'alas,253,6
+119,7,Bottle,1107,6
+120,7,Koryk,625,6
+121,7,Tarr,188,6
+122,7,Balm,164,6
+123,7,Corabb Bhilan Thenu'alas,308,6
+124,7,Bottle,910,6
+125,7,Corabb Bhilan Thenu'alas,509,6
+126,7,Keneb,550,6
+127,7,Blistig,457,6
+128,7,Nil,463,6
+129,7,Pores,285,6
+130,7,Faradan Sort,114,6
+131,7,Keneb,388,6
+132,7,Balm,507,6
+133,7,Smiles,551,6
+134,7,Koryk,358,6
+135,7,Jamber Bole,216,6
+136,7,Corabb Bhilan Thenu'alas,134,6
+137,7,Fiddler,415,6
+138,7,Bottle,817,6
+139,7,Gesler,168,6
+140,7,Bottle,469,6
+141,7,Smiles,389,6
+142,7,Bottle,890,6
+143,7,Faradan Sort,586,6
+144,7,Bottle,224,6
+145,7,Faradan Sort,67,6
+146,7,Bottle,778,6
+147,7,Gesler,304,6
+148,7,Corabb Bhilan Thenu'alas,767,6
+149,8,Ganoes Stabro Paran,1897,6
+150,8,Apsalar,793,6
+151,8,Kalam Mekhar,1559,6
+152,8,Bottle,983,6
+153,8,Gesler,253,6
+154,8,Balm,197,6
+155,8,Hellian,439,6
+156,8,Mayfly,466,6
+157,8,Cuttle,377,6
+158,8,Ganoes Stabro Paran,2285,6
+159,9,Taralack Veed,1175,6
+160,9,Heboric Light Touch,1682,6
+161,9,Polielfrog,118,6
+162,9,Samar Dev,1986,6
+163,9,Dejim Nebrahl,571,6
+164,9,Iskaral Pust,640,6
+165,9,Mogora,117,6
+166,9,Iskaral Pust,2602,6
+167,9,Lostara Yil,688,6
+168,9,Mogora,196,6
+169,9,Cotillion,37,6
+170,10,Kalam Mekhar,416,6
+171,10,Apsalar,1152,6
+172,10,Hellian,510,6
+173,10,Maybe,328,6
+174,10,Gesler,481,6
+175,10,Bottle,207,6
+176,10,Koryk,186,6
+177,10,Fiddler,720,6
+178,10,Ganoes Stabro Paran,5993,6
+179,11,Heboric Light Touch,1176,6
+180,11,Scillara,913,6
+181,11,Iskaral Pust,814,6
+182,11,Mappo,1008,6
+183,11,Ganoes Stabro Paran,4575,6
+184,11,Hedge,194,6
+185,11,Scillara,754,6
+186,11,Heboric Light Touch,599,6
+187,11,Scillara,380,6
+188,11,Crokus Younghand,189,6
+189,11,Polielfrog,115,6
+190,11,Heboric Light Touch,662,6
+191,12,Samar Dev,3094,6
+192,12,Taralack Veed,1404,6
+193,12,Barathol Mekhar,3377,6
+194,12,Felisin Paran Younger,1193,6
+195,12,Mappo,2056,6
+196,13,Ganoes Stabro Paran,3261,6
+197,13,Lostara Yil,631,6
+198,13,Kalam Mekhar,1055,6
+199,13,Fiddler,1258,6
+200,13,Apsalar,590,6
+201,13,Bottle,861,6
+202,13,Hellian,604,6
+203,13,Gesler,335,6
+204,13,Masan Gilani,336,6
+205,13,Gesler,49,6
+206,13,Dejim Nebrahl,831,6
+207,13,Masan Gilani,1359,6
+208,13,Dejim Nebrahl,383,6
+209,13,Fiddler,945,6
+210,13,Dejim Nebrahl,606,6
+211,13,Kalam Mekhar,121,6
+212,13,Pores,928,6
+213,13,Keneb,993,6
+214,13,Kalam Mekhar,215,6
+215,13,Bottle,288,6
+216,14,Barathol Mekhar,1902,6
+217,14,Scillara,945,6
+218,14,Crokus Younghand,1571,6
+219,14,L'oric,1169,6
+220,14,Barathol Mekhar,325,6
+221,14,Samar Dev,3454,6
+222,14,Mappo,4376,6
+223,14,Sick boy,942,6
+224,14,Felisin Paran Younger,892,6
+225,15,Ganoes Stabro Paran,2685,6
+226,15,Noto Boil,58,6
+227,15,Torahaval Ben Adaephon Delat,1762,6
+228,15,Bottle,1019,6
+229,15,Fiddler,192,6
+230,15,Apsalar,251,6
+231,15,Telorast,97,6
+232,15,Kalam Mekhar,355,6
+233,15,Ganoes Stabro Paran,948,6
+234,15,Noto Boil,204,6
+235,15,Ganoes Stabro Paran,347,6
+236,15,Torahaval Ben Adaephon Delat,682,6
+237,15,Ganoes Stabro Paran,607,6
+238,15,Ben Adaephon Delat,497,6
+239,15,Ammanas,115,6
+240,15,Bottle,225,6
+241,15,Hurlochel,458,6
+242,15,Noto Boil,183,6
+243,15,Ganoes Stabro Paran,149,6
+244,15,Brokeface,221,6
+245,15,Ben Adaephon Delat,156,6
+246,15,Ganoes Stabro Paran,180,6
+247,15,Ben Adaephon Delat,74,6
+248,15,Brokeface,585,6
+249,15,Ben Adaephon Delat,167,6
+250,15,Telorast,56,6
+251,15,Poliel,420,6
+252,15,Brokeface,150,6
+253,15,Ganoes Stabro Paran,745,6
+254,15,Ben Adaephon Delat,418,6
+255,15,Cotillion,226,6
+256,15,Ganoes Stabro Paran,322,6
+257,16,Keneb,1952,6
+258,16,Pores,872,6
+259,16,Barathol Mekhar,531,6
+260,16,Crokus Younghand,942,6
+261,16,Scillara,640,6
+262,16,Ganath,544,6
+263,16,Mappo,2142,6
+264,16,Gumble,805,6
+265,16,Ganoes Stabro Paran,852,6
+266,16,Samar Dev,2687,6
+267,16,Keneb,371,6
+268,16,Pores,900,6
+269,16,Keneb,976,6
+270,17,Banaschar,2856,6
+271,17,Ahlrada Ahn,1816,6
+272,17,Yan Tovis,319,6
+273,17,Taralack Veed,1100,6
+274,17,Cotillion,3201,6
+275,17,Trull Sengar,867,6
+276,17,Samar Dev,2248,6
+277,17,Banaschar,1776,6
+278,17,Pearl,1181,6
+279,18,Bottle,3932,6
+280,18,Kalam Mekhar,494,6
+281,18,Fiddler,230,6
+282,18,Samar Dev,569,6
+283,18,Kalam Mekhar,330,6
+284,18,Bottle,187,6
+285,18,Kalam Mekhar,105,6
+286,18,Samar Dev,429,6
+287,18,Kalam Mekhar,263,6
+288,18,Fiddler,196,6
+289,18,Taralack Veed,1160,6
+290,18,Masan Gilani,960,6
+291,18,Nil,428,6
+292,18,Apsalar,872,6
+293,18,Squint,63,6
+294,18,Apsalar,838,6
+295,19,Barathol Mekhar,1090,6
+296,19,Scillara,1310,6
+297,19,Onrack T'emlava,769,6
+298,19,Banaschar,2007,6
+299,19,Mappo,1183,6
+300,19,Taralack Veed,512,6
+301,19,Bottle,1080,6
+302,19,Kalam Mekhar,397,6
+303,19,Apsalar,694,6
+304,19,Bottle,342,6
+305,20,Ganoes Stabro Paran,1084,6
+306,20,Rythe Bude,409,6
+307,20,Ganoes Stabro Paran,346,6
+308,20,Mappo,570,6
+309,20,Bottle,305,6
+310,20,Hellian,415,6
+311,20,Apsalar,188,6
+312,20,Ganoes Stabro Paran,586,6
+313,20,Crokus Younghand,282,6
+314,20,Chaur,176,6
+315,20,Crokus Younghand,149,6
+316,20,Heboric Light Touch,481,6
+317,20,Barathol Mekhar,126,6
+318,20,Crokus Younghand,374,6
+319,20,Heboric Light Touch,205,6
+320,20,Mappo,1385,6
+321,20,Spite,178,6
+322,20,Ganoes Stabro Paran,198,6
+323,20,Keneb,1096,6
+324,20,Kalam Mekhar,769,6
+325,20,Tene Baralta,1031,6
+326,20,Lostara Yil,256,6
+327,20,Keneb,1186,6
+328,20,Kalam Mekhar,225,6
+329,21,Felisin Paran Younger,1504,6
+330,21,Ganoes Stabro Paran,1051,6
+331,21,Hurlochel,251,6
+332,21,Ahlrada Ahn,1352,6
+333,21,Taralack Veed,186,6
+334,21,Ahlrada Ahn,265,6
+335,21,Taralack Veed,220,6
+336,21,Ammanas,306,6
+337,21,Keneb,512,6
+338,21,Kalam Mekhar,560,6
+339,21,Bottle,433,6
+340,21,Banaschar,1628,6
+341,21,Withal,126,6
+342,21,Cartheron Crust,776,6
+343,22,Keneb,600,6
+344,22,Kalam Mekhar,707,6
+345,22,Bottle,325,6
+346,22,Pores,296,6
+347,22,Keneb,495,6
+348,22,Kalam Mekhar,351,6
+349,22,Bottle,351,6
+350,22,Keneb,2382,6
+351,22,Pearl,2671,6
+352,22,Hellian,419,6
+353,22,Touchy Brethless,206,6
+354,22,Oponn,490,6
+355,22,Bottle,550,6
+356,22,Kalam Mekhar,699,6
+357,22,Lostara Yil,235,6
+358,22,Banaschar,708,6
+359,22,Braven Tooth,330,6
+360,22,Saygen Maral,839,6
+361,22,Mudslinger,124,6
+362,22,Saygen Maral,126,6
+363,22,Keneb,1398,6
+364,22,Kalam Mekhar,344,6
+365,22,Banaschar,451,6
+366,22,Hellian,592,6
+367,22,Saygen Maral,239,6
+368,22,Banaschar,252,6
+369,22,Fiddler,1992,6
+370,22,Hellian,1521,6
+371,22,Koryk,496,6
+372,23,Kalam Mekhar,726,6
+373,23,Bottle,464,6
+374,23,Koryk,1076,6
+375,23,Keneb,319,6
+376,23,Koryk,279,6
+377,23,Keneb,282,6
+378,23,Fiddler,712,6
+379,23,Kalam Mekhar,4308,6
+380,23,Pearl,383,6
+381,23,Kalam Mekhar,177,6
+382,23,Lostara Yil,610,6
+383,23,Koryk,746,6
+384,23,Kalam Mekhar,1971,6
+385,23,Pearl,346,6
+386,23,Kalam Mekhar,361,6
+387,23,Sturtho,122,6
+388,23,Kalam Mekhar,179,6
+389,23,Fiddler,710,6
+390,23,Bottle,645,6
+391,23,Hellian,618,6
+392,23,Kalam Mekhar,2164,6
+393,23,Lostara Yil,356,6
+394,23,Kalam Mekhar,78,6
+395,23,Ben Adaephon Delat,351,6
+396,23,Kalam Mekhar,1287,6
+397,23,Pearl,448,6
+398,23,Fiddler,718,6
+399,23,Keneb,613,6
+400,23,Pores,255,6
+401,23,Apsalar,423,6
+402,23,Pearl,554,6
+403,23,Apsalar,218,6
+404,23,Ammanas,263,6
+405,23,Fiddler,490,6
+406,23,Tavore Paran,861,6
+407,23,Lostara Yil,722,6
+408,23,Fiddler,1023,6
+409,23,Kalam Mekhar,239,6
+410,23,Ammanas,404,6
+411,23,Braven Tooth,244,6
+412,23,Aragan,265,6
+413,24,Taralack Veed,1095,6
+414,24,Varat Taun,496,6
+415,24,Aystar,433,6
+416,24,Trull Sengar,533,6
+417,24,Ahlrada Ahn,464,6
+418,24,Icarium,364,6
+419,24,Ahlrada Ahn,234,6
+420,24,Trull Sengar,335,6
+421,24,Onrack T'emlava,338,6
+422,24,Trull Sengar,515,6
+423,24,Varat Taun,385,6
+424,24,Trull Sengar,578,6
+425,24,Varat Taun,155,6
+426,24,Trull Sengar,392,6
+427,24,Varat Taun,399,6
+428,24,Trull Sengar,585,6
+429,25,Scillara,420,6
+430,25,Samar Dev,313,6
+431,25,Icarium,258,6
+432,25,Tayschrenn,814,6
+433,25,investigator,475,6
+1,0,Kilmandaros,739,7
+2,0,Gothos,1225,7
+3,0,Kilmandaros,444,7
+4,0,Bivatt,978,7
+5,0,Redmask,857,7
+6,1,Tanal Yathvanar,1568,7
+7,1,Rautos Hivanar,1329,7
+8,1,Brohl Handar,1681,7
+9,1,Nameless Merude,612,7
+10,1,Silchas Ruin,522,7
+11,1,Seren Pedac,1936,7
+12,1,Tanal Yathvanar,1184,7
+13,1,Tehol Beddict,936,7
+14,2,Seren Pedac,1923,7
+15,2,Tanal Yathvanar,2226,7
+16,2,Brohl Handar,1944,7
+17,2,Redmask,1100,7
+18,2,Bivatt,438,7
+19,2,Brohl Handar,928,7
+20,2,Redmask,530,7
+21,2,Seren Pedac,859,7
+22,3,Nisall,2754,7
+23,3,Bruthen Trana,859,7
+24,3,The Errant,890,7
+25,3,Tehol Beddict,2450,7
+26,3,Rautos Hivanar,155,7
+27,3,Shurq Elalle,2141,7
+28,4,Redmask,2419,7
+29,4,Udinaas,1353,7
+30,4,Seren Pedac,906,7
+31,4,Ventrala,409,7
+32,4,Hayenar,105,7
+33,4,Ventrala,79,7
+34,4,Hayenar,391,7
+35,4,Ventrala,1114,7
+36,4,Seren Pedac,892,7
+37,4,Udinaas,231,7
+38,4,Redmask,1243,7
+39,4,Abasard,703,7
+40,4,Redmask,299,7
+41,4,Abasard,444,7
+42,4,Masarch,234,7
+43,5,Hannan Mosag,800,7
+44,5,Sukul Ankhadu,346,7
+45,5,Rautos Hivanar,457,7
+46,5,Bugg,752,7
+47,5,Karos Invictad,333,7
+48,5,Janath Anar,1277,7
+49,5,Tanal Yathvanar,492,7
+50,5,The Errant,966,7
+51,5,Menandore,567,7
+52,5,Nisall,795,7
+53,5,Janall,379,7
+54,5,Nisall,1094,7
+55,5,Sukul Ankhadu,1301,7
+56,6,Shurq Elalle,1084,7
+57,6,Venitt Sathad,768,7
+58,6,Bivatt,935,7
+59,6,Redmask,2021,7
+60,6,Masarch,222,7
+61,6,Brohl Handar,1299,7
+62,6,Redmask,949,7
+63,6,Clip,984,7
+64,6,Seren Pedac,1272,7
+65,7,Yan Tovis,1375,7
+66,7,The Errant,814,7
+67,7,Yan Tovis,243,7
+68,7,Taralack Veed,352,7
+69,7,Samar Dev,1445,7
+70,7,Bugg,1765,7
+71,7,Feather Witch,2257,7
+72,7,Nisall,1625,7
+73,7,Bruthen Trana,367,7
+74,7,Tanal Yathvanar,1877,7
+75,7,Janath Anar,519,7
+76,7,Bugg,341,7
+77,7,Tehol Beddict,1351,7
+78,8,Cotillion,1705,7
+79,8,Skorgen Kaban,284,7
+80,8,Shurq Elalle,1750,7
+81,8,Udinaas,2423,7
+82,8,Clip,1210,7
+83,8,Seren Pedac,602,7
+84,8,Brohl Handar,1046,7
+85,8,Bivatt,1009,7
+86,8,Redmask,1674,7
+87,9,Sukul Ankhadu,1549,7
+88,9,Samar Dev,1160,7
+89,9,Taralack Veed,898,7
+90,9,Yan Tovis,3345,7
+91,9,The Errant,1548,7
+92,9,Feather Witch,1260,7
+93,9,Samar Dev,325,7
+94,9,Bugg,590,7
+95,9,Sirryn Kanar,1022,7
+96,9,Bruthen Trana,597,7
+97,9,Triban Gnol,194,7
+98,9,Nisall,1396,7
+99,9,Bruthen Trana,410,7
+100,9,Tanal Yathvanar,776,7
+101,9,Bruthen Trana,450,7
+102,9,Bugg,999,7
+103,9,Rautos Hivanar,1001,7
+104,10,Hedge,1324,7
+105,10,Varat Taun,1250,7
+106,10,Trull Sengar,1151,7
+107,10,Ben Adaephon Delat,630,7
+108,10,Trull Sengar,36,7
+109,10,Ballant,1426,7
+110,10,Seren Pedac,1674,7
+111,10,Toc the Younger,1187,7
+112,10,Redmask,435,7
+113,10,Setoc,1048,7
+114,10,Toc the Younger,619,7
+115,10,Redmask,298,7
+116,11,Hunch Arbat,1559,7
+117,11,Tehol Beddict,1537,7
+118,11,Rucket,1002,7
+119,11,The Errant,1631,7
+120,11,Feather Witch,103,7
+121,11,The Errant,1096,7
+122,11,Samar Dev,1722,7
+123,11,Taralack Veed,85,7
+124,11,Samar Dev,507,7
+125,11,Hannan Mosag,695,7
+126,11,Bruthen Trana,459,7
+127,11,Tehol Beddict,630,7
+128,11,Bruthen Trana,632,7
+129,11,Feather Witch,173,7
+130,11,Tehol Beddict,544,7
+131,11,Samar Dev,1065,7
+132,12,Brohl Handar,619,7
+133,12,Toc the Younger,903,7
+134,12,Hedge,1299,7
+135,12,Udinaas,1410,7
+136,12,Seren Pedac,1733,7
+137,12,Ben Adaephon Delat,1301,7
+138,12,Masarch,1073,7
+139,12,Yan Tovis,1802,7
+140,12,Bivatt,4040,7
+141,12,Brohl Handar,1406,7
+142,12,Bivatt,487,7
+143,12,Yan Tovis,2489,7
+144,13,Throatslitter,1040,7
+145,13,Brullyg,2980,7
+146,13,Blistig,2164,7
+147,13,Lostara Yil,517,7
+148,13,The owl,204,7
+149,13,Fiddler,1043,7
+150,13,Hellian,772,7
+151,13,Keneb,1168,7
+152,13,Beak,1628,7
+153,13,Cord,732,7
+154,13,Withal,938,7
+155,13,Nimander,947,7
+156,14,Hedge,1551,7
+157,14,Trull Sengar,3111,7
+158,14,Udinaas,1020,7
+159,14,Seren Pedac,1714,7
+160,14,Yan Tovis,1427,7
+161,14,Fiddler,1016,7
+162,14,Gesler,743,7
+163,14,Bottle,621,7
+164,14,Corabb Bhilan Thenu'alas,596,7
+165,14,Trantalo Kendar,1344,7
+166,14,Hellian,958,7
+167,14,Beak,1007,7
+168,14,Throatslitter,2597,7
+169,15,Tomad Sengar,1316,7
+170,15,The Errant,1989,7
+171,15,Sirryn Kanar,368,7
+172,15,Samar Dev,608,7
+173,15,Karsa Orlong,669,7
+174,15,Tehol Beddict,1645,7
+175,15,Taralack Veed,1878,7
+176,15,Samar Dev,586,7
+177,15,Sirryn Kanar,453,7
+178,15,Edur warrior,126,7
+179,15,The Errant,1287,7
+180,15,Samar Dev,837,7
+181,15,Sirryn Kanar,391,7
+182,15,Feather Witch,559,7
+183,15,Hannan Mosag,1510,7
+184,15,Tehol Beddict,294,7
+185,15,Bugg,690,7
+186,15,Karsa Orlong,318,7
+187,15,Triban Gnol,1238,7
+188,16,Brohl Handar,1580,7
+189,16,Bivatt,440,7
+190,16,Toc the Younger,1149,7
+191,16,Orbyn Truthfinder,1113,7
+192,16,Venitt Sathad,544,7
+193,16,Orbyn Truthfinder,866,7
+194,16,Seren Pedac,1540,7
+195,16,Yan Tovis,1042,7
+196,16,Banaschar,1641,7
+197,16,Shard,956,7
+198,16,Nimander,921,7
+199,16,Brohl Handar,462,7
+200,16,Toc the Younger,1961,7
+201,16,Brohl Handar,699,7
+202,17,Beak,1247,7
+203,17,Hellian,1065,7
+204,17,Beak,940,7
+205,17,Fiddler,674,7
+206,17,Koryk,425,7
+207,17,Stormy,441,7
+208,17,Fiddler,1069,7
+209,17,Cuttle,294,7
+210,17,Fiddler,1137,7
+211,17,Bottle,2032,7
+212,17,Kenryll'ah demon,289,7
+213,17,Bottle,237,7
+214,17,Keneb,1261,7
+215,17,Hedge,2206,7
+216,17,Trull Sengar,737,7
+217,17,Ben Adaephon Delat,1148,7
+218,17,Fiddler,515,7
+219,17,Tarr,658,7
+220,17,Smiles,808,7
+221,17,Corabb Bhilan Thenu'alas,1140,7
+222,17,Shurq Elalle,3041,7
+223,18,Triban Gnol,5279,7
+224,18,The Errant,1437,7
+225,18,Tanal Yathvanar,473,7
+226,18,The Errant,1085,7
+227,18,Bugg,1964,7
+228,18,Tehol Beddict,2280,7
+229,18,Tanal Yathvanar,406,7
+230,18,Bugg,862,7
+231,18,Rhulad Sengar,1119,7
+232,18,Trull Sengar,340,7
+233,19,Seren Pedac,2322,7
+234,19,Udinaas,2276,7
+235,19,Seren Pedac,1900,7
+236,19,Venitt Sathad,2786,7
+237,19,Brohl Handar,874,7
+238,19,Bivatt,661,7
+239,19,Toc the Younger,791,7
+240,19,Redmask,676,7
+241,20,Bruthen Trana,3135,7
+242,20,Rud Ellale,1841,7
+243,20,Hedge,1720,7
+244,20,Trull Sengar,1486,7
+245,20,Nimander,3546,7
+246,20,Yan Tovis,565,7
+247,20,Pores,545,7
+248,20,Masan Gilani,554,7
+249,20,Cord,297,7
+250,20,Shurq Elalle,1128,7
+251,20,Sirryn Kanar,509,7
+252,20,Janath Anar,1537,7
+253,20,Samar Dev,857,7
+254,20,Taralack Veed,919,7
+255,20,Rhulad Sengar,1386,7
+256,20,The Errant,522,7
+257,21,Fiddler,1317,7
+258,21,Hellian,1073,7
+259,21,Fiddler,715,7
+260,21,Koryk,440,7
+261,21,Bottle,417,7
+262,21,Beak,1332,7
+263,21,Keneb,245,7
+264,21,Koryk,368,7
+265,21,Fiddler,292,7
+266,21,Stormy,348,7
+267,21,Corabb Bhilan Thenu'alas,176,7
+268,21,Fiddler,68,7
+269,21,Hellian,257,7
+270,21,Badan Gruk,979,7
+271,21,Skim,335,7
+272,21,Reliko,214,7
+273,21,Strap Mull,229,7
+274,21,Pravalak Rim,645,7
+275,21,Skulldeath,486,7
+276,21,Urb,208,7
+277,21,Hellian,706,7
+278,21,Fiddler,545,7
+279,21,Koryk,544,7
+280,21,Fiddler,556,7
+281,21,Koryk,834,7
+282,21,Hellian,219,7
+283,21,Skulldeath,69,7
+284,21,Hedge,1286,7
+285,21,Trull Sengar,1492,7
+286,21,Hedge,106,7
+287,21,Seren Pedac,1382,7
+288,22,Gaskaral Traum,926,7
+289,22,Brohl Handar,1073,7
+290,22,Toc the Younger,577,7
+291,22,Drawfirst,751,7
+292,22,Beak,1145,7
+293,22,Bottle,440,7
+294,22,Koryk,433,7
+295,22,Fiddler,370,7
+296,22,Corabb Bhilan Thenu'alas,440,7
+297,22,Hellian,612,7
+298,22,Sirryn Kanar,429,7
+299,22,Toc the Younger,962,7
+300,22,Natarkas,501,7
+301,22,Brohl Handar,1035,7
+302,22,Natarkas,73,7
+303,22,Natarkas' horse,93,7
+304,22,Fiddler,879,7
+305,22,Hanradi Khalag,472,7
+306,22,Beak,1295,7
+307,22,Fiddler,337,7
+308,22,Hanradi Khalag,151,7
+309,22,Beak,63,7
+310,22,Letherii commander,166,7
+311,22,Beak,210,7
+312,22,Letherii commander,264,7
+313,22,Faradan Sort,194,7
+314,22,Fiddler,313,7
+315,22,Beak,371,7
+316,22,Bivatt,757,7
+317,22,Brohl Handar,224,7
+318,22,Masarch,463,7
+319,22,Redmask,472,7
+320,22,Toc the Younger,491,7
+321,22,Torrent,142,7
+322,22,Toc the Younger,720,7
+323,22,Torrent,87,7
+324,22,Hetan,719,7
+325,22,Torrent,298,7
+326,22,Hetan,596,7
+327,22,Bivatt,544,7
+328,22,Brohl Handar,218,7
+329,22,Venitt Sathad,206,7
+330,22,Hetan,490,7
+331,22,Hood,466,7
+332,23,Onrack T'emlava,981,7
+333,23,Trull Sengar,293,7
+334,23,Hedge,626,7
+335,23,Menandore,983,7
+336,23,Hedge,81,7
+337,23,Sukul Ankhadu,880,7
+338,23,Seren Pedac,1593,7
+339,23,Udinaas,671,7
+340,23,Ulshun Pral,389,7
+341,23,Hedge,280,7
+342,23,Menandore,142,7
+343,23,Hedge,766,7
+344,23,Ben Adaephon Delat,23,7
+345,23,Ulshun Pral,254,7
+346,23,Hostille Rator,298,7
+347,23,Sukul Ankhadu,924,7
+348,23,Trull Sengar,165,7
+349,23,Seren Pedac,589,7
+350,23,Trull Sengar,440,7
+351,23,Seren Pedac,101,7
+352,23,Trull Sengar,256,7
+353,23,Seren Pedac,247,7
+354,23,Onrack T'emlava,115,7
+355,23,Trull Sengar,163,7
+356,23,Silchas Ruin,253,7
+357,23,Udinaas,253,7
+358,23,Seren Pedac,521,7
+359,23,Onrack T'emlava,767,7
+360,23,Hedge,350,7
+361,23,Silchas Ruin,164,7
+362,24,Keneb,512,7
+363,24,Fiddler,445,7
+364,24,Smiles,195,7
+365,24,Koryk,313,7
+366,24,Bottle,520,7
+367,24,Hellian,491,7
+368,24,Sirryn Kanar,1260,7
+369,24,Balm,1277,7
+370,24,Lostara Yil,1036,7
+371,24,Shurq Elalle,586,7
+372,24,Banaschar,130,7
+373,24,Rautos Hivanar,802,7
+374,24,Ublala Pung,264,7
+375,24,Ormly,586,7
+376,24,Ursto Hoobutt,397,7
+377,24,Tanal Yathvanar,1688,7
+378,24,Karos Invictad,1561,7
+379,24,Tanal Yathvanar,266,7
+380,24,Janath Anar,471,7
+381,24,Taralack Veed,999,7
+382,24,Samar Dev,907,7
+383,24,The Errant,669,7
+384,24,Varat Taun,1061,7
+385,24,Fiddler,785,7
+386,24,Hedge,393,7
+387,24,Bruthen Trana,1025,7
+388,24,Padderunt,188,7
+389,24,Janath Anar,304,7
+390,24,Karos Invictad,522,7
+391,24,Feather Witch,458,7
+392,24,The Errant,29,7
+393,24,Hannan Mosag,436,7
+394,24,Ormly,710,7
+395,24,Brys Beddict,336,7
+396,24,Ursto Hoobutt,94,7
+397,24,Hannan Mosag,306,7
+398,24,Ursto Hoobutt,123,7
+399,24,Balm,730,7
+400,24,Fiddler,480,7
+401,24,Nameless Finadd,368,7
+402,24,Gesler,137,7
+403,24,Hellian,445,7
+404,24,Icarium,935,7
+405,24,Taralack Veed,398,7
+406,24,Icarium,118,7
+407,24,Rautos Hivanar,146,7
+408,24,Bugg,221,7
+409,24,Lostara Yil,412,7
+410,24,Hunch Arbat,234,7
+411,24,Samar Dev,752,7
+412,24,Karos Invictad,556,7
+413,24,Brys Beddict,112,7
+414,24,Ben Adaephon Delat,192,7
+415,24,Silchas Ruin,187,7
+416,24,Samar Dev,410,7
+417,24,Kuru Qan,403,7
+418,24,Hunch Arbat,184,7
+419,24,Kuru Qan,172,7
+420,24,Fiddler,251,7
+421,24,Ben Adaephon Delat,141,7
+422,24,Fiddler,366,7
+423,24,Bottle,72,7
+424,24,Seren Pedac,252,7
+425,24,The Errant,50,7
+426,24,Brys Beddict,295,7
+427,24,Lostara Yil,1083,7
+428,24,Sirryn Kanar,197,7
+429,24,Triban Gnol,295,7
+430,24,Fiddler,294,7
+431,24,Tarr,352,7
+432,24,Trull Sengar,484,7
+433,24,Sirryn Kanar,223,7
+434,24,Fiddler,523,7
+435,24,The Errant,43,7
+436,24,Karsa Orlong,795,7
+437,24,Withal,561,7
+438,25,Nimander,518,7
+439,25,Clip,121,7
+440,25,Rud Ellale,553,7
+441,25,Onrack T'emlava,204,7
+442,25,Brys Beddict,477,7
+443,25,Seren Pedac,601,7
+1,0,Nameless woman,1260,8
+2,0,Ditch,960,8
+3,0,Apsal'ara,622,8
+4,0,Karsa Orlong's daughters,466,8
+5,0,Kruppe,555,8
+6,1,Challice,819,8
+7,1,Picker,329,8
+8,1,Dester Thrin,662,8
+9,1,Chillbais,475,8
+10,1,Zechan Throw,263,8
+11,1,Dester Thrin,169,8
+12,1,Picker,226,8
+13,1,Zechan Throw,146,8
+14,1,Bluepearl,168,8
+15,1,Picker,716,8
+16,1,Challice,674,8
+17,1,Murillio,1293,8
+18,1,Kruppe,1106,8
+19,1,Picker,818,8
+20,1,Baruk,1993,8
+21,2,Endest Silann,1497,8
+22,2,Spinnock Durav,2590,8
+23,2,Nimander,2087,8
+24,2,Clip,617,8
+25,2,Spinnock Durav,1681,8
+26,2,Seerdomin,590,8
+27,2,Silanah,307,8
+28,3,Kruppe,272,8
+29,3,Faint,898,8
+30,3,Kruppe,893,8
+31,3,Scorch,483,8
+32,3,Gruntle,2075,8
+33,3,Torvald Nom,1405,8
+34,3,Humble Measure,1292,8
+35,3,Scillara,597,8
+36,3,Barathol Mekhar,919,8
+37,3,Iskaral Pust,627,8
+38,3,Scillara,765,8
+39,3,Rallick Nom,1175,8
+40,3,Kruppe,865,8
+41,4,Dessembrae,1663,8
+42,4,Nimander,2770,8
+43,4,Seerdomin,1352,8
+44,4,Endest Silann,1775,8
+45,4,Spinnock Durav,2137,8
+46,4,Kallor,1271,8
+47,5,Kruppe,605,8
+48,5,Torvald Nom,2117,8
+49,5,Harllo (young),1637,8
+50,5,Duiker,1161,8
+51,5,Thordy,796,8
+52,5,Gaz,852,8
+53,5,Krute,843,8
+54,5,Iskaral Pust,1472,8
+55,5,Mappo,1750,8
+56,5,Barathol Mekhar,1379,8
+57,5,Picker,702,8
+58,5,Barathol Mekhar,471,8
+59,5,Picker,1256,8
+60,5,Crone,877,8
+61,5,Baruk,414,8
+62,5,Crokus Younghand,1097,8
+63,5,Leff,771,8
+64,5,Crokus Younghand,903,8
+65,5,Tiserra,640,8
+66,5,Kruppe,414,8
+67,6,Dessembrae,1897,8
+68,6,Cotillion,431,8
+69,6,Nimander,3783,8
+70,6,Endest Silann,1226,8
+71,6,Salind,1494,8
+72,6,Spinnock Durav,1415,8
+73,6,Kallor,1621,8
+74,6,Nimander,1629,8
+75,6,Dessembrae,2102,8
+76,7,Kruppe,1099,8
+77,7,Mappo,471,8
+78,7,Sweetest Sufferance,292,8
+79,7,Faint,941,8
+80,7,Mappo,400,8
+81,7,Faint,813,8
+82,7,Kruppe,622,8
+83,7,Gorlas,691,8
+84,7,Challice,1055,8
+85,7,Gruntle,1784,8
+86,7,Snell,377,8
+87,7,Nameless shepherd,216,8
+88,7,Crokus Younghand,1333,8
+89,7,Rallick Nom,1317,8
+90,7,Torvald Nom,1221,8
+91,7,Leff,1362,8
+92,7,Kruppe,366,8
+93,7,Duiker,1251,8
+94,7,Picker,496,8
+95,7,Bluepearl,333,8
+96,7,Faint,628,8
+97,7,Kruppe,692,8
+98,8,Dessembrae,1654,8
+99,8,The Captain,2598,8
+100,8,Nimander,1316,8
+101,8,Endest Silann,1680,8
+102,8,Spinnock Durav,2687,8
+103,8,Salind,1259,8
+104,8,Spinnock Durav,315,8
+105,8,Gradithan,392,8
+106,8,Silanah,110,8
+107,8,Nimander,4382,8
+108,8,Desra,828,8
+109,8,Skintick,802,8
+110,8,Desra,84,8
+111,8,Nimander,984,8
+112,8,Desra,325,8
+113,8,Kedeviss,213,8
+114,8,Nimander,1492,8
+115,8,Kedeviss,164,8
+116,8,The Captain,503,8
+117,8,Karsa Orlong,1016,8
+118,8,Samar Dev,289,8
+119,9,Kruppe,586,8
+120,9,Thordy,293,8
+121,9,Barathol Mekhar,1353,8
+122,9,The ox,262,8
+123,9,Leff,1185,8
+124,9,Torvald Nom,532,8
+125,9,Leff,182,8
+126,9,Torvald Nom,856,8
+127,9,Murillio,1446,8
+128,9,Snell,1067,8
+129,9,Gorlas,885,8
+130,9,Challice,530,8
+131,9,Scillara,435,8
+132,9,Crokus Younghand,848,8
+133,9,Iskaral Pust,1042,8
+134,9,Gorlas,660,8
+135,9,Harllo (young),1376,8
+136,9,Duiker,770,8
+137,9,Crokus Younghand,1622,8
+138,9,Challice,2297,8
+139,9,Kruppe,726,8
+140,10,Endest Silann,1336,8
+141,10,Samar Dev,2810,8
+142,10,Salind,1489,8
+143,10,Seerdomin,1795,8
+144,10,Monkrat,117,8
+145,10,Nimander,3293,8
+146,10,Desra,246,8
+147,10,Crone,690,8
+148,11,Kruppe,429,8
+149,11,Harllo (young),1577,8
+150,11,Leff,702,8
+151,11,Scorch,452,8
+152,11,Leff,217,8
+153,11,Torvald Nom,3523,8
+154,11,Leff,276,8
+155,11,Kruppe,1789,8
+156,11,Barathol Mekhar,832,8
+157,11,Kruppe,607,8
+158,11,Picker,564,8
+159,11,Bluepearl,456,8
+160,11,Blend,132,8
+161,11,Antsy,154,8
+162,11,Nameless killer,165,8
+163,11,Fisher,92,8
+164,11,Picker,119,8
+165,11,Blend,32,8
+166,11,Antsy,96,8
+167,11,Blend,322,8
+168,11,Mallet,154,8
+169,11,Nameless killer,19,8
+170,11,Bluepearl,181,8
+171,11,Antsy,232,8
+172,11,Picker,350,8
+173,11,Blend,71,8
+174,11,Antsy,450,8
+175,11,Blend,737,8
+176,11,Crokus Younghand,595,8
+177,12,Endest Silann,2162,8
+178,12,Harak,661,8
+179,12,Seerdomin,1042,8
+180,12,Salind,1538,8
+181,12,Spinnock Durav,1220,8
+182,12,Samar Dev,1517,8
+183,12,Nimander,1408,8
+184,12,Desra,108,8
+185,12,Skintick,150,8
+186,12,Kedeviss,218,8
+187,12,Nimander,238,8
+188,12,Seerdomin,643,8
+189,12,Gradithan,464,8
+190,12,Seerdomin,654,8
+191,12,Spinnock Durav,280,8
+192,12,Skintick,591,8
+193,12,Nimander,737,8
+194,12,Seerdomin,225,8
+195,12,Nimander,340,8
+196,12,Skintick,518,8
+197,12,Seerdomin,330,8
+198,12,Gradithan,216,8
+199,12,Anomander Rake,173,8
+200,12,Kallor,413,8
+201,13,Gruntle,1458,8
+202,13,Amby Bole,709,8
+203,13,Faint,667,8
+204,13,Reccanto Ilk,222,8
+205,13,Mappo,781,8
+206,13,Precious Thimble,834,8
+207,13,Gruntle,1964,8
+208,13,Ditch,2498,8
+209,13,Apsal'ara,987,8
+210,13,Kruppe,397,8
+211,13,Krute,384,8
+212,13,Thordy,511,8
+213,13,The ox,313,8
+214,13,Nameless guard,682,8
+215,13,Iskaral Pust,2285,8
+216,13,Crokus Younghand,1460,8
+217,13,Scillara,1474,8
+218,13,Kruppe,780,8
+219,13,Harllo (young),722,8
+220,13,Dev'ad Anan Tol,788,8
+221,14,Gruntle,3006,8
+222,14,Samar Dev,1412,8
+223,14,Skintick,2190,8
+224,14,Endest Silann,1040,8
+225,14,Seerdomin,805,8
+226,14,Salind,506,8
+227,14,Karsa Orlong,971,8
+228,14,Cotillion,83,8
+229,14,Gruntle,515,8
+230,15,Bainisk,184,8
+231,15,Harllo (young),1001,8
+232,15,Bainisk,135,8
+233,15,Kruppe,125,8
+234,15,Blend,941,8
+235,15,Picker,1132,8
+236,15,Antsy,3034,8
+237,15,Picker,899,8
+238,15,Antsy,302,8
+239,15,Baruk,1612,8
+240,15,Fisher,938,8
+241,15,Envy,205,8
+242,15,Kruppe,93,8
+243,15,Tiserra,1595,8
+244,15,Kruppe,1111,8
+245,15,Crokus Younghand,518,8
+246,15,Challice,2161,8
+247,15,Barathol Mekhar,586,8
+248,15,Murillio,1290,8
+249,15,Blend,568,8
+250,16,Kallor,1557,8
+251,16,Endest Silann,1191,8
+252,16,Apsal'ara,1391,8
+253,16,Ditch,1258,8
+254,16,Kedeviss,1429,8
+255,16,Clip,577,8
+256,16,The High Priestess,1875,8
+257,16,Samar Dev,2428,8
+258,16,Tulas Shorn,476,8
+259,16,Gruntle,1065,8
+260,16,Glanno Tarp,850,8
+261,16,Gruntle,434,8
+262,17,Kruppe,472,8
+263,17,Snell,758,8
+264,17,Bellam Nom,314,8
+265,17,Seba Krafar,877,8
+266,17,Coll,585,8
+267,17,Hanut Orr,323,8
+268,17,Seba Krafar,864,8
+269,17,Fisher,626,8
+270,17,Bedek,567,8
+271,17,Snell,1201,8
+272,17,Bellam Nom,250,8
+273,17,Challice,858,8
+274,17,Murillio,552,8
+275,17,The ox,382,8
+276,17,Snell,1082,8
+277,17,Bellam Nom,147,8
+278,17,Scillara,1946,8
+279,17,Kruppe,1236,8
+280,17,Gorlas,719,8
+281,17,Murillio,1734,8
+282,17,Krute,457,8
+283,17,Rallick Nom,359,8
+284,17,Barathol Mekhar,463,8
+285,17,Kruppe,772,8
+286,17,Myrla,455,8
+287,17,Bedek,99,8
+288,17,Myrla,163,8
+289,17,Murillio,1240,8
+290,17,Gorlas,299,8
+291,17,The ox,181,8
+292,18,Cotillion,2175,8
+293,18,Kallor,1211,8
+294,18,Nimander,862,8
+295,18,Samar Dev,1371,8
+296,18,Pearl (demon),385,8
+297,18,Draconus,609,8
+298,18,Ditch,400,8
+299,18,Kadaspala,883,8
+300,18,Seerdomin,444,8
+301,18,Monkrat,715,8
+302,18,The High Priestess,858,8
+303,18,Reccanto Ilk,1052,8
+304,18,Precious Thimble,604,8
+305,18,Gruntle,626,8
+306,18,Quell,1521,8
+307,18,Precious Thimble,351,8
+308,18,Gruntle,254,8
+309,18,Amby Bole,301,8
+310,18,Gruntle,909,8
+311,18,Bedusk Pall Kovuss Agape,25,8
+312,18,Kedeviss,1005,8
+313,18,Aranatha,405,8
+314,18,Endest Silann,410,8
+315,19,Kruppe,803,8
+316,19,Nameless old man,81,8
+317,19,Crokus Younghand,1662,8
+318,19,Kruppe,193,8
+319,19,Venaz,603,8
+320,19,Harllo (young),2060,8
+321,19,Bainisk,226,8
+322,19,Kruppe,687,8
+323,19,Blend,1602,8
+324,19,Baruk,850,8
+325,19,Spite,398,8
+326,19,Meese,143,8
+327,19,Kruppe,265,8
+328,19,Rallick Nom,114,8
+329,19,Crokus Younghand,575,8
+330,19,Kruppe,36,8
+331,19,Bellam Nom,666,8
+332,19,Challice,567,8
+333,19,Kruppe,1058,8
+334,19,Picker,931,8
+335,19,Harllo (young),504,8
+336,19,Kruppe,318,8
+337,19,Crokus Younghand,181,8
+338,19,Kruppe,93,8
+339,20,Nimander,1746,8
+340,20,Skintick,218,8
+341,20,Monkrat,1442,8
+342,20,The High Priestess,1081,8
+343,20,Seerdomin,508,8
+344,20,Kallor,375,8
+345,20,Samar Dev,716,8
+346,20,Karsa Orlong,929,8
+347,20,Ditch,1051,8
+348,20,Precious Thimble,1239,8
+349,20,Kruppe,285,8
+350,20,Kallor,42,8
+351,20,Samar Dev,57,8
+352,20,Chillbais,123,8
+353,21,Kruppe,200,8
+354,21,Gorlas,1353,8
+355,21,The foreman,693,8
+356,21,Crokus Younghand,150,8
+357,21,Venaz,1934,8
+358,21,Kruppe,30,8
+359,21,Thordy,132,8
+360,21,Gaz,44,8
+361,21,Tiserra,154,8
+362,21,Blend,125,8
+363,21,Chaur,181,8
+364,21,Spite,82,8
+365,21,Nameless guard,347,8
+366,21,Kruppe,179,8
+367,21,Seba Krafar,102,8
+368,21,Shardan Lim,970,8
+369,21,Challice,1496,8
+370,21,Hanut Orr,340,8
+371,21,Torvald Nom,363,8
+372,21,Leff,271,8
+373,21,Crokus Younghand,602,8
+374,21,Grisp Falaunt,1047,8
+375,21,Kruppe,159,8
+376,21,Spite,270,8
+377,21,Envy,118,8
+378,21,Spite,148,8
+379,21,Leff,311,8
+380,21,Torvald Nom,1345,8
+381,21,Harllo (young),991,8
+382,21,Hanut Orr,124,8
+383,21,Gaz,250,8
+384,21,Nameless thug,571,8
+385,21,Nameless guard,682,8
+386,21,Gaz,357,8
+387,21,Thordy,150,8
+388,21,Nameless guard,854,8
+389,21,Thordy,268,8
+390,21,Kruppe,205,8
+391,21,Skilles Naver,366,8
+392,21,Kanz,222,8
+393,21,Benuck Fill,417,8
+394,21,Avab Tenitt,280,8
+395,21,Widow Lebbil,206,8
+396,21,Saborgan,396,8
+397,21,Seba Krafar,1007,8
+398,21,Kruppe,170,8
+399,21,The coyote,324,8
+400,21,Anomander Rake,283,8
+401,21,Kruppe,121,8
+402,21,Anomander Rake,46,8
+403,21,Hood,141,8
+404,21,Anomander Rake,307,8
+405,22,Samar Dev,1022,8
+406,22,Kallor,1090,8
+407,22,Nimander,1580,8
+408,22,Salind,119,8
+409,22,Monkrat,1476,8
+410,22,Seerdomin,527,8
+411,22,Picker,640,8
+412,22,Endest Silann,879,8
+413,22,Samar Dev,689,8
+414,22,Chillbais,327,8
+415,22,Samar Dev,968,8
+416,22,Kruppe,258,8
+417,22,Ditch,262,8
+418,22,Pearl (demon),297,8
+419,22,Apsal'ara,601,8
+420,22,Draconus,1784,8
+421,23,Kruppe,830,8
+422,23,Pallid,532,8
+423,23,Barathol Mekhar,359,8
+424,23,Chaur,64,8
+425,23,Barathol Mekhar,295,8
+426,23,The ox,110,8
+427,23,Torvald Nom,475,8
+428,23,Scorch,419,8
+429,23,Crokus Younghand,337,8
+430,23,Challice,65,8
+431,23,Crokus Younghand,339,8
+432,23,Challice,244,8
+433,23,Crokus Younghand,207,8
+434,23,Challice,148,8
+435,23,Kruppe,348,8
+436,23,Barathol Mekhar,381,8
+437,23,Chaur,140,8
+438,23,Barathol Mekhar,1016,8
+439,23,Chaur,45,8
+440,23,Draconus,374,8
+441,23,Samar Dev,1426,8
+442,23,Kruppe,626,8
+443,23,Tulas Shorn,98,8
+444,23,Kruppe,43,8
+445,23,Iskaral Pust,303,8
+446,23,Kruppe,894,8
+447,23,Samar Dev,158,8
+448,23,Baruk,330,8
+449,23,Crokus Younghand,784,8
+450,23,Spinnock Durav,1751,8
+451,23,Kallor,219,8
+452,24,Endest Silann,894,8
+453,24,Apsal'ara,502,8
+454,24,Kruppe,679,8
+455,24,Toc the Younger,552,8
+456,24,Glanno Tarp,686,8
+457,24,Mappo,85,8
+458,24,Toc the Younger,163,8
+459,24,Gruntle,120,8
+460,24,Draconus,1095,8
+461,24,Seguleh Second,275,8
+462,24,Crokus Younghand,70,8
+463,24,Karsa Orlong,351,8
+464,24,Crokus Younghand,111,8
+465,24,Barathol Mekhar,151,8
+466,24,Samar Dev,190,8
+467,24,Karsa Orlong,440,8
+468,24,Kruppe,219,8
+469,24,Samar Dev,275,8
+470,24,Tulas Shorn,58,8
+471,24,Iskaral Pust,356,8
+472,24,Picker,535,8
+473,24,Anomander Rake,317,8
+474,24,Kadaspala,363,8
+475,24,Kruppe,186,8
+476,24,Monkrat,927,8
+477,24,Clip,445,8
+478,24,Endest Silann,260,8
+479,24,The Bellurdan,272,8
+480,24,Nimander,433,8
+481,24,Seerdomin,518,8
+482,24,The High Priestess,174,8
+483,24,Kadaspala,28,8
+484,24,Ditch,652,8
+485,24,Apsal'ara,105,8
+486,24,Draconus,273,8
+487,24,The Bellurdan,164,8
+488,24,Monkrat,137,8
+489,24,Nimander,399,8
+490,24,Endest Silann,253,8
+491,24,Itkovian,363,8
+492,24,Draconus,360,8
+493,24,Barathol Mekhar,725,8
+494,24,Kruppe,444,8
+495,24,Kallor,143,8
+496,24,Blend,223,8
+497,24,Samar Dev,677,8
+498,24,Caladan Brood,333,8
+499,24,Cotillion,626,8
+500,24,Bellam Nom,68,8
+501,24,Torvald Nom,229,8
+502,24,Rallick Nom,41,8
+503,24,Spite,179,8
+504,24,Crokus Younghand,169,8
+505,24,Scillara,408,8
+506,24,Kruppe,692,8
+507,25,Nimander,741,8
+508,25,Baruk,531,8
+509,25,Fisher,169,8
+510,25,Kruppe,253,8
+1,0,Rutt,510,9
+2,0,Badalle,486,9
+3,0,Visto,643,9
+4,0,Badalle,227,9
+5,0,Kalyth,2602,9
+6,0,Gu'Rull,665,9
+7,0,Icarium,850,9
+8,0,Heboric Light Touch,918,9
+9,1,The owl,373,9
+10,1,Throatslitter,260,9
+11,1,Bottle,999,9
+12,1,Throatslitter,165,9
+13,1,Bottle,246,9
+14,1,Sinn,474,9
+15,1,Pores,512,9
+16,1,Grub,785,9
+17,1,Tehol Beddict,1706,9
+18,1,Pores,399,9
+19,1,Mulvan Dreader,219,9
+20,1,Norlo Trumb,391,9
+21,1,Badan Gruk,625,9
+22,1,Banaschar,923,9
+23,1,Lostara Yil,689,9
+24,1,Brys Beddict,850,9
+25,1,Ben Adaephon Delat,572,9
+26,1,Jarak bird,53,9
+27,1,Kindly,582,9
+28,1,Seren Pedac,1182,9
+29,1,Bottle,506,9
+30,1,Seren Pedac,585,9
+31,1,Bottle,86,9
+32,1,Banaschar,428,9
+33,1,The Errant,107,9
+34,2,Udinaas,1377,9
+35,2,Onrack T'emlava,1462,9
+36,2,Tanakalian,2180,9
+37,2,Yedan Derryg,1800,9
+38,2,Pully,676,9
+39,2,Udinaas,1596,9
+40,2,Tanakalian,2688,9
+41,2,Avalt,785,9
+42,2,Felash,197,9
+43,2,Yan Tovis,987,9
+44,3,Shurq Elalle,1235,9
+45,3,Kisswhere,1044,9
+46,3,Keneb,376,9
+47,3,Deadsmell,875,9
+48,3,Urb,1103,9
+49,3,Brys Beddict,1180,9
+50,3,The Errant,27,9
+51,3,Seren Pedac,225,9
+52,3,Deadsmell,234,9
+53,3,Hellian,191,9
+54,3,Brys Beddict,1243,9
+55,3,Bugg,1258,9
+56,3,The Errant,588,9
+57,3,Telorast,942,9
+58,3,Withal,306,9
+59,3,Deadsmell,639,9
+60,3,Brys Beddict,638,9
+61,3,Ben Adaephon Delat,535,9
+62,3,Brys Beddict,772,9
+63,3,Ben Adaephon Delat,54,9
+64,3,Fiddler,139,9
+65,4,Kalyth,933,9
+66,4,Sag'Churok,874,9
+67,4,Kalyth,1542,9
+68,4,Gu'Rull,816,9
+69,4,Sag'Churok,230,9
+70,4,Gu'Rull,193,9
+71,4,Kalyth,785,9
+72,4,Hetan,2133,9
+73,4,Torrent,2181,9
+74,4,Setoc,804,9
+75,4,Cafal,1799,9
+76,4,Badalle,1101,9
+77,4,Saddic,773,9
+78,5,Tarr,699,9
+79,5,Brys Beddict,344,9
+80,5,Tarr,82,9
+81,5,Brys Beddict,105,9
+82,5,Lostara Yil,3370,9
+83,5,Brys Beddict,2105,9
+84,5,Bottle,1677,9
+85,5,Grub,311,9
+86,5,Tarr,259,9
+87,5,Fiddler,413,9
+88,5,Pores,546,9
+89,5,Kisswhere,373,9
+90,5,Badan Gruk,379,9
+91,5,Lostara Yil,1613,9
+92,6,Vedith,1186,9
+93,6,Jarabb,477,9
+94,6,Tanakalian,1086,9
+95,6,Avalt,1456,9
+96,6,Tanakalian,1973,9
+97,6,Yan Tovis,1248,9
+98,6,Pithy,630,9
+99,6,Yan Tovis,188,9
+100,6,Icarium,4027,9
+101,7,The Errant,2054,9
+102,7,Kilmandaros,731,9
+103,7,Gesler,344,9
+104,7,Bottle,2467,9
+105,7,Withal,945,9
+106,7,Telorast,806,9
+107,7,Smiles,1809,9
+108,7,Keneb,438,9
+109,7,Faradan Sort,467,9
+110,7,Sinter,1099,9
+111,7,Withal,293,9
+112,7,Grub,1418,9
+113,7,The Errant,167,9
+114,8,Kalyth,3300,9
+115,8,Sag'Churok,52,9
+116,8,Setoc,4692,9
+117,8,Rautos Hivanar,1008,9
+118,8,Icarium,211,9
+119,8,Asane,230,9
+120,8,Last,462,9
+121,8,Sheb,270,9
+122,8,Nappet,422,9
+123,8,Feather Witch,452,9
+124,8,Rautos Hivanar,547,9
+125,8,Taxilian,651,9
+126,8,Icarium,221,9
+127,8,Yan Tovis,1248,9
+128,8,Yedan Derryg,803,9
+129,8,Badalle,984,9
+130,9,Shurq Elalle,1135,9
+131,9,Bugg,273,9
+132,9,Shurq Elalle,1503,9
+133,9,Felash's handmaiden,217,9
+134,9,Bugg,108,9
+135,9,Deadsmell,3893,9
+136,9,Hellian,554,9
+137,9,Cuttle,1838,9
+138,9,Tarr,674,9
+139,9,Smiles,575,9
+140,9,Pores,1580,9
+141,9,Kisswhere,308,9
+142,9,Sunrise,604,9
+143,9,Fiddler,1263,9
+144,9,Cuttle,16,9
+145,10,Kalyth,1941,9
+146,10,Zaravow,947,9
+147,10,Sekara,770,9
+148,10,Hetan,2096,9
+149,10,Setoc,613,9
+150,10,Torrent,74,9
+151,10,Icarium,1815,9
+152,10,Yan Tovis,524,9
+153,10,Pully,208,9
+154,10,Yedan Derryg,1753,9
+155,10,Skwish,194,9
+156,10,Yedan Derryg,1537,9
+157,10,Yan Tovis,594,9
+158,11,Janath Anar,2489,9
+159,11,The Errant,982,9
+160,11,Shurq Elalle,832,9
+161,11,Ruthan Gudd,571,9
+162,11,Ublala Pung,667,9
+163,11,Harlest Eberict,807,9
+164,11,Brys Beddict,587,9
+165,11,Reliko,745,9
+166,11,Fiddler,1193,9
+167,11,Throatslitter,608,9
+168,11,Ruthan Gudd,1145,9
+169,11,Tarr,556,9
+170,11,Bottle,2106,9
+171,11,Pores,624,9
+172,11,Hedge,782,9
+173,11,Lostara Yil,1123,9
+174,11,Bugg,507,9
+175,12,Maral Eb,944,9
+176,12,Hessanrala,734,9
+177,12,Onos T'oolan,1376,9
+178,12,Irkullas,634,9
+179,12,Kamz'tryld,403,9
+180,12,Talt,353,9
+181,12,Inthalas,106,9
+182,12,Sagant,164,9
+183,12,Inthalas,165,9
+184,12,Bedit,375,9
+185,12,Inthalas,839,9
+186,12,Onos T'oolan,1304,9
+187,12,Maral Eb,633,9
+188,12,Onos T'oolan,692,9
+189,12,Maral Eb,170,9
+190,12,Hetan,200,9
+191,12,Ralata,688,9
+192,12,Torrent,1074,9
+193,12,Bakal,604,9
+194,12,Yan Tovis,831,9
+195,12,Yedan Derryg,592,9
+196,13,Rud Ellale,1601,9
+197,13,Withal,2318,9
+198,13,Badalle,1112,9
+199,13,Kalyth,2197,9
+200,13,Sag'Churok,2662,9
+201,13,Grub,1912,9
+202,13,Icarium,2028,9
+203,14,Warleader Gall,1345,9
+204,14,Shelemasa,947,9
+205,14,Vedith,641,9
+206,14,Rava,1827,9
+207,14,Tanakalian,1453,9
+208,14,Warleader Gall,1067,9
+209,14,Abrastal,3318,9
+210,14,Warleader Gall,1580,9
+211,15,Onos T'oolan,2219,9
+212,15,Toc the Younger,511,9
+213,15,Torrent,1185,9
+214,15,Setoc,982,9
+215,15,Kalyth,777,9
+216,15,Gunth Mach,729,9
+217,15,Irkullas,1046,9
+218,15,Bakal,1098,9
+219,15,Sekara,997,9
+220,15,Stavi,318,9
+221,15,Absi Kire,268,9
+222,15,Stavi,99,9
+223,15,Hetan,317,9
+224,15,Cafal,460,9
+225,15,Sathand Gril,442,9
+226,15,Hetan,281,9
+227,15,Krin,829,9
+228,15,Hetan,275,9
+229,15,Sathand Gril,331,9
+230,15,Cafal,437,9
+231,15,Stavi,609,9
+232,15,Sathand Gril,414,9
+233,15,Stavi,439,9
+234,15,Setoc,314,9
+235,15,Cafal,185,9
+236,15,Balamit,335,9
+237,15,Jayviss,285,9
+238,15,Yedin,313,9
+239,15,Bakal,336,9
+240,15,Sekara,895,9
+241,15,Bakal,592,9
+242,15,Setoc,438,9
+243,15,Onos T'oolan,667,9
+244,16,Sechul Lath,3509,9
+245,16,Cuttle,1222,9
+246,16,Gesler,272,9
+247,16,Bottle,4122,9
+248,16,Banaschar,891,9
+249,16,Lostara Yil,874,9
+250,16,Stormy,803,9
+251,16,Sunrise,1109,9
+252,16,Pores,378,9
+253,16,Tarr,477,9
+254,16,Badan Gruk,840,9
+255,16,Fiddler,745,9
+256,16,Brys Beddict,1038,9
+257,17,Badalle,1521,9
+258,17,Lera Epar,845,9
+259,17,Rystalle Ev,2219,9
+260,17,Lera Epar,93,9
+261,17,Setoc,1607,9
+262,17,Toc the Younger,863,9
+263,17,Varandas,270,9
+264,17,Toc the Younger,612,9
+265,17,Irkullas,540,9
+266,17,Bakal,608,9
+267,17,Estaral,2439,9
+268,17,Kashat,325,9
+269,17,Cafal,969,9
+270,17,Estaral,686,9
+271,17,Bakal,1483,9
+272,17,Estaral,690,9
+273,17,Cafal,396,9
+274,17,Hetan,171,9
+275,17,Strahl,334,9
+276,17,Badalle,397,9
+277,18,Yan Tovis,778,9
+278,18,Yedan Derryg,885,9
+279,18,Brevity,197,9
+280,18,Sandalath Drukorlat,1466,9
+281,18,Taralack Veed,508,9
+282,18,Icarium,1101,9
+283,18,Torrent,547,9
+284,18,Setoc,636,9
+285,18,Yan Tovis,660,9
+286,18,Strahl,699,9
+287,18,Maral Eb,186,9
+288,18,Irkullas,174,9
+289,18,Sekara,356,9
+290,18,Sagal,471,9
+291,18,Irkullas,434,9
+292,18,Kashat,491,9
+293,18,Maral Eb,362,9
+294,18,Sagal,491,9
+295,18,Irkullas,399,9
+296,18,Last,566,9
+297,18,Sheb,527,9
+298,18,Icarium,184,9
+299,18,Rautos Hivanar,347,9
+300,18,Icarium,488,9
+301,18,Yan Tovis,1764,9
+302,18,Torrent,357,9
+303,18,Withal,624,9
+304,18,Draconus,432,9
+305,19,Kilmandaros,3127,9
+306,19,Bugg,58,9
+307,19,Brayderal,708,9
+308,19,Badalle,659,9
+309,19,Sever,708,9
+310,19,Brayderal,125,9
+311,19,Badalle,960,9
+312,19,Onos T'oolan,768,9
+313,19,Nom Kala,576,9
+314,19,Rystalle Ev,184,9
+315,19,Aranict,1934,9
+316,19,Smiles,908,9
+317,19,Cuttle,355,9
+318,19,Corabb Bhilan Thenu'alas,532,9
+319,19,Koryk,742,9
+320,19,Ruthan Gudd,463,9
+321,19,Balm,462,9
+322,19,Hellian,378,9
+323,19,Gesler,1556,9
+324,19,Aranict,868,9
+325,19,Brys Beddict,219,9
+326,19,Sunrise,434,9
+327,19,Sinter,753,9
+328,19,Kisswhere,3169,9
+329,19,Pores,523,9
+330,19,Lostara Yil,671,9
+331,19,Ublala Pung,720,9
+332,20,Rud Ellale,1500,9
+333,20,Torrent,2427,9
+334,20,Setoc,4716,9
+335,20,Mappo,2015,9
+336,20,Tanakalian,2196,9
+337,20,Krughava,151,9
+338,20,Spax,2210,9
+339,20,Hanavat,1153,9
+340,20,Spax,648,9
+341,21,Sandalath Drukorlat,1077,9
+342,21,Brevity,505,9
+343,21,Sandalath Drukorlat,436,9
+344,21,Pully,847,9
+345,21,Yan Tovis,595,9
+346,21,Sechul Lath,1614,9
+347,21,Torrent,2716,9
+348,21,Kebralle Korish,752,9
+349,21,Kalt Urmanal,707,9
+350,21,Nom Kala,597,9
+351,21,Draconus,1357,9
+352,21,Strahl,880,9
+353,21,Shurq Elalle,1586,9
+354,21,Felash's handmaiden,990,9
+355,21,Shurq Elalle,100,9
+356,22,Badalle,1418,9
+357,22,Saddic,955,9
+358,22,Brayderal,413,9
+359,22,Badalle,369,9
+360,22,Fiddler,2223,9
+361,22,Keneb,1165,9
+362,22,Bottle,913,9
+363,22,Keneb,1759,9
+364,22,Odenid,525,9
+365,22,Henar Vygulf,268,9
+366,22,Brys Beddict,1466,9
+367,22,Cuttle,652,9
+368,22,Corabb Bhilan Thenu'alas,1174,9
+369,22,Kindly,511,9
+370,22,Pores,839,9
+371,22,Sinter,1550,9
+372,22,Gesler,1352,9
+373,23,Abrastal,1267,9
+374,23,Spax,323,9
+375,23,Abrastal,1492,9
+376,23,Kisswhere,557,9
+377,23,Rafala,594,9
+378,23,Kisswhere,1456,9
+379,23,Masan Gilani,778,9
+380,23,Onos T'oolan,717,9
+381,23,Brys Beddict,1007,9
+382,23,Keneb,119,9
+383,23,Banaschar,153,9
+384,23,Sunrise,232,9
+385,23,Ruthan Gudd,266,9
+386,23,Fiddler,272,9
+387,23,Bottle,166,9
+388,23,Sinter,309,9
+389,23,Ben Adaephon Delat,477,9
+390,23,Ruthan Gudd,475,9
+391,23,Lostara Yil,225,9
+392,23,Ben Adaephon Delat,88,9
+393,23,Keneb,72,9
+394,23,Skanarow,53,9
+395,23,Ruthan Gudd,107,9
+396,23,Fiddler,122,9
+397,23,Ebron,82,9
+398,23,Ruthan Gudd,134,9
+399,23,Bottle,209,9
+400,23,Ebron,101,9
+401,23,Ben Adaephon Delat,122,9
+402,23,Ruthan Gudd,90,9
+403,23,Fiddler,241,9
+404,23,Hedge,143,9
+405,23,Ben Adaephon Delat,170,9
+406,23,Sunrise,85,9
+407,23,Hedge,50,9
+408,23,Ruthan Gudd,210,9
+409,23,Fiddler,119,9
+410,23,Corabb Bhilan Thenu'alas,109,9
+411,23,Drawfirst,173,9
+412,23,Lostara Yil,308,9
+413,23,Skanarow,93,9
+414,23,Brys Beddict,115,9
+415,23,Warleader Gall,216,9
+416,23,Fiddler,246,9
+417,23,Bottle,80,9
+418,23,Corabb Bhilan Thenu'alas,244,9
+419,23,Hedge,217,9
+420,23,Warleader Gall,305,9
+421,23,Hedge,60,9
+422,23,Brys Beddict,415,9
+423,23,Bottle,226,9
+424,23,Tarr,107,9
+425,23,Urb,80,9
+426,23,Henar Vygulf,75,9
+427,23,Lostara Yil,209,9
+428,23,Henar Vygulf,8,9
+429,23,Kisswhere,124,9
+430,24,Nom Kala,686,9
+431,24,Onos T'oolan,143,9
+432,24,Kalyth,1751,9
+433,24,Gesler,983,9
+434,24,Gu'Rull,686,9
+435,24,Stormy,186,9
+436,24,Gesler,492,9
+437,24,Strahl,635,9
+438,24,Nom Kala,373,9
+439,24,Stormy,1483,9
+440,24,Kalyth,694,9
+441,24,Stormy,255,9
+442,24,Gesler,230,9
+443,24,Stormy,216,9
+444,24,Gesler,184,9
+445,24,Kalyth,73,9
+446,24,Stormy,160,9
+447,24,Gesler,149,9
+448,24,Icarium,154,9
+449,24,Kalyth,400,9
+450,24,Gesler,311,9
+451,24,Icarium,513,9
+452,24,Kalyth,347,9
+453,24,Stormy,399,9
+454,24,Gesler,1209,9
+455,24,Sulkit,142,9
+456,24,Faint,412,9
+457,24,Toc the Younger,525,9
+458,24,Hood,244,9
+459,24,Sechul Lath,143,9
+1,1,Cotillion,302,10
+2,1,Calm,781,10
+3,1,Aparal Forge,996,10
+4,1,Crippled God,540,10
+5,1,Cotillion,794,10
+6,1,Bugg,1039,10
+7,1,Udinaas,1778,10
+8,1,Calm,549,10
+9,1,Ganoes Stabro Paran,1156,10
+10,1,Samar Dev,294,10
+11,1,Apsal'ara,1378,10
+12,1,Ganoes Stabro Paran,1050,10
+13,2,Tulas Shorn,1255,10
+14,2,Ralata,1883,10
+15,2,Mappo,1321,10
+16,2,Faint,769,10
+17,2,Torrent,951,10
+18,2,Precious Thimble,2227,10
+19,2,Mappo,408,10
+20,2,Torrent,435,10
+21,2,Setoc,437,10
+22,2,Masan Gilani,1541,10
+23,2,Bottle,1602,10
+24,2,Ben Adaephon Delat,691,10
+25,3,Felash,446,10
+26,3,Shurq Elalle,1801,10
+27,3,Kalyth,1526,10
+28,3,Gu'Rull,411,10
+29,3,Grub,401,10
+30,3,Gesler,1034,10
+31,3,Badalle,511,10
+32,3,Spax,505,10
+33,3,Kisswhere,765,10
+34,3,Spax,767,10
+35,3,Tanakalian,567,10
+36,3,Aranict,1209,10
+37,3,Shelemasa,638,10
+38,3,Warleader Gall,520,10
+39,4,Blistig,1041,10
+40,4,Kindly,274,10
+41,4,Faradan Sort,305,10
+42,4,Banaschar,601,10
+43,4,Hedge,776,10
+44,4,Badan Gruk,1096,10
+45,4,Reliko,155,10
+46,4,Sinter,207,10
+47,4,Urb,663,10
+48,4,Hellian,263,10
+49,4,Widdershins,1034,10
+50,4,Shortnose,336,10
+51,4,Cuttle,765,10
+52,4,Lostara Yil,405,10
+53,4,Banaschar,508,10
+54,4,Lostara Yil,702,10
+55,4,Balm,308,10
+56,4,Lostara Yil,209,10
+57,4,Aranict,1015,10
+58,5,Withal,1726,10
+59,5,Yedan Derryg,1604,10
+60,5,Yan Tovis,1179,10
+61,5,Reverence,2051,10
+62,5,Sechul Lath,1649,10
+63,5,Badalle,776,10
+64,6,Kalt Urmanal,1006,10
+65,6,Onos T'oolan,1287,10
+66,6,Rystalle Ev,337,10
+67,6,Ulag Togtil,485,10
+68,6,Stormy,535,10
+69,6,Grub,405,10
+70,6,Sinn,989,10
+71,6,Rud Ellale,1132,10
+72,6,Ublala Pung,902,10
+73,6,Setoc,1214,10
+74,6,Faint,1009,10
+75,6,Ublala Pung,185,10
+76,6,Faint,588,10
+77,6,Ublala Pung,405,10
+78,6,Torrent,861,10
+79,6,Gruntle,1166,10
+80,6,Mappo,544,10
+81,6,Stormy,1006,10
+82,7,Aranict,4517,10
+83,7,Fiddler,1231,10
+84,7,Masan Gilani,865,10
+85,7,Bottle,965,10
+86,7,Lostara Yil,1128,10
+87,7,Bottle,235,10
+88,7,Masan Gilani,1118,10
+89,7,Bottle,381,10
+90,7,Stormy,1935,10
+91,8,Badalle,980,10
+92,8,Felash,1524,10
+93,8,Shurq Elalle,354,10
+94,8,Felash,337,10
+95,8,Shurq Elalle,337,10
+96,8,Felash's handmaiden,855,10
+97,8,Felash,668,10
+98,8,Shurq Elalle,284,10
+99,8,Silchas Ruin,1632,10
+100,8,Ammanas,340,10
+101,8,Withal,2061,10
+102,8,Yan Tovis,330,10
+103,9,Toc the Younger,798,10
+104,9,Minala,579,10
+105,9,Torrent,714,10
+106,9,Olar Ethil,719,10
+107,9,Torrent,175,10
+108,9,Onos T'oolan,1092,10
+109,9,Ulag Togtil,216,10
+110,9,Rystalle Ev,352,10
+111,9,Gruntle,727,10
+112,9,Mappo,1162,10
+113,9,Faint,823,10
+114,9,Setoc,424,10
+115,9,Equity,3314,10
+116,9,Shurq Elalle,175,10
+117,10,Aranict,1236,10
+118,10,Brys Beddict,5515,10
+119,10,Tanakalian,3148,10
+120,10,Spax,2471,10
+121,11,Spindle,620,10
+122,11,Banaschar,800,10
+123,11,Blistig,778,10
+124,11,Pores,714,10
+125,11,Lostara Yil,1613,10
+126,11,Faradan Sort,1870,10
+127,11,Ruthan Gudd,193,10
+128,11,Cuttle,920,10
+129,11,Bottle,1619,10
+130,11,Widdershins,567,10
+131,11,Sinter,988,10
+132,11,Kisswhere,539,10
+133,11,Badan Gruk,89,10
+134,11,Hellian,766,10
+135,11,Maybe,299,10
+136,11,Urb,573,10
+137,11,Saltlick,566,10
+138,11,Flashwit,728,10
+139,11,Hedge,805,10
+140,11,Jastara,532,10
+141,11,Hanavat,648,10
+142,11,Henar Vygulf,1302,10
+143,11,Banaschar,711,10
+144,11,Fiddler,890,10
+145,12,Pithy,2374,10
+146,12,Yedan Derryg,340,10
+147,12,Yan Tovis,753,10
+148,12,Aparal Forge,1957,10
+149,12,Sandalath Drukorlat,2273,10
+150,12,Yedan Derryg,589,10
+151,12,Brevity,106,10
+152,12,Sharl,1042,10
+153,12,Pithy,239,10
+154,13,Aranict,1179,10
+155,13,Faint,764,10
+156,13,Precious Thimble,882,10
+157,13,Brys Beddict,358,10
+158,13,Spax,3232,10
+159,13,Krughava,1240,10
+160,13,Gesler,2029,10
+161,14,Badalle,1584,10
+162,14,Kilava,725,10
+163,14,Gruntle,1313,10
+164,14,Mappo,1749,10
+165,14,Rud Ellale,1736,10
+166,14,Ublala Pung,1347,10
+167,14,Ruthan Gudd,2007,10
+168,14,Faradan Sort,528,10
+169,14,Blistig,476,10
+170,14,Shelemasa,971,10
+171,14,Lostara Yil,576,10
+172,14,Hedge,508,10
+173,14,Widdershins,1694,10
+174,14,Burnt Cotillion,534,10
+175,14,Fiddler,410,10
+176,15,Yan Tovis,2609,10
+177,15,Aparal Forge,1798,10
+178,15,Sandalath Drukorlat,401,10
+179,15,Withal,913,10
+180,15,Pithy,563,10
+181,15,Yan Tovis,180,10
+182,15,Pithy,383,10
+183,15,Yan Tovis,110,10
+184,15,Yedan Derryg,565,10
+185,15,Yan Tovis,170,10
+186,15,Aparal Forge,386,10
+187,15,Yedan Derryg,359,10
+188,15,Pithy,366,10
+189,15,Brevity,328,10
+190,15,Yedan Derryg,285,10
+191,15,Brevity,81,10
+192,15,Aparal Forge,313,10
+193,15,Yan Tovis,443,10
+194,16,Sechul Lath,887,10
+195,16,Tulas Shorn,1835,10
+196,16,Rud Ellale,532,10
+197,16,Torrent,1308,10
+198,16,Onos T'oolan,703,10
+199,16,Rystalle Ev,92,10
+200,16,Gruntle,1207,10
+201,16,Mappo,1864,10
+202,16,Sechul Lath,2127,10
+203,17,Badalle,2378,10
+204,17,Fiddler,860,10
+205,17,Banaschar,460,10
+206,17,Bottle,560,10
+207,17,Shortnose,927,10
+208,17,Bavedict,745,10
+209,17,Sinter,951,10
+210,17,Hellian,623,10
+211,17,Nom Kala,637,10
+212,17,Ruthan Gudd,1696,10
+213,17,Nom Kala,793,10
+214,17,Badalle,868,10
+215,17,Ruthan Gudd,578,10
+216,18,Kalam Mekhar,1745,10
+217,18,Temper,233,10
+218,18,Belie,1756,10
+219,18,Noto Boil,157,10
+220,18,Picker,1234,10
+221,18,Shurq Elalle,1561,10
+222,18,Felash,578,10
+223,18,Shurq Elalle,571,10
+224,18,Felash's handmaiden,523,10
+225,18,Shurq Elalle,248,10
+226,18,Felash's handmaiden,256,10
+227,18,Shurq Elalle,68,10
+228,18,Ublala Pung,829,10
+229,18,Diligence,942,10
+230,18,Gu'Rull,683,10
+231,18,Spax,760,10
+232,18,Faint,2303,10
+233,18,Tanakalian,942,10
+234,18,Gruntle,1299,10
+235,18,Kilava,403,10
+236,19,Sandalath Drukorlat,780,10
+237,19,Withal,1397,10
+238,19,Yan Tovis,746,10
+239,19,Sandalath Drukorlat,633,10
+240,19,Nimander,350,10
+241,19,Apsal'ara,755,10
+242,19,Aparal Forge,1080,10
+243,19,Nimander,710,10
+244,19,Spinnock Durav,956,10
+245,19,Sandalath Drukorlat,462,10
+246,19,Sharl,759,10
+247,19,Yedan Derryg,478,10
+248,19,Korlat,296,10
+249,19,Yan Tovis,471,10
+250,19,Nimander,247,10
+251,19,Sandalath Drukorlat,780,10
+252,19,Nimander,130,10
+253,19,Withal,324,10
+254,19,Sharl,277,10
+255,19,Zevgan Drouls,597,10
+256,19,Kadagar Fant,834,10
+257,19,Korlat,212,10
+258,19,Withal,923,10
+259,19,Sharl,344,10
+260,19,Yan Tovis,120,10
+261,20,Rutt,76,10
+262,20,Warleader Gall,508,10
+263,20,Badalle,679,10
+264,20,Koryk,707,10
+265,20,Bottle,412,10
+266,20,Smiles,525,10
+267,20,Cuttle,456,10
+268,20,Corabb Bhilan Thenu'alas,799,10
+269,20,Tarr,297,10
+270,20,Himble Thrup,336,10
+271,20,Rackle,213,10
+272,20,Pores,638,10
+273,20,Deadsmell,461,10
+274,20,Rackle,138,10
+275,20,Widdershins,565,10
+276,20,Shortnose,571,10
+277,20,Balm,295,10
+278,20,Deadsmell,533,10
+279,20,Ruthan Gudd,1277,10
+280,20,Blistig,419,10
+281,20,Badalle,827,10
+282,20,Saddic,75,10
+283,20,Fiddler,1227,10
+284,20,Lostara Yil,1640,10
+285,20,Fiddler,153,10
+286,20,Lostara Yil,322,10
+287,21,Cotillion,247,10
+288,21,Crippled God,393,10
+289,21,Picker,213,10
+290,21,Ganoes Stabro Paran,278,10
+291,21,Belie,1117,10
+292,21,Ganoes Stabro Paran,2482,10
+293,21,Kalam Mekhar,644,10
+294,21,Erekala,943,10
+295,21,Reverence,1191,10
+296,21,Stormy,660,10
+297,21,Setoc,1447,10
+298,21,Brys Beddict,1080,10
+299,21,Aranict,1182,10
+300,21,Spax,465,10
+301,21,Aranict,1626,10
+302,21,Tanakalian,942,10
+303,22,Calm,1134,10
+304,22,Kilmandaros,848,10
+305,22,Draconus,354,10
+306,22,Ammanas,657,10
+307,22,Sechul Lath,343,10
+308,22,Korabas,587,10
+309,22,Ganoes Stabro Paran,852,10
+310,22,Kalam Mekhar,1605,10
+311,22,Silchas Ruin,1622,10
+312,22,Torrent,465,10
+313,22,Telorast,516,10
+314,22,Ganoes Stabro Paran,1242,10
+315,22,Kalam Mekhar,1724,10
+316,22,Ganoes Stabro Paran,568,10
+317,22,Erekala,911,10
+318,22,Ganoes Stabro Paran,1214,10
+319,22,Stern,536,10
+320,22,Erekala,1418,10
+321,22,Staylock,219,10
+322,22,Stern,368,10
+323,22,Erekala,470,10
+324,22,Kalam Mekhar,585,10
+325,22,Ben Adaephon Delat,194,10
+326,22,Korabas,585,10
+327,23,Toc the Younger,601,10
+328,23,Diligence,1284,10
+329,23,Reverence,798,10
+330,23,Grub,2117,10
+331,23,Gesler,1214,10
+332,23,Onos T'oolan,840,10
+333,23,Gesler,214,10
+334,23,Kalyth,651,10
+335,23,Reverence,365,10
+336,23,Setoc,1244,10
+337,23,Krughava,283,10
+338,23,Faint,1120,10
+339,23,Brys Beddict,577,10
+340,23,Krughava,1324,10
+341,23,Setoc,85,10
+342,23,Krughava,640,10
+343,23,Brys Beddict,534,10
+344,23,Syndecan,533,10
+345,23,Abrastal,1877,10
+346,23,Feveren,363,10
+347,23,Diligence,664,10
+348,23,Brys Beddict,981,10
+349,23,Faint,559,10
+350,23,Precious Thimble,240,10
+351,23,Faint,302,10
+352,23,Precious Thimble,334,10
+353,23,Grub,698,10
+354,23,Abrastal,1122,10
+355,23,Brys Beddict,738,10
+356,23,Faint,251,10
+357,23,Syndecan,464,10
+358,23,Festian,222,10
+359,23,Spax,421,10
+360,23,Syndecan,117,10
+361,23,Spax,734,10
+362,23,Karsa Orlong,1441,10
+363,23,Reverence,1041,10
+364,23,Gesler,503,10
+365,23,Kalyth,292,10
+366,23,Gesler,510,10
+367,23,Onos T'oolan,321,10
+368,23,Reverence,233,10
+369,23,Karsa Orlong,298,10
+370,23,Onos T'oolan,548,10
+371,23,Reverence,251,10
+372,23,Kalyth,270,10
+373,23,Onos T'oolan,451,10
+374,23,Gillimada,233,10
+375,23,Sag'Churok,207,10
+376,23,Festian,69,10
+377,23,Lera Epar,237,10
+378,23,Shurq Elalle,630,10
+379,23,Toc the Younger,538,10
+380,23,Torrent,1298,10
+381,23,Olar Ethil,74,10
+382,23,Torrent,80,10
+383,23,Gesler,687,10
+384,23,Kalyth,128,10
+385,23,Bent,124,10
+386,23,Gesler,581,10
+387,23,Hood,565,10
+388,23,Stormy,465,10
+389,23,Sinn,84,10
+390,23,Gesler,834,10
+391,23,Reverence,84,10
+392,23,Bent,115,10
+393,23,Hood,136,10
+394,23,Bent,48,10
+395,23,Hood,288,10
+396,23,Lera Epar,213,10
+397,23,Onos T'oolan,459,10
+398,24,Banaschar,3593,10
+399,24,Hedge,369,10
+400,24,Fiddler,319,10
+401,24,Corabb Bhilan Thenu'alas,485,10
+402,24,Cuttle,675,10
+403,24,Sinter,228,10
+404,24,Hellian,229,10
+405,24,Urb,281,10
+406,24,Widdershins,283,10
+407,24,Deadsmell,251,10
+408,24,Hedge,828,10
+409,24,Badalle,176,10
+410,24,Pores,984,10
+411,24,Blistig,1266,10
+412,24,Banaschar,1276,10
+413,24,Tavore Paran,329,10
+414,24,Kalam Mekhar,815,10
+415,24,Tulas Shorn,653,10
+416,24,Telorast,306,10
+417,24,Korabas,444,10
+418,24,Fiddler,999,10
+419,24,Bottle,792,10
+420,24,Sinter,152,10
+421,24,Bottle,260,10
+422,24,Pravalak Rim,121,10
+423,24,Fiddler,219,10
+424,24,Gu'Rull,437,10
+425,24,Sinter,35,10
+426,24,Crone,186,10
+427,24,Fiddler,199,10
+428,24,Gu'Rull,353,10
+429,24,Crone,124,10
+430,24,Fiddler,1108,10
+431,24,Calm,267,10
+432,24,Mappo,188,10
+433,24,Calm,562,10
+434,24,Mappo,87,10
+435,24,Calm,242,10
+436,24,Grave,207,10
+437,24,Fiddler,194,10
+438,24,Urb,592,10
+439,24,Cuttle,137,10
+440,24,Saltlick,136,10
+441,24,Koryk,145,10
+442,24,Corabb Bhilan Thenu'alas,104,10
+443,24,Throatslitter,241,10
+444,24,Kisswhere,160,10
+445,24,Lap Twirl,202,10
+446,24,Skulldeath,206,10
+447,24,Hedge,270,10
+448,24,Fiddler,105,10
+449,24,Bottle,203,10
+450,24,Grave,132,10
+451,24,Crippled God,371,10
+452,24,Nom Kala,626,10
+453,24,Lostara Yil,451,10
+454,24,Banaschar,544,10
+455,24,Tavore Paran,703,10
+456,24,Blistig,83,10
+457,24,Freedom,789,10
+458,24,Warleader Gall,295,10
+459,24,Faradan Sort,303,10
+460,24,Freedom,431,10
+461,24,Blistig,194,10
+462,24,Lostara Yil,321,10
+463,24,Badalle,272,10
+464,24,Banaschar,64,10
+465,24,Aloft,80,10
+466,24,Badalle,182,10
+467,24,Warleader Gall,256,10
+468,24,Faradan Sort,212,10
+469,24,Ordinary Poliel,239,10
+470,24,Kindly,169,10
+471,24,Trissin,181,10
+472,24,Ruthan Gudd,91,10
+473,24,Trissin,82,10
+474,24,Grid Ffan,203,10
+475,24,Trissin,215,10
+476,24,Grid Ffan,293,10
+477,24,Lostara Yil,374,10
+478,24,Warleader Gall,264,10
+479,24,Freedom,217,10
+480,24,Warleader Gall,245,10
+481,24,Nom Kala,128,10
+482,24,Banaschar,371,10
+483,24,Ganoes Stabro Paran,456,10
+484,24,Melest,157,10
+485,24,Ganoes Stabro Paran,154,10
+486,24,Ruthan Gudd,266,10
+487,24,Lostara Yil,119,10
+488,24,Tavore Paran,170,10
+489,24,Ganoes Stabro Paran,133,10
+490,24,Tavore Paran,82,10
+491,24,Ganoes Stabro Paran,168,10
+492,24,Melest,40,10
+493,24,Hellian,184,10
+494,24,Corabb Bhilan Thenu'alas,205,10
+495,24,Crippled God,460,10
+496,24,Hedge,687,10
+497,24,Fiddler,447,10
+498,24,Smiles,38,10
+499,24,Cuttle,216,10
+500,24,Crippled God,195,10
+501,24,Haggraf,239,10
+502,24,Grave,383,10
+503,24,Kalam Mekhar,229,10
+504,24,Hedge,91,10
+505,24,Apsal'ara,478,10
+506,24,Fiddler,429,10
+507,24,Crippled God,1781,10
+508,24,Fiddler,135,10
+509,24,Ben Adaephon Delat,73,10
+510,24,Kalam Mekhar,175,10
+511,24,Ben Adaephon Delat,19,10
+512,24,Crippled God,69,10
+513,24,Koryk,384,10
+514,24,Fiddler,1067,10
+515,24,Cotillion,204,10
+516,24,Toc the Younger,137,10
+517,24,Gu'Rull,289,10
+518,24,Ublala Pung,425,10
+519,25,Nimander,559,10
+520,25,Korlat,1982,10
+521,25,Hood,251,10
+522,25,Aranict,548,10
+523,25,Bottle,395,10
+524,25,Korlat,610,10
+525,26,Udinaas,363,10
+526,26,Cotillion,234,10
+527,26,Crokus Younghand,313,10
+528,26,Nameless boy,711,10

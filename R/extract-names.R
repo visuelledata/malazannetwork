@@ -56,6 +56,8 @@ process_data <- function(datastuff, book_num, i){
               compress = "none")
   
   tictoc::toc() # Gets execution time
+  
+  return(NULL)
 }
 
 # Each book has a for loop and each loop iterates through every chapter in the book
