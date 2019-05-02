@@ -141,7 +141,7 @@ as_tbl_graph(network_data, directed = FALSE) %>%
   filter(!is.na(book_introduced)) %>%
   count(book_introduced) %>% 
   ggplot(aes(book_introduced, n)) + 
-  geom_col() + 
+  geom_col(width = .8) + 
   geom_text(aes(label = n), vjust = -0.6, color = "grey20") + 
   labs(subtitle = "Characters introduced by book", 
        x = "Book number", y = "Estimated # of chars") + 
@@ -151,7 +151,7 @@ as_tbl_graph(network_data, directed = FALSE) %>%
 no_clipping()
 ```
 
-I began by mining the co-occurrence data from the ngrams; I used a combination of regular expressions, parallelization, and more. I'll go more into that process later on. From there, I had to get the co-occurrence data into a reasonable format and clean the name data. I then used the AFINN Lexicon to get the sentiment data. Finally, I compared the sentiment data with the network data to try to see which works better to determine the climax of each of the 10 books. 
+I began by mining the co-occurrence data from the ngrams; I used a combination of regular expressions, parallelization, and more. I'll elaborate more on that process later. From there, I had to get the co-occurrence data into a reasonable format and clean the name data. I then used the AFINN Lexicon to get the sentiment data. Finally, I compared the sentiment data with the network data to try to see which works better to determine the climax of each of the 10 books. 
 
 ```{marginfigure echo=TRUE}
 The AFINN Lexicon contains 2,476 words with negativity and positivity scores between -5 and 5. 
@@ -175,19 +175,22 @@ At this point, I went back to the book data and turned the text into ngrams of l
 Some of the code for this process will be shown in the appendix. 
 ```
 
-This method of extraction was incredibly computationally intensive as there were 3,080 names in my name list and 3,250,530 ngrams. My code went through multiple iterations, and I eventually added parallelization and broke my data into 263 chunks. All of this managed to get my code to run in around 40 hours on my laptop. The original speed was about 310 seconds per 1600 ngrams, and I got that down to about 70 seconds per 1600. These speeds are what I recall, initially I did not think to record them. Most of the improvement was due to the parallelization and an `if` statement before the `str_extract_all` call. I attached the code for this part in the appendix. 
+This method of extraction was incredibly computationally intensive as there were 3,080 names in my name list and 3,250,530 ngrams. My code went through multiple iterations, and I eventually added parallelization and broke my data into 263 chunks. All of this managed to get my code to run in around 40 hours on my laptop. The original speed was about 310 seconds per 1600 ngrams, and I reduced that to approximately 70 seconds per 1600. These speeds are what I recall. Initially, I did not think to record them. Most of the improvement was due to the parallelization and an `if` statement before the `str_extract_all` call. I attached the code for this part in the appendix. 
 
-Once I got the co-occurrence data into a usable format, I had a lot of data cleaning to do. A lot of the data cleaning was due to the fact that there were partial name matches due to the use of ngrams "John Smith" matched as "John", and due to the fact that some characters have up to 9 different names that they might go by. My job was made slightly easier by the fact that less important characters tend to have fewer names in the series, such as Mallet, Picker, or Antsy whose surnames are never revealed. I formatted and removed variations of all names with over 100 appearances in the network data. I used over 130 regular expressions to achieve this. I made three important assumptions at this stage: 
+Once the co-occurrence data was in a usable format, I had a significant amount of data cleaning to do. Much of the data cleaning was due to the fact that there were partial name matches due to the use of ngrams "John Smith" matched as "John", and due to the fact that some characters have up to 9 different names. My job was made easier by the fact that less important characters tend to have fewer names in the series, such as Mallet, Picker, or Antsy whose surnames are never revealed. I formatted and removed variations of all names with over 100 appearances in the network data. I used over 130 regular expressions to achieve this. I made three assumptions at this stage:
+```{marginfigure echo=TRUE}
+Note, when I use the word "importance"  I am generally talking about something with a high centrality measure. 
+```
 
 * The names with over 100 occurrences in the co-occurrence data, in addition to the uncleaned names of the less featured characters are sufficient to fully represent the true co-occurrence network. 
 *  The most common variations of names accurately represent the co-occurrence relationships of their specific character. 
-* Any extremely uncommon name variations will be filtered out as isolated nodes or by a small filter removing the most uncommon nodes.
+* Any extremely uncommon name variations will be filtered out as isolated nodes or removed by a small filter on a centrality measure.  
  
 After cleaning the data, I began to analyze the co-occurrence data. 
 
 ## Results
 
-I'll jump right into it by giving the top 10 most important characters by PageRank compared with their degree centrality importance. I only used un-directed network graphs for everything that follows. 
+I'll jump right into it by giving the top 10 most important characters using PageRank compared with their degree centrality importance. I only used un-directed network graphs for everything that follows. 
 ```{r}
 as_tbl_graph(network_data, directed = FALSE) %>% 
   mutate(pop_deg = centrality_degree(), 
@@ -257,7 +260,7 @@ sentiment_scores <- books %>%
   ungroup()
 ```
 
-Before I begin trying to find the best way to find the climaxes in the series, I'll check if a chapter's sentiment score is correlated to it's importance. I initially thought that either of them could be used to predict climaxes on their own and that they may be correlated. The importance of the chapters was calculated by taking the mean of the edge betweenness centrality values of all of the edges in each chapter. 
+Before I begin trying to find the best way to indicate the climaxes in the series, I'll check if a chapter's sentiment score is correlated with importance. I initially thought that either of them could be used to predict climaxes on their own and that they may be correlated. The importance of the chapters was calculated by taking the mean of the edge betweenness centrality values of all of the edges in each chapter. 
 
 ```{r fig.margin=TRUE, fig.height=3}
 sentiment_scores %>% 
@@ -276,7 +279,7 @@ Since nearly every chapter in this book has a negative sentiment score, we will 
 ```
 
 Edge betweenness centrality looks at the shortest paths through the network that go through each edge, and assigns each edge a value based on how much each edge "connects" the entire network.  Removing an edge with high edge betweenness centrality will greatly impact the entire network.
-```{r fig.height=2.4}
+```{r fig.height=2.3}
 as_tbl_graph(network_data, directed = FALSE) %>% 
   activate(edges) %>% 
   mutate(book = as.double(book), 
@@ -515,7 +518,7 @@ process_data <- function(datastuff, book_num, chap_num){
 ```
 
 \newpage
-The `process_data()` function is then ran in 10 different for loops that iterate through each chapter to write `rds` files containing all of the co-occurrence data. One for loop is shown below. 
+The `process_data()` function is then ran in 10 different for loops, one per book, that iterate over the chapters to write `rds` files containing all of the co-occurrence data. One for loop is shown below. 
 
 ------
 
