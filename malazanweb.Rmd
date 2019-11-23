@@ -1,0 +1,531 @@
+---
+title: "[Project] Determining Literary Climaxes in Malazan"
+author: "Chris Peralta"
+date: "2019-11-22"
+output: 
+  tufte::tufte_html:
+  toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+```{r setup, include=TRUE, echo=FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  warning = FALSE, 
+  #out.width = '75%',
+  #out.height = '75%', 
+  comment = "#>", 
+  #fig.keep = "last", 
+  dpi = 600, 
+  warning = FALSE, 
+  message = FALSE, 
+  dev = 'jpeg', 
+  cache = TRUE)
+
+
+# All packages available on CRAN
+library(tidyverse)
+library(ggraph)
+library(tidygraph)
+library(tidytext)
+library(hrbrthemes)
+
+# Read in data
+network_data <- read_rds("data/network_data.rds")
+pre_network_data <- read_rds("data/pre_network_data.rds")
+pov_data <- read_rds("data/pov-data.rds")
+occurrence_data <- read_rds("data/occurrence_data.rds")
+#network_data <- read_rds("data/network_data.rds")
+source("R/import_books.R")
+source("R/import_characters.R")
+source("R/standardize_names.R")
+
+#theme_set(theme_ipsum())
+
+#source("gghelpers.R")
+
+#ggplot <- function(...) ggplot2::ggplot(...) + scale_colour_manual(values = color) + #theme(plot.title = element_text(size = 11.5))
+```
+
+```{r numbers}
+num_char <- function(){
+  num_char_low <- as_tbl_graph(network_data, directed = FALSE) %>% 
+    activate(nodes) %>%
+    mutate(popularity = centrality_degree()) %>%
+    arrange(desc(popularity)) %>% 
+    mutate(rank = row_number()) %>% 
+    filter(popularity > 2) %>% 
+    activate(nodes) %>% 
+    pull(name) %>% 
+    length() %>% 
+    formatC(format="d", big.mark=",")
+  
+  num_char_high <- as_tbl_graph(network_data, directed = FALSE) %>% 
+    activate(nodes) %>% 
+    pull(name) %>% 
+    length() %>% 
+    formatC(format="d", big.mark=",")
+
+  c(num_char_low, num_char_high)
+}
+
+num_words <- 
+  books %>% 
+  filter(!str_detect(line, "^Chapter .+|^CHAPTER .+|^[A-Z]+$|^[A-Z]+\\d{1,2}$")) %>% 
+  unnest_tokens(words, line) %>% 
+  pull(words) %>% 
+  length() %>% 
+  formatC(format="d", big.mark=",")
+
+
+pov_characters <- pov_data %>% 
+  distinct(name) %>% 
+  mutate(name = str_remove_all(name, "\\(.+\\)"), 
+         name = str_trim(name)) %>%
+  distinct(name) %>% 
+  pull(name)
+
+num_pov <- pov_characters %>% 
+  unique() %>% 
+  length()
+
+book_introduced <- occurrence_data %>%
+  mutate(name = str_split(names, ";"), 
+         book = as.integer(book)) %>%
+  unnest(name) %>%
+  group_by(name) %>%
+  summarize(book_introduced = as.factor(min(book))) %>%
+  filter(!str_detect(name, "^ "))
+
+mode_s <- function(x){
+  unique_x <- unique(x)
+  unique_x[which.max(tabulate(match(x, unique_x)))]
+}
+
+book_most_mentioned <-occurrence_data %>%
+  mutate(name = str_split(names, ";")) %>%
+  unnest(name) %>%
+  group_by(name) %>%
+  summarize(book_most_mentioned = as.factor(mode_s(book)))
+
+no_clipping <- function(plot = last_plot()){
+  plot <- plot %>%
+    ggplot_build() %>% 
+    ggplot_gtable()
+  
+  plot$layout$clip[plot$layout$name=="panel"] <- "off"
+  cowplot::ggdraw(plot)
+}
+```
+
+# Abstract
+```{marginfigure, echo=TRUE}
+Note: All bolded, underlined words are hyperlinks. 
+```
+In this project, I attempt to find the climaxes of the series [**Malazan Book of the Fallen**](https://en.wikipedia.org/wiki/Malazan_Book_of_the_Fallen) by using network, text, and sentiment analysis. This series is notable in that it is one of the most complex and long fantasy series with a continuous single plot-line. There are `r num_words` words in the series and I estimated that there are at least 1,314 characters in the series with approximately `r num_pov` unique points of view. Additionally, many of the characters have multiple aliases and nicknames adding another layer of complexity. A character might go by completely different names in different novels. 
+
+```{r fig.margin = TRUE, fig.keep='last'}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  mutate(popularity = centrality_degree()) %>%
+  arrange(desc(popularity)) %>% 
+  mutate(rank = row_number()) %>% 
+  filter(popularity > 2) %>% 
+  as.tibble() %>% 
+  left_join(book_introduced) %>% 
+  mutate(book_introduced = as.integer(book_introduced)) %>% 
+  arrange(book_introduced) %>% 
+  mutate(book_introduced = as.factor(book_introduced)) %>% 
+  filter(!is.na(book_introduced)) %>%
+  count(book_introduced) %>% 
+  ggplot(aes(book_introduced, n)) + 
+  geom_col(width = .8) + 
+  geom_text(aes(label = n), vjust = -0.6, color = "grey20") + 
+  labs(subtitle = "Characters introduced by book", 
+       x = "Book number", y = "Estimated # of chars") + 
+  theme_ipsum() + 
+  theme(axis.text.y=element_blank())
+
+no_clipping()
+```
+
+I began by text mining the co-occurrence data from the books, I'll elaborate more on that process later. From there, I had to get the co-occurrence data into a reasonable format and clean the name data. I then used the AFINN Lexicon to get the sentiment data. Finally, I compared the sentiment data with the network data to try to see which works better to determine the climax of each of the 10 books. 
+
+```{marginfigure echo=TRUE}
+The AFINN Lexicon contains 2,476 words with negativity and positivity scores between -5 and 5. 
+```
+
+# Data Preparation
+
+Numerous datasets from several sources were used in this project. The co-occurrence data was mined from the books by me. The books were converted from `.epub` format to `.txt` format. I made most of the `alias` data manually and crowd-sourced some of the aliases on [**Reddit**](https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/). The `name` data was extracted from the *Dramatis Personae* sections at the start of each book and manually extracted from the [**Malazan Wiki**](https://malazan.fandom.com/wiki/Category:Males). 
+
+I began by joining the character name data with the alias data into a single dataset. I then split all of this data by spaces in order to get variations of the names and rejoined the partial name data back to the full name data to get a comprehensive dataset of full and partial names. I then filtered out stop words, formal titles, military ranks, and commonly capitalized words that aren't names from this list. Then, I arranged the list by string length.
+
+# Methodology
+
+At this point, I went back to the book data and turned the text into ngrams of length 20 by book and chapter. I chose to use ngrams so that I would get the full co-occurrence relations within the 20 word groups. For example, "Ron Jon" then "Ron Jon Bob" and finally "Jon Bob". Then I wrote a function that tries to extract every name in the name list from the ngram. If there is a match, then it also removes the match from the string for subsequent iterations. Otherwise, "Brys Beddict" would be extracted 3 times. 
+```{marginfigure echo=TRUE}
+Some of the code for this process will be shown in the appendix. 
+```
+
+This method of extraction was computationally intensive as there were 3,080 names in my name list and 3,250,530 ngrams. After several iterations of my code, I managed to get it to run in around 40 hours on my laptop. The original speed was about 310 seconds per 1600 ngrams, and I reduced that to approximately 70 seconds per 1600. 
+
+Once the co-occurrence data was in a usable format, I moved on to data cleaning. Much of the data cleaning was due to the fact that there were partial name matches due to the use of ngrams "John Smith" matched as "John" and because some characters have up to 9 different names. Using regular expressions, I formatted and removed variations of all names with over 100 appearances in the network data. I made three assumptions at this stage:
+```{marginfigure echo=TRUE}
+Note, when I use the word "importance"  I am generally talking about something with a high centrality measure. 
+```
+
+* The names with over 100 occurrences in the co-occurrence data, in addition to the uncleaned names of the less featured characters are sufficient to fully represent the true co-occurrence network. 
+*  The most common variations of names accurately represent the co-occurrence relationships of their specific character. 
+* Any extremely uncommon name variations will be filtered out as isolated nodes or removed by a small filter on a centrality measure.  
+ 
+# Results
+
+I'll jump right into it by giving the top 10 most important characters using PageRank compared with their degree centrality importance. I only used un-directed network graphs for everything that follows. 
+```{r}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  mutate(pop_deg = centrality_degree(), 
+         pop_pr = centrality_pagerank()) %>% 
+  arrange(desc(pop_deg)) %>% 
+  mutate(rank_degree = 1:1493) %>% 
+  arrange(desc(pop_pr)) %>% 
+  mutate(rank_pagerank = 1:1493) %>% 
+  as.tibble() %>% 
+  select(-pop_deg, -pop_pr) %>% 
+  head(10) %>% 
+  knitr::kable(col.names = c("Character", "Ranking - Degree Centrality", "Ranking - PageRank"))
+```
+
+```{r fig.margin=TRUE}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  mutate(pop_deg = centrality_degree(), 
+         pop_pr = centrality_pagerank()) %>% 
+  arrange(desc(pop_deg)) %>% 
+  mutate(rank_degree = 1:1493) %>% 
+  arrange(desc(pop_pr)) %>% 
+  mutate(rank_pagerank = 1:1493) %>%
+  ggplot(aes(rank_degree, rank_pagerank)) + 
+  geom_line(color = "grey25") + 
+  labs(subtitle = "Rankings of degree and PageRank centrality",  
+       x = "Ranking from degree centrality", y = "Ranking from PageRank") + 
+  theme_ipsum() 
+```
+Degree centrality and PageRank mostly agree on the most important characters in the series, but they start to greatly diverge the further they get away from the top 10. As shown in the figure to the right. 
+
+In the following network graph, I decided to use PageRank after experimenting with other centrality measures.
+```{r results='asis',fig.fullwidth=TRUE,strip.white=TRUE}
+# Code for full graph
+# pallette <-  RColorBrewer::brewer.pal(10, "Set3")
+# as_tbl_graph(network_data, directed = FALSE) %>%
+#   mutate(popularity = centrality_pagerank()) %>%
+#   arrange(desc(popularity)) %>% 
+#   mutate(rank = row_number()) %>% 
+#   filter(!node_is_isolated()) %>%
+#   activate(edges) %>% 
+#   mutate(book = as.integer(book)) %>% 
+#   arrange(book) %>%
+#   mutate(book = as.factor(book)) %>% 
+#   distinct(from, to, book, chapter) %>% 
+#   ggraph(layout = "nicely") +
+#   geom_edge_link(aes(color = book)) +
+#   geom_node_point(aes(size = popularity^2.5), color = "grey20") +
+#   theme_void() +
+#   theme(legend.position="none") +
+#   scale_color_manual(values = pallette)
+#cat('\n')
+knitr::include_graphics("full-network-graph.png")
+#cat('\n')
+#cat('\n![](full-network-graph.png)\n')
+```
+
+The only interesting observation I can make from this graph is that there is a distinction between the two main continents from the 4 first books in the series and the third main continent introduced in book 5. Also, these groups become more connected in books 7, 8, 9, and 10. 
+
+```{r}
+sentiment_scores <- books %>% 
+  unnest_tokens(word, line) %>% 
+  inner_join(get_sentiments("afinn")) %>% 
+  group_by(book, chapter) %>% 
+  summarize(score = sum(score)) %>% 
+  ungroup()
+```
+
+```{marginfigure echo=TRUE}
+Edge betweenness centrality looks at the shortest paths through the network that go through each edge, and assigns each edge a value based on how much each edge "connects" the entire network.  Removing an edge with high edge betweenness centrality will greatly impact the entire network.
+```
+
+Before I begin trying to find the best way to indicate the climaxes in the series, I'll check if a chapter's sentiment score is correlated with importance. I initially thought that either of them could be used to predict climaxes on their own and that they may be correlated. The importance of the chapters was calculated by taking the mean of the edge betweenness centrality values of all of the edges in each chapter.
+
+```{r fig.margin=TRUE}
+sentiment_scores %>% 
+  group_by(book) %>%
+  summarize(score = sum(score)) %>% 
+  mutate(book = as.factor(book)) %>% 
+  ggplot(aes(book, score)) + 
+  geom_col(width = .8) + 
+  labs(subtitle = "Total sentiment score by book",
+       x = "Book number", y = "Total sentiment score") + 
+  theme_ipsum() 
+```
+
+```{marginfigure echo=TRUE}
+Since nearly every chapter in this book has a negative sentiment score, we will use negative values as an indicator of importance.
+```
+
+```{r}
+as_tbl_graph(network_data, directed = FALSE) %>% 
+  activate(edges) %>% 
+  mutate(book = as.double(book), 
+         chapter = as.integer(chapter)) %>% 
+  mutate(importance = centrality_edge_betweenness()) %>% 
+  as.tibble() %>% 
+  select(book, chapter, importance) %>% 
+  group_by(book, chapter) %>% 
+  summarize(mean_importance = mean(importance)) %>% 
+  ungroup() %>% 
+  arrange(desc(mean_importance)) %>%
+  left_join(sentiment_scores) %>% 
+  ggplot(aes(score, mean_importance)) + 
+  geom_point(size = .4) +
+  labs(subtitle = "Centrality and sentiment by chapter", 
+       x = "Total sentiment score", y = "Mean edge betweenness centrality") + 
+  coord_flip() + 
+  theme_ipsum() 
+```
+
+It appears that there is little to no correlation between a chapter's mean sentiment and mean edge betweenness centrality.
+
+```{r fig.margin=TRUE, fig.keep='last', fig.height=4}
+books %>% 
+  unnest_tokens(word, line) %>% 
+  inner_join(get_sentiments("nrc")) %>% 
+  count(sentiment) %>% 
+  filter(sentiment != "positive" & sentiment != "negative") %>% 
+  mutate(sentiment = str_to_title(sentiment)) %>% 
+  ggplot(aes(fct_reorder(sentiment, n), n)) + 
+  geom_col(width = .8) + 
+  geom_text(aes(label = formatC(n, format="d", big.mark=",")), hjust = -.1, 
+            color = "grey20") + 
+  labs(subtitle = "Most common emotions in Malazan", 
+       x = "Emotion", y = "Count", 
+       caption = "The NRC Word-Association Lexicon was\n used to identify the most often\n occuring emotions.") + 
+  theme_ipsum(subtitle_size = 13) + 
+  theme(axis.text.x=element_blank()) + 
+  coord_flip()
+no_clipping()
+
+emotion_chapter <- books %>% 
+  unnest_tokens(word, line) %>% 
+  inner_join(get_sentiments("nrc")) %>% 
+  group_by(book, chapter, sentiment) %>% 
+  count() %>% 
+  filter(sentiment != "positive" & sentiment != "negative") %>% 
+  arrange(book, chapter, desc(n)) %>% 
+  group_by(book, chapter) %>% 
+  mutate(rank = row_number(), 
+         sentiment = str_to_title(sentiment)) %>% 
+  filter(rank == 1) %>% 
+  select(-rank, -n)
+```
+
+Now, I'm going to see if the mean edge betweenness centrality weighted with the total sentiment score of each chapter will find the major climaxes of each book. Note, the most common emotions weren't used to calculate sentiment scores or to find any of the climaxes. 
+
+```{r}
+importance_df <- as_tbl_graph(network_data, directed = FALSE) %>% 
+  activate(edges) %>% 
+  mutate(book = as.double(book), 
+         chapter = as.integer(chapter)) %>% 
+  mutate(importance = centrality_edge_betweenness()) %>% 
+  as.tibble() %>% 
+  select(book, chapter, importance) %>% 
+  group_by(book, chapter) %>% 
+  summarize(mean_importance = mean(importance)) %>% 
+  ungroup()
+
+importance_df %>% 
+  left_join(sentiment_scores) %>% 
+  mutate(importance_weighted = score * mean_importance) %>% 
+  arrange(importance_weighted) %>% 
+  group_by(book) %>% 
+  mutate(rank =  row_number()) %>% 
+  filter(rank == 1) %>% 
+  select(book, chapter, mean_importance, score, importance_weighted) %>% 
+  arrange(book) %>% 
+  left_join(emotion_chapter) %>% 
+  knitr::kable(col.names = c("Book", "Chapter", "Mean importance", "Sentiment score",
+                             "Weighted importance", "Most common emotion")) 
+```
+
+While all of these chapters may be considered climaxes, I would say that only main climaxes are for books 5, 8, and 10. The interpretation of the "weighted importance" value, could be that these are the chapters with the largest negative impact on the series as a whole because many important characters are present and the chapters are very negative. If you read the series as a whole, this sounds quite plausible with the only exception being book 10, chapter 23.
+
+```{marginfigure echo=TRUE}
+Chapter summaries can be found here:<br>
+- [Book 1: Gardens of the Moon](https://malazan.fandom.com/wiki/Gardens_of_the_Moon/Dramatis_Personae)<br>
+- [Book 2: Deadhouse Gates](https://malazan.fandom.com/wiki/Deadhouse_Gates/Dramatis_Personae)<br>
+- [Book 3: Memories of Ice](https://malazan.fandom.com/wiki/Memories_of_Ice/Dramatis_Personae)<br>
+- [Book 4: House of Chains](https://malazan.fandom.com/wiki/House_of_Chains/Dramatis_Personae)<br>
+- [Book 5: Midnight Tides](https://malazan.fandom.com/wiki/Midnight_Tides/Dramatis_Personae)<br>
+- [Book 6: The Bonehunters](https://malazan.fandom.com/wiki/The_Bonehunters/Dramatis_Personae)<br>
+- [Book 7: Reapers Gale](https://malazan.fandom.com/wiki/Reaper%27s_Gale/Dramatis_Personae)<br>
+- [Book 8: Toll the Hounds](https://malazan.fandom.com/wiki/Toll_the_Hounds/Dramatis_Personae)<br>
+- [Book 9: Dust of Dreams](https://malazan.fandom.com/wiki/Dust_of_Dreams/Dramatis_Personae)<br>
+- [Book 10: The Crippled God](https://malazan.fandom.com/wiki/The_Crippled_God/Dramatis_Personae)
+```
+
+Lets look at only the mean edge betweenness centrality on its own. 
+
+```{r}
+importance_df %>% 
+  arrange(desc(mean_importance)) %>% 
+  group_by(book) %>% 
+  mutate(rank = row_number()) %>% 
+  filter(rank == 1) %>% 
+  arrange(book) %>% 
+  select(-rank) %>% 
+  left_join(emotion_chapter) %>% 
+  knitr::kable(col.names = c("Book", "Chapter", "Mean Importance", 
+                             "Most common Emotion"))
+
+# as_tbl_graph(network_data, directed = FALSE) %>% 
+#   activate(edges) %>% 
+#   filter(book == 9) %>% 
+#   mutate(importance = centrality_edge_betweenness()) %>% 
+#   as.tibble() %>% 
+#   group_by(book, chapter) %>% 
+#   summarize(mean_importance = mean(importance)) %>% 
+#   arrange(desc(mean_importance))
+```
+
+The only main climax here is for Book 8, but the chapters for books 5 and 8 could be considered sub-climaxes. So just plain edge betweenness centrality doesn't quite work for finding the climaxes of each book. Book 2, chapter 1 just has a lot of dialogue between important characters, but I don't think it can be considered a climax of any degree. These are the chapters that have the highest mean edge centrality, meaning that the average edge has the highest edge betweenness centrality. 
+
+What about only using sentiment scores? 
+
+```{r}
+sentiment_scores %>% 
+  arrange(score) %>% 
+  group_by(book) %>% 
+  mutate(rank = row_number()) %>% 
+  filter(rank == 1) %>% 
+  select(-rank) %>% 
+  arrange(book) %>% 
+  left_join(emotion_chapter) %>% 
+  knitr::kable(col.names = c("Book", "Chapter", "Sentiment score", 
+                             "Most common emotion"))
+```
+
+Well this appears to be the best metric by far for finding climaxes. A conclusion that can easily be drawn from this is that the most negative part of each book tends to be the climax of the book in this series and the most frequently occurring emotion in these chapters is "Fear". Some of these chapters have major battles, revolutions, and a couple horribly morbid chapters. Books 3, 5, 7, 8, and 10 all have what I believe are the main climaxes in their respective books, and Books 2, 4, 6, and 15 are all sub-climaxes. 
+
+```{marginfigure echo=TRUE}
+Emotions in the NRC Lexicon:<br>
+- Fear<br>
+- Trust<br>
+- Sadness<br>
+- Anger<br>
+- Anticipation<br>
+- Joy<br>
+- Disgust<br>
+- Surprise
+```
+
+While simple positive and negative sentiment scores are the best metrics for finding the climax of each book, all of these methods pick out some very interesting chapters. 
+
+\newpage
+
+# Appendices
+##Co-occurrence extraction
+In this section, I'll include some snippets of the code that I used to extract the co-occurrence data from the books. 
+
+The books were in this format, in a single data.frame, after being loaded into R and doing some pre-processing:
+
+```{marginfigure echo=TRUE}
+The book pre-processing code can be found here: \newline
+https://github.com/visuelledata/malazannetwork/blob/master/R/import_books.R
+```
+
+```{r}
+books %>% 
+  head(7)
+```
+
+Starting with data in the ngram format below. 
+
+
+```{r}
+books %>% 
+  standardize_names_book() %>% 
+  group_by(book, chapter) %>% 
+  unnest_tokens(ngram, line, token = "ngrams", n = 20, to_lower = FALSE) %>%
+  head(10)
+```
+
+I then broke the ngram data into 10 separate lists, 1 for each book, each list contained a separate data frame for each chapter. I'll leave this output out as it will be too long.
+
+Below is the main function I used to extract the co-occurrence data: 
+
+
+```{r eval=FALSE, collapse=FALSE, cache=FALSE, echo=TRUE, fig.fullwidth=TRUE}
+library(future.apply)
+
+process_data <- function(text, book_num, chap_num){
+  tictoc::tic() # For execution time
+  plan(multiprocess, workers = 4) # To set parallelization parameters
+  
+  # Pulls out the co-occurrence data
+  placeholder <- text %>%
+    future_apply(1, function(x){ # future_apply applies func to each row of text
+                      map_chr(all_names, # map_chr plugs names into the function
+                        function(pat){ # Finds names
+                          name <- str_extract(x, pattern = fixed(pat)) 
+                          #The line below removes any matches from the string
+                          if(!is.na(name)) x <<- str_remove(x, pattern=fixed(pat)) 
+                          name # So the function returns the co-occurrence data
+                         }
+                        )
+                      },
+                 future.seed = TRUE) # Outputs a matrix
+  
+  # Formats the data into a "tidy" format and does some basic cleaning
+  placeholder %>% 
+    t() %>% # Transposes matrix
+    as.tibble() %>% # Converts it to a data frame
+    unite("names", V1:V3080, sep = ";") %>% # Combines all cols into one
+    remove_NAs() %>% # Removes all generated NAs, leaves only names
+    mutate(book = book_num, # Adds book and chapter data
+           chapter = chap_num) %>%  
+    write_rds(paste0("data/network_data/network_data", # Writes data
+                     book_num, "-", chap_num,   
+                     ".rds"), 
+              compress = "none")
+  
+  tictoc::toc() # Gets execution time
+  return(NULL)
+}
+```
+
+The `process_data()` function is then ran in 10 different for loops, one per book, that iterate over the chapters to write `rds` files containing all of the co-occurrence data. One for loop is shown below. 
+
+```{r eval=FALSE, collapse=FALSE, cache=FALSE, echo=TRUE}
+for (i in seq_along(book1)){
+  process_data(text = book1[[i]], book_num = 1, chap_num = i) 
+}
+```
+
+## Bibliography
+
+* Erikson, S. (1999). Gardens of the Moon. London: Bantam.
+* Erikson, S. (2000). Deadhouse Gates. London: Bantam.
+* Erikson, S. (2001). Memories of Ice. London: Bantam.
+* Erikson, S. (2002). House of Chains. London: Bantam.
+* Erikson, S. (2004). Midnight Tides. London: Bantam.
+* Erikson, S. (2006). The Bonehunters. London: Bantam.
+* Erikson, S. (2007). Reaper's Gale. London: Bantam.
+* Erikson, S. (2008). Toll the Hounds. London: Bantam.
+* Erikson, S. (2009). Dust of Dreams. London: Bantam.
+* Erikson, S. (2011). The Crippled God. London: Bantam.
+* Nielsen, Å. (2011, March). AFINN Sentiment Lexicon. Retrieved from http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010
+* Mohammad, S., & Turney, P. (n.d.). NRC Emotion Lexicon. Retrieved from https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm
+* Malazan Wiki. (n.d.). Retrieved from https://malazan.fandom.com/wiki/Malazan_Wiki
+* R/Malazan - Main series character POV data. Data from https://www.reddit.com/r/Malazan/comments/a1ukxk/main_series_character_pov_data/
+* R/Malazan - Malazan alias data. Data created by me. Some aliases crowd-sourced from https://www.reddit.com/r/Malazan/comments/alaknz/spoilers_what_are_aliases_are_there_in_this_series/ 
